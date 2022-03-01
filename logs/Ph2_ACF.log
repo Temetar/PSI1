@@ -1,0 +1,189 @@
+24.02.2022 10:16:34: |140144378686464|I| CMS Ph2_ACF  Data acquisition test and Data dump
+
+Available options
+-----------------
+-h, --help
+    Print this help page
+
+-l, --list
+    Print the list of available firmware images on SD card (works only with
+    CTA boards)
+
+-d <value>, --delete <value>
+    Delete a firmware image on SD card (works only with CTA boards)
+
+-f <value>, --file <value>
+    Local FPGA Bitstream file (*.mcs format for GLIB or *.bit/*.bin format for
+    CTA boards)
+
+--download <value>, -o <value>
+    Download an FPGA configuration from SD card to file (only for CTA boards)
+
+-c <value>, --config <value>
+    Hw Description File . Default value: settings/HWDescription_2CBC.xml
+
+-i <value>, --image <value>
+    Without -f: load image from SD card to FPGA
+    With    -f: name of image written to SD card
+    -f specifies the source filename
+
+-b <value>, --board <value>
+    In case of multiple boards in the same file, specify board Id
+
+Return codes
+-----------------
+    0     Success
+    1     Error
+
+24.02.2022 10:40:23: |139912436497408|I| [1m[33mParseHW [FileParser] 0x16a1100	cmsinnertracker.crate0.slot0[0m
+24.02.2022 10:40:23: |139912436497408|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+24.02.2022 10:40:23: |139912436497408|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+24.02.2022 10:40:24: |139912436497408|I| 20 firmware images on SD card:
+24.02.2022 10:40:24: |139912436497408|I|  - GoldenImage.bin
+24.02.2022 10:40:24: |139912436497408|I|  - ph2ITuDTC_v036_SC_DI-CE_x1G28
+24.02.2022 10:40:24: |139912436497408|I|  - ph2ITuDTC_v036_SC_DI-CE_x640M
+24.02.2022 10:40:24: |139912436497408|I|  - ph2ITuDTC_v036_QU_DI-KS_x1G28
+24.02.2022 10:40:24: |139912436497408|I|  - ph2ITuDTC_v036_QU_DI-KS_x640M
+24.02.2022 10:40:24: |139912436497408|I|  - ph2ITuDTC_v036_QU_KS-KS_x1G28
+24.02.2022 10:40:24: |139912436497408|I|  - ph2ITuDTC_v036_QU_KS-KS_x640M
+24.02.2022 10:40:24: |139912436497408|I|  - ph2ITuDTC_v036_SC_DI-KS_x1G28
+24.02.2022 10:40:24: |139912436497408|I|  - ph2ITuDTC_v036_SC_DI-KS_x640M
+24.02.2022 10:40:24: |139912436497408|I|  - ph2ITuDTC_v036_SC_KS-KS_x1G28
+24.02.2022 10:40:24: |139912436497408|I|  - ph2ITuDTC_v036_SC_KS-KS_x640M
+24.02.2022 10:40:24: |139912436497408|I|  - ph2ITuDTC_v4p0_QU_KS-KS_x1G28
+24.02.2022 10:40:24: |139912436497408|I|  - ph2ITuDTC_v4p0_QU_KS-KS_x640M
+24.02.2022 10:40:24: |139912436497408|I|  - ph2ITuDTC_v4p0_SC_KS-KS_x640M
+24.02.2022 10:40:24: |139912436497408|I|  - ph2ITuDTC_v4p0_SC_KS-KS_x1G28
+24.02.2022 10:40:24: |139912436497408|I|  - ph2ITuDTC_v4p1_QU_KS-KS_x1G28
+24.02.2022 10:40:24: |139912436497408|I|  - ph2ITuDTC_v4p1_QU_KS-KS_x640M
+24.02.2022 10:40:24: |139912436497408|I|  - ph2ITuDTC_v4p1_SC_KS-KS_x1G28
+24.02.2022 10:40:24: |139912436497408|I|  - ph2ITuDTC_v4p1_SC_KS-KS_x640M
+24.02.2022 10:40:24: |139912436497408|I|  - ph2ITuDTC_CROCv4p3p5_QU_KS-KS
+24.02.2022 10:48:34: |139787041868800|I| [1m[33mParseHW [FileParser] 0x14c4100	cmsinnertracker.crate0.slot0[0m
+24.02.2022 10:48:34: |139787041868800|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+24.02.2022 10:48:34: |139787041868800|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+24.02.2022 10:48:34: |139787041868800|I| [1m[34m>>> Done <<<[0m
+24.02.2022 14:32:31: |140589138557952|I| [1m[33mParseHW [FileParser] 0x1b1a100	cmsinnertracker.crate0.slot0[0m
+24.02.2022 14:32:31: |140589138557952|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+24.02.2022 14:32:31: |140589138557952|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+24.02.2022 14:32:31: |140589138557952|I| 1 firmware images on SD card:
+24.02.2022 14:32:31: |140589138557952|I|  - GoldenImage.bin
+24.02.2022 14:37:12: |140301431647232|I| [1m[33mParseHW [FileParser] 0x1f50100	cmsinnertracker.crate0.slot0[0m
+24.02.2022 14:37:12: |140301431647232|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+24.02.2022 14:37:12: |140301431647232|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+24.02.2022 14:37:12: |140301431647232|I| 1 firmware images on SD card:
+24.02.2022 14:37:12: |140301431647232|I|  - GoldenImage.bin
+24.02.2022 14:44:44: |139965735803904|I| [1m[33mParseHW [FileParser] 0x28d1100	cmsinnertracker.crate0.slot0[0m
+24.02.2022 14:44:44: |139965735803904|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+24.02.2022 14:44:44: |139965735803904|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+24.02.2022 14:44:44: |139965735803904|I| 0%  Starting upload                 
+24.02.2022 14:44:45: |139965735803904|I| 1%  Loading firmware image                 
+24.02.2022 14:44:46: |139965735803904|I| 11%  Loading firmware image                 
+24.02.2022 14:44:47: |139965735803904|I| 21%  Loading firmware image                 
+24.02.2022 14:44:48: |139965735803904|I| 31%  Loading firmware image                 
+24.02.2022 14:44:49: |139965735803904|I| 41%  Loading firmware image                 
+24.02.2022 14:44:50: |139965735803904|I| 52%  Loading firmware image                 
+24.02.2022 14:44:51: |139965735803904|I| 61%  Loading firmware image                 
+24.02.2022 14:44:52: |139965735803904|I| 72%  Loading firmware image                 
+24.02.2022 14:44:53: |139965735803904|I| 81%  Loading firmware image                 
+24.02.2022 14:44:54: |139965735803904|I| 92%  Loading firmware image                 
+24.02.2022 14:44:55: |139965735803904|I| [1m[34m>>> 100% Done <<<[0m
+24.02.2022 14:45:01: |140123334167552|I| [1m[33mParseHW [FileParser] 0x1522100	cmsinnertracker.crate0.slot0[0m
+24.02.2022 14:45:01: |140123334167552|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+24.02.2022 14:45:01: |140123334167552|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+24.02.2022 14:45:01: |140123334167552|I| 2 firmware images on SD card:
+24.02.2022 14:45:01: |140123334167552|I|  - GoldenImage.bin
+24.02.2022 14:45:01: |140123334167552|I|  - IT-uDTC_v4p2-KSU-4x_elec_x1G28
+24.02.2022 14:45:26: |140035308764160|I| [1m[33mParseHW [FileParser] 0xf40100	cmsinnertracker.crate0.slot0[0m
+24.02.2022 14:45:26: |140035308764160|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+24.02.2022 14:45:26: |140035308764160|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+24.02.2022 14:45:26: |140035308764160|I| [1m[34m>>> Done <<<[0m
+24.02.2022 14:45:49: |140040874523648|I| [1m[33mParseHW [FileParser] 0x207a100	cmsinnertracker.crate0.slot0[0m
+24.02.2022 14:45:49: |140040874523648|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+24.02.2022 14:45:49: |140040874523648|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+24.02.2022 14:45:49: |140040874523648|I| [1m[34m>>> Done <<<[0m
+24.02.2022 14:48:52: |140082918013952|I| [1m[33mParseHW [FileParser] 0xe54100	cmsinnertracker.crate0.slot0[0m
+24.02.2022 14:48:52: |140082918013952|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+24.02.2022 14:48:52: |140082918013952|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+24.02.2022 14:48:52: |140082918013952|I| [1m[34m>>> Done <<<[0m
+28.02.2022 15:14:02: |140460634844160|I| [1m[33mParseHW [FileParser] 0x1df9100	cmsinnertracker.crate0.slot0[0m
+28.02.2022 15:14:02: |140460634844160|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+28.02.2022 15:14:02: |140460634844160|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+28.02.2022 15:15:02: |140155708705792|I| [1m[33mParseHW [FileParser] 0x24e6100	cmsinnertracker.crate0.slot0[0m
+28.02.2022 15:15:02: |140155708705792|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+28.02.2022 15:15:02: |140155708705792|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+28.02.2022 15:15:02: |140155708705792|I| 2 firmware images on SD card:
+28.02.2022 15:15:02: |140155708705792|I|  - GoldenImage.bin
+28.02.2022 15:15:02: |140155708705792|I|  - IT-uDTC_v4p2-KSU-4x_elec_x1G28
+28.02.2022 15:15:23: |140378729933824|I| [1m[33mParseHW [FileParser] 0x1e0f100	cmsinnertracker.crate0.slot0[0m
+28.02.2022 15:15:23: |140378729933824|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+28.02.2022 15:15:23: |140378729933824|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+28.02.2022 15:15:24: |140378729933824|I| [1m[34m>>> Done <<<[0m
+28.02.2022 15:23:31: |140364598832128|I| [1m[33mParseHW [FileParser] 0xfb8100	cmsinnertracker.crate0.slot0[0m
+28.02.2022 15:23:31: |140364598832128|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+28.02.2022 15:23:31: |140364598832128|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+28.02.2022 15:23:32: |140364598832128|I| [1m[34m>>> Done <<<[0m
+28.02.2022 15:56:58: |140621682285568|I| [1m[33mParseHW [FileParser] 0x101a100	cmsinnertracker.crate0.slot0[0m
+28.02.2022 15:56:58: |140621682285568|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+28.02.2022 15:56:58: |140621682285568|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+28.02.2022 15:56:59: |140621682285568|I| [1m[34m>>> Done <<<[0m
+28.02.2022 16:03:33: |139710334770176|I| [1m[33mParseHW [FileParser] 0x1594100	cmsinnertracker.crate0.slot0[0m
+28.02.2022 16:03:33: |139710334770176|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+28.02.2022 16:03:33: |139710334770176|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+28.02.2022 16:03:34: |139710334770176|I| [1m[34m>>> Done <<<[0m
+01.03.2022 14:22:41: |140077891611648|I| [1m[33mParseHW [FileParser] 0xf64100	cmsinnertracker.crate0.slot0[0m
+01.03.2022 14:22:41: |140077891611648|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+01.03.2022 14:22:41: |140077891611648|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+01.03.2022 14:22:41: |140077891611648|I| [1m[34m>>> Done <<<[0m
+01.03.2022 14:23:20: |140632815082496|I| [1m[33mParseHW [FileParser] 0xb0d100	cmsinnertracker.crate0.slot0[0m
+01.03.2022 14:23:20: |140632815082496|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+01.03.2022 14:23:20: |140632815082496|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+01.03.2022 14:23:20: |140632815082496|I| [1m[34m>>> Done <<<[0m
+01.03.2022 14:46:14: |140458387442688|I| [1m[33mParseHW [FileParser] 0x25d5100	cmsinnertracker.crate0.slot0[0m
+01.03.2022 14:46:14: |140458387442688|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+01.03.2022 14:46:14: |140458387442688|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+01.03.2022 14:46:14: |140458387442688|I| [1m[34m>>> Done <<<[0m
+01.03.2022 14:46:54: |140459512941568|I| [1m[33mParseHW [FileParser] 0x290f100	cmsinnertracker.crate0.slot0[0m
+01.03.2022 14:46:54: |140459512941568|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+01.03.2022 14:46:54: |140459512941568|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+01.03.2022 14:46:54: |140459512941568|I| [1m[34m>>> Done <<<[0m
+01.03.2022 14:55:10: |140394772651008|I| [1m[33mParseHW [FileParser] 0x2844100	cmsinnertracker.crate0.slot0[0m
+01.03.2022 14:55:10: |140394772651008|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+01.03.2022 14:55:10: |140394772651008|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+01.03.2022 14:55:10: |140394772651008|I| [1m[34m>>> Done <<<[0m
+01.03.2022 14:59:29: |140706279107584|I| [1m[33mParseHW [FileParser] 0x1bc1100	cmsinnertracker.crate0.slot0[0m
+01.03.2022 14:59:29: |140706279107584|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+01.03.2022 14:59:29: |140706279107584|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+01.03.2022 14:59:30: |140706279107584|I| [1m[34m>>> Done <<<[0m
+01.03.2022 15:13:57: |139906125773824|I| [1m[33mParseHW [FileParser] 0x1cfb100	cmsinnertracker.crate0.slot0[0m
+01.03.2022 15:13:57: |139906125773824|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+01.03.2022 15:13:57: |139906125773824|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+01.03.2022 15:13:57: |139906125773824|I| [1m[34m>>> Done <<<[0m
+01.03.2022 15:18:29: |140161827658752|I| [1m[33mParseHW [FileParser] 0x1815100	cmsinnertracker.crate0.slot0[0m
+01.03.2022 15:18:29: |140161827658752|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+01.03.2022 15:18:29: |140161827658752|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+01.03.2022 15:18:29: |140161827658752|I| [1m[34m>>> Done <<<[0m
+01.03.2022 15:18:48: |139972666059776|I| [1m[33mParseHW [FileParser] 0xce5100	cmsinnertracker.crate0.slot0[0m
+01.03.2022 15:18:48: |139972666059776|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+01.03.2022 15:18:48: |139972666059776|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+01.03.2022 15:18:48: |139972666059776|I| [1m[34m>>> Done <<<[0m
+01.03.2022 15:20:48: |140464693619712|I| [1m[33mParseHW [FileParser] 0x25a0100	cmsinnertracker.crate0.slot0[0m
+01.03.2022 15:20:48: |140464693619712|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+01.03.2022 15:20:48: |140464693619712|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+01.03.2022 15:20:48: |140464693619712|I| [1m[34m>>> Done <<<[0m
+01.03.2022 15:21:42: |140152753380352|I| [1m[33mParseHW [FileParser] 0x2791100	cmsinnertracker.crate0.slot0[0m
+01.03.2022 15:21:42: |140152753380352|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+01.03.2022 15:21:42: |140152753380352|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+01.03.2022 15:21:42: |140152753380352|I| [1m[34m>>> Done <<<[0m
+01.03.2022 15:23:13: |140664144129024|I| [1m[33mParseHW [FileParser] 0x28e3100	cmsinnertracker.crate0.slot0[0m
+01.03.2022 15:23:13: |140664144129024|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+01.03.2022 15:23:13: |140664144129024|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+01.03.2022 15:23:13: |140664144129024|I| [1m[34m>>> Done <<<[0m
+01.03.2022 15:25:08: |140206261160960|I| [1m[33mParseHW [FileParser] 0x195a100	cmsinnertracker.crate0.slot0[0m
+01.03.2022 15:25:08: |140206261160960|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+01.03.2022 15:25:08: |140206261160960|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+01.03.2022 15:25:09: |140206261160960|I| [1m[34m>>> Done <<<[0m
+01.03.2022 15:31:10: |139974135356416|I| [1m[33mParseHW [FileParser] 0xafb100	cmsinnertracker.crate0.slot0[0m
+01.03.2022 15:31:10: |139974135356416|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+01.03.2022 15:31:10: |139974135356416|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+01.03.2022 15:31:10: |139974135356416|I| [1m[34m>>> Done <<<[0m

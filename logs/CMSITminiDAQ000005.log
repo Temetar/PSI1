@@ -1,0 +1,14 @@
+|03:22:37|I|[1m[33mParseHW [FileParser] 0x1ae3100	cmsinnertracker.crate0.slot0[0m
+|03:22:37|I|[1m[33mTrying to connect to the Power Supply Server...[0m
+|03:22:37|I|[1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+|03:22:37|I|[1m[35mResetting the backend board... it may take a while[0m
+|03:22:37|I|[33mWaiting for DDR3 calibration...[0m
+|03:22:38|I|[1m[34m	--> DDR3 calibration done[0m
+|03:22:38|I|[1m[35mNow you can start using the DAQ ... enjoy![0m
+|03:23:36|I|[1m[33mParseHW [FileParser] 0xe88100	cmsinnertracker.crate0.slot0[0m
+|03:23:36|I|[1m[33mTrying to connect to the Power Supply Server...[0m
+|03:23:36|I|[1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+|03:23:36|I|[1m[35mResetting the backend board... it may take a while[0m
+|03:23:36|I|[33mWaiting for DDR3 calibration...[0m
+|03:23:37|I|[1m[34m	--> DDR3 calibration done[0m
+|03:23:37|I|[1m[35mNow you can start using the DAQ ... enjoy![0m

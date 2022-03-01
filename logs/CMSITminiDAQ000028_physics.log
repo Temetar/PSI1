@@ -1,0 +1,1557 @@
+|02:39:48|I|[1m[35m@@@ Initializing the Hardware @@@[0m
+|02:39:48|I|[1m[33mParseHW [FileParser] 0x1d1e100	cmsinnertracker.crate0.slot0[0m
+|02:39:48|I|[1m[33mTrying to connect to the Power Supply Server...[0m
+|02:39:48|I|[1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+|02:39:49|I|[1m[35m@@@ Configuring HW parsed from xml file @@@[0m
+|02:39:49|I|[1m[34m	--> Found an Inner Tracker Readout-board[0m
+|02:39:49|I|[32mConfiguring Board: [1m[33m0[0m
+|02:39:49|I|[1m[34m	--> FW version : [1m[33m4.2[1m[34m -- Date (yy/mm/dd) : [1m[33m21/8/28[1m[34m -- Time (hour:minute:sec) : [1m[33m2:35:40[0m
+|02:39:49|I|[1m[34m	--> Link type : [1m[33melectrical[1m[34m -- Optical speed : [1m[33m10 Gbit/s[1m[34m -- Frontend type : [1m[33mRD53A[0m
+|02:39:49|I|[1m[34m	--> L12 FMC type : [1m[33m1[1m[34m -- L08 FMC type : [1m[33m1[1m[34m (1=KSU, 2=CERN, 3=DIO5, 4=OPTO, 5=FERMI, 7=NONE, 0=Unspecified)[0m
+|02:39:49|I|[32mInitializing DIO5:[0m
+|02:39:49|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.HitOr_enable_l12: 0x[1m[33m0 (0)[0m
+|02:39:49|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.trigger_source: 0x[1m[33m2 (2)[0m
+|02:39:49|I|[1m[34m	--> user.ctrl_regs.reset_reg.ext_clk_en: 0x[1m[33m0 (0)[0m
+|02:39:49|I|[1m[34m	--> Done[0m
+|02:39:49|I|[32mReading clock generator (CDCE62005) configuration[0m
+|02:39:49|I|[1m[34m	--> SPI register content: 0x[1m[33mEB020320[0m
+|02:39:49|I|[1m[34m	--> SPI register content: 0x[1m[33mEB020321[0m
+|02:39:49|I|[1m[34m	--> SPI register content: 0x[1m[33mEB840302[0m
+|02:39:49|I|[1m[34m	--> SPI register content: 0x[1m[33mEB840303[0m
+|02:39:49|I|[1m[34m	--> SPI register content: 0x[1m[33mEB140334[0m
+|02:39:49|I|[1m[34m	--> SPI register content: 0x[1m[33m10000E75[0m
+|02:39:49|I|[1m[34m	--> SPI register content: 0x[1m[33m030E02E6[0m
+|02:39:49|I|[1m[34m	--> SPI register content: 0x[1m[33mBD800DF7[0m
+|02:39:49|I|[1m[34m	--> SPI register content: 0x[1m[33m20009D58[0m
+|02:39:49|W|[32mOptical link tx slow control status: [1m[31mnot ready[0m
+|02:39:49|W|[32mOptical link rx slow control status: [1m[31mnot ready[0m
+|02:39:49|I|[32mInput clock frequency (could be either internal or external, should be ~40 MHz): [1m[33m40.078 MHz[0m
+|02:39:49|I|[32mGTX receiver clock frequency (~160 MHz (~320 MHz) for electrical (optical) readout): [1m[33m160.314 MHz[0m
+|02:39:49|I|[32mExternal CMD clock frequency: [1m[33m0.000 MHz[0m
+|02:39:49|I|[32mExternal Serializer clock frequency: [1m[33m0.000 MHz[0m
+|02:39:49|I|[36m=== Configuring FSM fast command block ===[0m
+|02:39:49|I|[32mInternal trigger frequency (if enabled): [1m[33m30372 Hz[0m
+|02:39:49|I|[32mChecking firmware status:[0m
+|02:39:49|I|[1m[34m	--> Clock generator is [1m[33mlocked[0m
+|02:39:49|I|[1m[34m	--> I2C [1m[33minitialized[0m
+|02:39:49|I|[32mFast command block trigger source: [1m[33m2[0m[32m (1=IPBus, 2=Test-FSM, 3=TTC, 4=TLU, 5=External, 6=Hit-Or, 7=User-defined frequency)[0m
+|02:39:49|I|[32mFast command block trigger state: [1m[33m0[0m[32m (0=Idle, 2=Running)[0m
+|02:39:49|I|[32mFast command block check if configuraiton registers have been set: [1m[33mconfigured[0m
+|02:39:49|I|[32mFast command block error code (0=No error): [1m[33m0[0m
+|02:39:49|I|[32mTrigger counter: [1m[33m0[0m
+|02:39:49|I|[32mHybrid type: [1m[33m1[0m[32m (1=Single chip, 2=Double chip, 4=Quad chip)[0m
+|02:39:49|I|[32mNumber of hybrids which can be potentially readout: [1m[33m8[0m
+|02:39:49|I|[36m================== Done ==================[0m
+|02:39:49|I|[32mInitializing board's registers:[0m
+|02:39:49|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg1.dio5_ch1_thr: 0x[1m[33m80 (128)[0m
+|02:39:49|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg1.dio5_ch2_thr: 0x[1m[33m28 (40)[0m
+|02:39:49|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch3_thr: 0x[1m[33m80 (128)[0m
+|02:39:49|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch4_thr: 0x[1m[33m80 (128)[0m
+|02:39:49|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch5_thr: 0x[1m[33m80 (128)[0m
+|02:39:49|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.tlu_delay: 0x[1m[33m0 (0)[0m
+|02:39:49|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.HitOr_enable_l12: 0x[1m[33m0 (0)[0m
+|02:39:49|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_3.triggers_to_accept: 0x[1m[33mA (10)[0m
+|02:39:49|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_7.autozero_freq: 0x[1m[33m3E8 (1000)[0m
+|02:39:49|I|[1m[34m	--> Done[0m
+|02:39:49|I|[32mChecking status of the optical links:[0m
+|02:39:49|I|[1m[34m	--> Optical link n. active LpGBT chip tx:  [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:39:49|I|[1m[34m	--> Optical link n. active LpGBT chip rx:  [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:39:49|I|[1m[34m	--> Optical link n. active LpGBT chip mgt: [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:39:49|I|[36m=== Configuring frontend chip communication ===[0m
+|02:39:49|I|[32mDown-link phase initialization...[0m
+|02:39:49|I|[1m[34m	--> Done[0m
+|02:39:49|I|[32mInitializing chip communication of hybrid: [0m[1m[33m0[0m
+|02:39:49|I|[32mInitializing communicationng to/from RD53: [0m[1m[33m0[0m
+|02:39:49|I|[32mConfiguring up-link lanes and monitoring...[0m
+|02:39:49|I|[1m[34m	--> Done[0m
+|02:39:49|I|[32mUp-link speed: [1m[33m1.28 Gbit/s[0m
+|02:39:49|I|[36m==================== Done =====================[0m
+|02:39:49|I|[32mChecking status communication RD53 --> FW[0m
+|02:39:49|I|[1m[34m	--> Aurora speed: [1m[33m1.28 Gbit/s[0m
+|02:39:49|I|[1m[34m	--> Total number of required data lanes: [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|02:39:49|I|[1m[34m	--> Total number of active data lanes:   [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|02:39:49|I|[1m[34m	--> All enabled data lanes are active[0m
+|02:39:49|I|[36m===== Configuring frontend chip registers =====[0m
+|02:39:49|I|[32mConfiguring chip of hybrid: [0m[1m[33m0[0m
+|02:39:49|I|[32mConfiguring RD53: [0m[1m[33m0[0m
+|02:39:49|E|[1m[31mRead-command FIFO empty[0m
+|02:39:49|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:50|E|[1m[31mRead-command FIFO empty[0m
+|02:39:50|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:50|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:50|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mVOLTAGE_TRIM[0m
+|02:39:50|E|[1m[31mRead-command FIFO empty[0m
+|02:39:50|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:50|E|[1m[31mRead-command FIFO empty[0m
+|02:39:50|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:50|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:50|E|[1m[31mRead-command FIFO empty[0m
+|02:39:50|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:50|E|[1m[31mRead-command FIFO empty[0m
+|02:39:50|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:50|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:50|E|[1m[31mRead-command FIFO empty[0m
+|02:39:50|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:50|E|[1m[31mRead-command FIFO empty[0m
+|02:39:50|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:50|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:50|E|[1m[31mRead-command FIFO empty[0m
+|02:39:50|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:50|E|[1m[31mRead-command FIFO empty[0m
+|02:39:50|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:50|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:50|E|[1m[31mRead-command FIFO empty[0m
+|02:39:51|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:51|E|[1m[31mRead-command FIFO empty[0m
+|02:39:51|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:51|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:51|E|[1m[31mRead-command FIFO empty[0m
+|02:39:51|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:51|E|[1m[31mRead-command FIFO empty[0m
+|02:39:51|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:51|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:51|E|[1m[31mRead-command FIFO empty[0m
+|02:39:51|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:51|E|[1m[31mRead-command FIFO empty[0m
+|02:39:51|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:51|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:51|E|[1m[31mRead-command FIFO empty[0m
+|02:39:51|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:51|E|[1m[31mRead-command FIFO empty[0m
+|02:39:51|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:51|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:51|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mSER_SEL_OUT[0m
+|02:39:51|E|[1m[31mRead-command FIFO empty[0m
+|02:39:51|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:51|E|[1m[31mRead-command FIFO empty[0m
+|02:39:51|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:52|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:52|E|[1m[31mRead-command FIFO empty[0m
+|02:39:52|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:52|E|[1m[31mRead-command FIFO empty[0m
+|02:39:52|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:52|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:52|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mHITOR_3_MASK_DIFF_0[0m
+|02:39:52|E|[1m[31mRead-command FIFO empty[0m
+|02:39:52|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:52|E|[1m[31mRead-command FIFO empty[0m
+|02:39:52|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:52|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:52|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mHITOR_2_MASK_DIFF_1[0m
+|02:39:52|E|[1m[31mRead-command FIFO empty[0m
+|02:39:52|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:52|E|[1m[31mRead-command FIFO empty[0m
+|02:39:52|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:52|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:52|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mHITOR_2_MASK_DIFF_0[0m
+|02:39:52|E|[1m[31mRead-command FIFO empty[0m
+|02:39:52|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:52|E|[1m[31mRead-command FIFO empty[0m
+|02:39:52|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:52|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:52|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mHITOR_1_MASK_DIFF_0[0m
+|02:39:52|E|[1m[31mRead-command FIFO empty[0m
+|02:39:52|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:52|E|[1m[31mRead-command FIFO empty[0m
+|02:39:52|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:53|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:53|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mHITOR_0_MASK_DIFF_1[0m
+|02:39:53|E|[1m[31mRead-command FIFO empty[0m
+|02:39:53|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:53|E|[1m[31mRead-command FIFO empty[0m
+|02:39:53|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:53|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:53|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mHITOR_0_MASK_DIFF_0[0m
+|02:39:53|E|[1m[31mRead-command FIFO empty[0m
+|02:39:53|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:53|E|[1m[31mRead-command FIFO empty[0m
+|02:39:53|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:53|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:53|E|[1m[31mRead-command FIFO empty[0m
+|02:39:53|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:53|E|[1m[31mRead-command FIFO empty[0m
+|02:39:53|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:53|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:53|E|[1m[31mRead-command FIFO empty[0m
+|02:39:53|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:53|E|[1m[31mRead-command FIFO empty[0m
+|02:39:53|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:53|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:53|E|[1m[31mRead-command FIFO empty[0m
+|02:39:53|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:53|E|[1m[31mRead-command FIFO empty[0m
+|02:39:53|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:54|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:54|E|[1m[31mRead-command FIFO empty[0m
+|02:39:54|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:54|E|[1m[31mRead-command FIFO empty[0m
+|02:39:54|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:54|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:54|E|[1m[31mRead-command FIFO empty[0m
+|02:39:54|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:54|E|[1m[31mRead-command FIFO empty[0m
+|02:39:54|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:54|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:54|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mHITOR_3_MASK_SYNC[0m
+|02:39:54|E|[1m[31mRead-command FIFO empty[0m
+|02:39:54|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:54|E|[1m[31mRead-command FIFO empty[0m
+|02:39:54|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:54|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:54|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mHITOR_1_MASK_SYNC[0m
+|02:39:54|E|[1m[31mRead-command FIFO empty[0m
+|02:39:54|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:54|E|[1m[31mRead-command FIFO empty[0m
+|02:39:54|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:54|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:54|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mVTH1_DIFF[0m
+|02:39:54|E|[1m[31mRead-command FIFO empty[0m
+|02:39:54|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:55|E|[1m[31mRead-command FIFO empty[0m
+|02:39:55|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:55|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:55|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mEN_MACRO_COL_CAL_SYNC_3[0m
+|02:39:55|E|[1m[31mRead-command FIFO empty[0m
+|02:39:55|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:55|E|[1m[31mRead-command FIFO empty[0m
+|02:39:55|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:55|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:55|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mEN_MACRO_COL_CAL_SYNC_4[0m
+|02:39:55|E|[1m[31mRead-command FIFO empty[0m
+|02:39:55|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:55|E|[1m[31mRead-command FIFO empty[0m
+|02:39:55|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:55|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:55|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mEN_CORE_COL_LIN_1[0m
+|02:39:55|E|[1m[31mRead-command FIFO empty[0m
+|02:39:55|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:55|E|[1m[31mRead-command FIFO empty[0m
+|02:39:55|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:55|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:55|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mPRMP_DIFF[0m
+|02:39:55|E|[1m[31mRead-command FIFO empty[0m
+|02:39:55|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:55|E|[1m[31mRead-command FIFO empty[0m
+|02:39:55|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:55|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:55|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mIBIASP1_SYNC[0m
+|02:39:55|E|[1m[31mRead-command FIFO empty[0m
+|02:39:55|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:56|E|[1m[31mRead-command FIFO empty[0m
+|02:39:56|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:56|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:56|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mLATENCY_CONFIG[0m
+|02:39:56|E|[1m[31mRead-command FIFO empty[0m
+|02:39:56|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:56|E|[1m[31mRead-command FIFO empty[0m
+|02:39:56|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:56|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:56|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mVCAL_HIGH[0m
+|02:39:56|E|[1m[31mRead-command FIFO empty[0m
+|02:39:56|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:56|E|[1m[31mRead-command FIFO empty[0m
+|02:39:56|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:56|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:56|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mVFF_DIFF[0m
+|02:39:56|E|[1m[31mRead-command FIFO empty[0m
+|02:39:56|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:56|E|[1m[31mRead-command FIFO empty[0m
+|02:39:56|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:56|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:56|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mHITOR_3_MASK_DIFF_1[0m
+|02:39:56|E|[1m[31mRead-command FIFO empty[0m
+|02:39:56|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:56|E|[1m[31mRead-command FIFO empty[0m
+|02:39:56|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:57|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:57|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mEN_MACRO_COL_CAL_LIN_5[0m
+|02:39:57|E|[1m[31mRead-command FIFO empty[0m
+|02:39:57|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:57|E|[1m[31mRead-command FIFO empty[0m
+|02:39:57|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:57|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:57|E|[1m[31mRead-command FIFO empty[0m
+|02:39:57|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:57|E|[1m[31mRead-command FIFO empty[0m
+|02:39:57|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:57|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:57|E|[1m[31mRead-command FIFO empty[0m
+|02:39:57|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:57|E|[1m[31mRead-command FIFO empty[0m
+|02:39:57|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:57|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:57|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mEN_MACRO_COL_CAL_DIFF_5[0m
+|02:39:57|E|[1m[31mRead-command FIFO empty[0m
+|02:39:57|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:57|E|[1m[31mRead-command FIFO empty[0m
+|02:39:57|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:57|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:57|E|[1m[31mRead-command FIFO empty[0m
+|02:39:57|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:57|E|[1m[31mRead-command FIFO empty[0m
+|02:39:57|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:58|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:58|E|[1m[31mRead-command FIFO empty[0m
+|02:39:58|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:58|E|[1m[31mRead-command FIFO empty[0m
+|02:39:58|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:58|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:58|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mMONITOR_CONFIG[0m
+|02:39:58|E|[1m[31mRead-command FIFO empty[0m
+|02:39:58|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:58|E|[1m[31mRead-command FIFO empty[0m
+|02:39:58|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:58|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:58|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mIBIAS_SF_SYNC[0m
+|02:39:58|E|[1m[31mRead-command FIFO empty[0m
+|02:39:58|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:58|E|[1m[31mRead-command FIFO empty[0m
+|02:39:58|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:58|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:58|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mLCC_DIFF[0m
+|02:39:58|E|[1m[31mRead-command FIFO empty[0m
+|02:39:58|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:58|E|[1m[31mRead-command FIFO empty[0m
+|02:39:58|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:58|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:58|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mEN_MACRO_COL_CAL_SYNC_2[0m
+|02:39:58|E|[1m[31mRead-command FIFO empty[0m
+|02:39:58|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:58|E|[1m[31mRead-command FIFO empty[0m
+|02:39:58|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:59|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:59|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mICTRL_SYNCT_SYNC[0m
+|02:39:59|E|[1m[31mRead-command FIFO empty[0m
+|02:39:59|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:59|E|[1m[31mRead-command FIFO empty[0m
+|02:39:59|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:59|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:59|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mHITOR_2_MASK_SYNC[0m
+|02:39:59|E|[1m[31mRead-command FIFO empty[0m
+|02:39:59|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:59|E|[1m[31mRead-command FIFO empty[0m
+|02:39:59|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:59|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:59|E|[1m[31mRead-command FIFO empty[0m
+|02:39:59|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:59|E|[1m[31mRead-command FIFO empty[0m
+|02:39:59|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:59|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:59|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mIBIASP2_SYNC[0m
+|02:39:59|E|[1m[31mRead-command FIFO empty[0m
+|02:39:59|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:39:59|E|[1m[31mRead-command FIFO empty[0m
+|02:39:59|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:39:59|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:39:59|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mEN_MACRO_COL_CAL_DIFF_3[0m
+|02:39:59|E|[1m[31mRead-command FIFO empty[0m
+|02:39:59|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:40:00|E|[1m[31mRead-command FIFO empty[0m
+|02:40:00|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:40:00|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:40:00|E|[1m[31mRead-command FIFO empty[0m
+|02:40:00|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:40:00|E|[1m[31mRead-command FIFO empty[0m
+|02:40:00|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:40:00|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:40:00|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mCOMP_DIFF[0m
+|02:40:00|E|[1m[31mRead-command FIFO empty[0m
+|02:40:00|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:40:00|E|[1m[31mRead-command FIFO empty[0m
+|02:40:00|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:40:00|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:40:00|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mVTH_SYNC[0m
+|02:40:00|E|[1m[31mRead-command FIFO empty[0m
+|02:40:00|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:40:00|E|[1m[31mRead-command FIFO empty[0m
+|02:40:00|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:40:00|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:40:00|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mIBIAS_KRUM_SYNC[0m
+|02:40:00|E|[1m[31mRead-command FIFO empty[0m
+|02:40:00|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:40:00|E|[1m[31mRead-command FIFO empty[0m
+|02:40:00|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:40:00|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:40:00|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mVBL_SYNC[0m
+|02:40:00|E|[1m[31mRead-command FIFO empty[0m
+|02:40:00|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:40:01|E|[1m[31mRead-command FIFO empty[0m
+|02:40:01|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:40:01|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:40:01|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mVREF_KRUM_SYNC[0m
+|02:40:01|E|[1m[31mRead-command FIFO empty[0m
+|02:40:01|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:40:01|E|[1m[31mRead-command FIFO empty[0m
+|02:40:01|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:40:01|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:40:01|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mMONITOR_CONFIG[0m
+|02:40:01|E|[1m[31mRead-command FIFO empty[0m
+|02:40:01|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:40:01|E|[1m[31mRead-command FIFO empty[0m
+|02:40:01|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:40:01|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:40:01|E|[1m[31mRead-command FIFO empty[0m
+|02:40:01|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:40:01|E|[1m[31mRead-command FIFO empty[0m
+|02:40:01|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:40:01|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:40:01|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mEN_MACRO_COL_CAL_LIN_3[0m
+|02:40:01|E|[1m[31mRead-command FIFO empty[0m
+|02:40:01|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:40:01|E|[1m[31mRead-command FIFO empty[0m
+|02:40:01|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:40:01|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:40:01|E|[1m[31mRead-command FIFO empty[0m
+|02:40:01|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:40:02|E|[1m[31mRead-command FIFO empty[0m
+|02:40:02|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:40:02|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:40:02|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mVTH2_DIFF[0m
+|02:40:02|E|[1m[31mRead-command FIFO empty[0m
+|02:40:02|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:40:02|E|[1m[31mRead-command FIFO empty[0m
+|02:40:02|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:40:02|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:40:02|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mVCAL_MED[0m
+|02:40:02|E|[1m[31mRead-command FIFO empty[0m
+|02:40:09|I|[1m[35m@@@ Initializing the Hardware @@@[0m
+|02:40:09|I|[1m[33mParseHW [FileParser] 0x1c0b100	cmsinnertracker.crate0.slot0[0m
+|02:40:09|I|[1m[33mTrying to connect to the Power Supply Server...[0m
+|02:40:09|I|[1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+|02:40:09|I|[1m[35m@@@ Configuring HW parsed from xml file @@@[0m
+|02:40:09|I|[1m[34m	--> Found an Inner Tracker Readout-board[0m
+|02:40:09|I|[32mConfiguring Board: [1m[33m0[0m
+|02:40:09|I|[1m[34m	--> FW version : [1m[33m4.2[1m[34m -- Date (yy/mm/dd) : [1m[33m21/8/28[1m[34m -- Time (hour:minute:sec) : [1m[33m2:35:40[0m
+|02:40:09|I|[1m[34m	--> Link type : [1m[33melectrical[1m[34m -- Optical speed : [1m[33m10 Gbit/s[1m[34m -- Frontend type : [1m[33mRD53A[0m
+|02:40:09|I|[1m[34m	--> L12 FMC type : [1m[33m1[1m[34m -- L08 FMC type : [1m[33m1[1m[34m (1=KSU, 2=CERN, 3=DIO5, 4=OPTO, 5=FERMI, 7=NONE, 0=Unspecified)[0m
+|02:40:09|I|[32mInitializing DIO5:[0m
+|02:40:09|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.HitOr_enable_l12: 0x[1m[33m0 (0)[0m
+|02:40:09|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.trigger_source: 0x[1m[33m2 (2)[0m
+|02:40:09|I|[1m[34m	--> user.ctrl_regs.reset_reg.ext_clk_en: 0x[1m[33m0 (0)[0m
+|02:40:09|I|[1m[34m	--> Done[0m
+|02:40:09|I|[32mReading clock generator (CDCE62005) configuration[0m
+|02:40:09|I|[1m[34m	--> SPI register content: 0x[1m[33mEB020320[0m
+|02:40:09|I|[1m[34m	--> SPI register content: 0x[1m[33mEB020321[0m
+|02:40:09|I|[1m[34m	--> SPI register content: 0x[1m[33mEB840302[0m
+|02:40:09|I|[1m[34m	--> SPI register content: 0x[1m[33mEB840303[0m
+|02:40:09|I|[1m[34m	--> SPI register content: 0x[1m[33mEB140334[0m
+|02:40:09|I|[1m[34m	--> SPI register content: 0x[1m[33m10000E75[0m
+|02:40:09|I|[1m[34m	--> SPI register content: 0x[1m[33m030E02E6[0m
+|02:40:09|I|[1m[34m	--> SPI register content: 0x[1m[33mBD800DF7[0m
+|02:40:09|I|[1m[34m	--> SPI register content: 0x[1m[33m20009D58[0m
+|02:40:09|W|[32mOptical link tx slow control status: [1m[31mnot ready[0m
+|02:40:09|W|[32mOptical link rx slow control status: [1m[31mnot ready[0m
+|02:40:09|I|[32mInput clock frequency (could be either internal or external, should be ~40 MHz): [1m[33m40.079 MHz[0m
+|02:40:09|I|[32mGTX receiver clock frequency (~160 MHz (~320 MHz) for electrical (optical) readout): [1m[33m160.314 MHz[0m
+|02:40:09|I|[32mExternal CMD clock frequency: [1m[33m0.000 MHz[0m
+|02:40:09|I|[32mExternal Serializer clock frequency: [1m[33m0.000 MHz[0m
+|02:40:09|I|[36m=== Configuring FSM fast command block ===[0m
+|02:40:09|I|[32mInternal trigger frequency (if enabled): [1m[33m30372 Hz[0m
+|02:40:09|I|[32mChecking firmware status:[0m
+|02:40:09|I|[1m[34m	--> Clock generator is [1m[33mlocked[0m
+|02:40:09|I|[1m[34m	--> I2C [1m[33minitialized[0m
+|02:40:09|I|[32mFast command block trigger source: [1m[33m2[0m[32m (1=IPBus, 2=Test-FSM, 3=TTC, 4=TLU, 5=External, 6=Hit-Or, 7=User-defined frequency)[0m
+|02:40:09|I|[32mFast command block trigger state: [1m[33m0[0m[32m (0=Idle, 2=Running)[0m
+|02:40:09|I|[32mFast command block check if configuraiton registers have been set: [1m[33mconfigured[0m
+|02:40:09|I|[32mFast command block error code (0=No error): [1m[33m0[0m
+|02:40:09|I|[32mTrigger counter: [1m[33m0[0m
+|02:40:09|I|[32mHybrid type: [1m[33m1[0m[32m (1=Single chip, 2=Double chip, 4=Quad chip)[0m
+|02:40:09|I|[32mNumber of hybrids which can be potentially readout: [1m[33m8[0m
+|02:40:09|I|[36m================== Done ==================[0m
+|02:40:09|I|[32mInitializing board's registers:[0m
+|02:40:09|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg1.dio5_ch1_thr: 0x[1m[33m80 (128)[0m
+|02:40:09|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg1.dio5_ch2_thr: 0x[1m[33m28 (40)[0m
+|02:40:09|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch3_thr: 0x[1m[33m80 (128)[0m
+|02:40:09|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch4_thr: 0x[1m[33m80 (128)[0m
+|02:40:09|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch5_thr: 0x[1m[33m80 (128)[0m
+|02:40:09|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.tlu_delay: 0x[1m[33m0 (0)[0m
+|02:40:09|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.HitOr_enable_l12: 0x[1m[33m0 (0)[0m
+|02:40:09|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_3.triggers_to_accept: 0x[1m[33mA (10)[0m
+|02:40:09|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_7.autozero_freq: 0x[1m[33m3E8 (1000)[0m
+|02:40:09|I|[1m[34m	--> Done[0m
+|02:40:09|I|[32mChecking status of the optical links:[0m
+|02:40:09|I|[1m[34m	--> Optical link n. active LpGBT chip tx:  [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:40:09|I|[1m[34m	--> Optical link n. active LpGBT chip rx:  [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:40:09|I|[1m[34m	--> Optical link n. active LpGBT chip mgt: [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:40:09|I|[36m=== Configuring frontend chip communication ===[0m
+|02:40:09|I|[32mDown-link phase initialization...[0m
+|02:40:09|I|[1m[34m	--> Done[0m
+|02:40:09|I|[32mInitializing chip communication of hybrid: [0m[1m[33m0[0m
+|02:40:09|I|[32mInitializing communicationng to/from RD53: [0m[1m[33m0[0m
+|02:40:09|I|[32mConfiguring up-link lanes and monitoring...[0m
+|02:40:10|I|[1m[34m	--> Done[0m
+|02:40:10|I|[32mUp-link speed: [1m[33m1.28 Gbit/s[0m
+|02:40:10|I|[36m==================== Done =====================[0m
+|02:40:10|I|[32mChecking status communication RD53 --> FW[0m
+|02:40:10|I|[1m[34m	--> Aurora speed: [1m[33m1.28 Gbit/s[0m
+|02:40:10|I|[1m[34m	--> Total number of required data lanes: [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|02:40:10|I|[1m[34m	--> Total number of active data lanes:   [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:10|E|[1m[31m	--> Some data lanes are enabled but inactive[0m
+|02:40:10|I|[32mTrying initialization sequence number: [1m[33m0[0m
+|02:40:10|I|[1m[34m	--> Number of required data lanes for [board/opticalGroup/hybrid = [1m[33m0/0/0[1m[34m]: [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|02:40:10|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m0[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:10|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m1[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:10|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m2[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:10|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m3[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:10|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m4[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:10|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m5[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:11|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m6[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:11|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m7[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:11|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m8[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:11|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m9[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:11|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m10[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:11|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m11[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:11|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m12[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:11|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m13[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:11|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m14[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:11|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m15[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:12|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m16[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:12|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m17[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:12|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m18[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:12|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m19[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:12|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m20[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:12|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m21[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:12|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m22[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:12|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m23[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:12|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m24[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:12|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m25[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:13|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m26[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:13|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m27[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:13|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m28[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:13|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m29[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:13|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m30[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:13|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m31[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:13|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m32[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:13|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m33[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:13|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m34[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:13|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m35[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:14|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m36[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:14|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m37[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:14|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m38[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:14|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m39[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:14|I|[32mTrying initialization sequence number: [1m[33m1[0m
+|02:40:14|I|[1m[34m	--> Number of required data lanes for [board/opticalGroup/hybrid = [1m[33m0/0/0[1m[34m]: [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|02:40:14|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m0[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:14|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m1[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:14|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m2[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:14|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m3[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:14|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m4[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:15|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m5[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:15|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m6[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:15|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m7[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:15|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m8[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:15|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m9[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:15|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m10[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:15|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m11[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:15|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m12[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:15|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m13[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:15|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m14[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:16|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m15[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:16|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m16[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:16|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m17[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:16|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m18[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:16|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m19[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:16|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m20[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:16|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m21[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:16|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m22[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:16|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m23[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:16|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m24[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:17|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m25[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:23|I|[1m[35m@@@ Initializing the Hardware @@@[0m
+|02:40:23|I|[1m[33mParseHW [FileParser] 0x2129100	cmsinnertracker.crate0.slot0[0m
+|02:40:24|I|[1m[33mTrying to connect to the Power Supply Server...[0m
+|02:40:24|I|[1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+|02:40:24|I|[1m[35m@@@ Configuring HW parsed from xml file @@@[0m
+|02:40:24|I|[1m[34m	--> Found an Inner Tracker Readout-board[0m
+|02:40:24|I|[32mConfiguring Board: [1m[33m0[0m
+|02:40:24|I|[1m[34m	--> FW version : [1m[33m4.2[1m[34m -- Date (yy/mm/dd) : [1m[33m21/8/28[1m[34m -- Time (hour:minute:sec) : [1m[33m2:35:40[0m
+|02:40:24|I|[1m[34m	--> Link type : [1m[33melectrical[1m[34m -- Optical speed : [1m[33m10 Gbit/s[1m[34m -- Frontend type : [1m[33mRD53A[0m
+|02:40:24|I|[1m[34m	--> L12 FMC type : [1m[33m1[1m[34m -- L08 FMC type : [1m[33m1[1m[34m (1=KSU, 2=CERN, 3=DIO5, 4=OPTO, 5=FERMI, 7=NONE, 0=Unspecified)[0m
+|02:40:24|I|[32mInitializing DIO5:[0m
+|02:40:24|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.HitOr_enable_l12: 0x[1m[33m0 (0)[0m
+|02:40:24|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.trigger_source: 0x[1m[33m2 (2)[0m
+|02:40:24|I|[1m[34m	--> user.ctrl_regs.reset_reg.ext_clk_en: 0x[1m[33m0 (0)[0m
+|02:40:24|I|[1m[34m	--> Done[0m
+|02:40:24|I|[32mReading clock generator (CDCE62005) configuration[0m
+|02:40:24|I|[1m[34m	--> SPI register content: 0x[1m[33mEB020320[0m
+|02:40:24|I|[1m[34m	--> SPI register content: 0x[1m[33mEB020321[0m
+|02:40:24|I|[1m[34m	--> SPI register content: 0x[1m[33mEB840302[0m
+|02:40:24|I|[1m[34m	--> SPI register content: 0x[1m[33mEB840303[0m
+|02:40:24|I|[1m[34m	--> SPI register content: 0x[1m[33mEB140334[0m
+|02:40:24|I|[1m[34m	--> SPI register content: 0x[1m[33m10000E75[0m
+|02:40:24|I|[1m[34m	--> SPI register content: 0x[1m[33m030E02E6[0m
+|02:40:24|I|[1m[34m	--> SPI register content: 0x[1m[33mBD800DF7[0m
+|02:40:24|I|[1m[34m	--> SPI register content: 0x[1m[33m20009D58[0m
+|02:40:24|W|[32mOptical link tx slow control status: [1m[31mnot ready[0m
+|02:40:24|W|[32mOptical link rx slow control status: [1m[31mnot ready[0m
+|02:40:24|I|[32mInput clock frequency (could be either internal or external, should be ~40 MHz): [1m[33m40.079 MHz[0m
+|02:40:24|I|[32mGTX receiver clock frequency (~160 MHz (~320 MHz) for electrical (optical) readout): [1m[33m160.315 MHz[0m
+|02:40:24|I|[32mExternal CMD clock frequency: [1m[33m0.000 MHz[0m
+|02:40:24|I|[32mExternal Serializer clock frequency: [1m[33m0.000 MHz[0m
+|02:40:24|I|[36m=== Configuring FSM fast command block ===[0m
+|02:40:24|I|[32mInternal trigger frequency (if enabled): [1m[33m30372 Hz[0m
+|02:40:24|I|[32mChecking firmware status:[0m
+|02:40:24|I|[1m[34m	--> Clock generator is [1m[33mlocked[0m
+|02:40:24|I|[1m[34m	--> I2C [1m[33minitialized[0m
+|02:40:24|I|[32mFast command block trigger source: [1m[33m2[0m[32m (1=IPBus, 2=Test-FSM, 3=TTC, 4=TLU, 5=External, 6=Hit-Or, 7=User-defined frequency)[0m
+|02:40:24|I|[32mFast command block trigger state: [1m[33m0[0m[32m (0=Idle, 2=Running)[0m
+|02:40:24|I|[32mFast command block check if configuraiton registers have been set: [1m[33mconfigured[0m
+|02:40:24|I|[32mFast command block error code (0=No error): [1m[33m0[0m
+|02:40:24|I|[32mTrigger counter: [1m[33m0[0m
+|02:40:24|I|[32mHybrid type: [1m[33m1[0m[32m (1=Single chip, 2=Double chip, 4=Quad chip)[0m
+|02:40:24|I|[32mNumber of hybrids which can be potentially readout: [1m[33m8[0m
+|02:40:24|I|[36m================== Done ==================[0m
+|02:40:24|I|[32mInitializing board's registers:[0m
+|02:40:24|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg1.dio5_ch1_thr: 0x[1m[33m80 (128)[0m
+|02:40:24|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg1.dio5_ch2_thr: 0x[1m[33m28 (40)[0m
+|02:40:24|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch3_thr: 0x[1m[33m80 (128)[0m
+|02:40:24|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch4_thr: 0x[1m[33m80 (128)[0m
+|02:40:24|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch5_thr: 0x[1m[33m80 (128)[0m
+|02:40:24|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.tlu_delay: 0x[1m[33m0 (0)[0m
+|02:40:24|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.HitOr_enable_l12: 0x[1m[33m0 (0)[0m
+|02:40:24|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_3.triggers_to_accept: 0x[1m[33mA (10)[0m
+|02:40:24|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_7.autozero_freq: 0x[1m[33m3E8 (1000)[0m
+|02:40:24|I|[1m[34m	--> Done[0m
+|02:40:24|I|[32mChecking status of the optical links:[0m
+|02:40:24|I|[1m[34m	--> Optical link n. active LpGBT chip tx:  [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:40:24|I|[1m[34m	--> Optical link n. active LpGBT chip rx:  [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:40:24|I|[1m[34m	--> Optical link n. active LpGBT chip mgt: [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:40:24|I|[36m=== Configuring frontend chip communication ===[0m
+|02:40:24|I|[32mDown-link phase initialization...[0m
+|02:40:24|I|[1m[34m	--> Done[0m
+|02:40:24|I|[32mInitializing chip communication of hybrid: [0m[1m[33m0[0m
+|02:40:24|I|[32mInitializing communicationng to/from RD53: [0m[1m[33m0[0m
+|02:40:24|I|[32mConfiguring up-link lanes and monitoring...[0m
+|02:40:24|I|[1m[34m	--> Done[0m
+|02:40:24|I|[32mUp-link speed: [1m[33m1.28 Gbit/s[0m
+|02:40:25|I|[36m==================== Done =====================[0m
+|02:40:25|I|[32mChecking status communication RD53 --> FW[0m
+|02:40:25|I|[1m[34m	--> Aurora speed: [1m[33m1.28 Gbit/s[0m
+|02:40:25|I|[1m[34m	--> Total number of required data lanes: [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|02:40:25|I|[1m[34m	--> Total number of active data lanes:   [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:25|E|[1m[31m	--> Some data lanes are enabled but inactive[0m
+|02:40:25|I|[32mTrying initialization sequence number: [1m[33m0[0m
+|02:40:25|I|[1m[34m	--> Number of required data lanes for [board/opticalGroup/hybrid = [1m[33m0/0/0[1m[34m]: [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|02:40:25|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m0[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:25|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m1[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:25|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m2[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:25|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m3[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:25|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m4[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:25|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m5[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:25|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m6[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:25|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m7[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:25|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m8[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:26|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m9[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:26|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m10[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:26|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m11[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:26|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m12[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:26|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m13[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:26|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m14[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:26|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m15[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:26|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m16[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:26|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m17[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:26|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m18[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:27|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m19[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:27|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m20[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:27|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m21[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:27|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m22[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:27|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m23[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:27|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m24[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:27|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m25[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:27|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m26[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:27|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m27[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:28|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m28[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:28|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m29[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:28|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m30[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:28|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m31[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:28|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m32[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:28|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m33[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:28|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m34[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:28|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m35[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:28|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m36[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:40:28|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m37[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:49|I|[1m[35m@@@ Initializing the Hardware @@@[0m
+|02:43:49|I|[1m[33mParseHW [FileParser] 0xd0e100	cmsinnertracker.crate0.slot0[0m
+|02:43:49|I|[1m[33mTrying to connect to the Power Supply Server...[0m
+|02:43:49|I|[1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+|02:43:50|I|[1m[35m@@@ Configuring HW parsed from xml file @@@[0m
+|02:43:50|I|[1m[34m	--> Found an Inner Tracker Readout-board[0m
+|02:43:50|I|[32mConfiguring Board: [1m[33m0[0m
+|02:43:50|I|[1m[34m	--> FW version : [1m[33m4.2[1m[34m -- Date (yy/mm/dd) : [1m[33m21/8/28[1m[34m -- Time (hour:minute:sec) : [1m[33m2:35:40[0m
+|02:43:50|I|[1m[34m	--> Link type : [1m[33melectrical[1m[34m -- Optical speed : [1m[33m10 Gbit/s[1m[34m -- Frontend type : [1m[33mRD53A[0m
+|02:43:50|I|[1m[34m	--> L12 FMC type : [1m[33m1[1m[34m -- L08 FMC type : [1m[33m1[1m[34m (1=KSU, 2=CERN, 3=DIO5, 4=OPTO, 5=FERMI, 7=NONE, 0=Unspecified)[0m
+|02:43:50|I|[32mInitializing DIO5:[0m
+|02:43:50|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.HitOr_enable_l12: 0x[1m[33m0 (0)[0m
+|02:43:50|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.trigger_source: 0x[1m[33m2 (2)[0m
+|02:43:50|I|[1m[34m	--> user.ctrl_regs.reset_reg.ext_clk_en: 0x[1m[33m0 (0)[0m
+|02:43:50|I|[1m[34m	--> Done[0m
+|02:43:50|I|[32mReading clock generator (CDCE62005) configuration[0m
+|02:43:50|I|[1m[34m	--> SPI register content: 0x[1m[33mEB020320[0m
+|02:43:50|I|[1m[34m	--> SPI register content: 0x[1m[33mEB020321[0m
+|02:43:50|I|[1m[34m	--> SPI register content: 0x[1m[33mEB840302[0m
+|02:43:50|I|[1m[34m	--> SPI register content: 0x[1m[33mEB840303[0m
+|02:43:50|I|[1m[34m	--> SPI register content: 0x[1m[33mEB140334[0m
+|02:43:50|I|[1m[34m	--> SPI register content: 0x[1m[33m10000E75[0m
+|02:43:50|I|[1m[34m	--> SPI register content: 0x[1m[33m030E02E6[0m
+|02:43:50|I|[1m[34m	--> SPI register content: 0x[1m[33mBD800DF7[0m
+|02:43:50|I|[1m[34m	--> SPI register content: 0x[1m[33m20009D58[0m
+|02:43:50|W|[32mOptical link tx slow control status: [1m[31mnot ready[0m
+|02:43:50|W|[32mOptical link rx slow control status: [1m[31mnot ready[0m
+|02:43:50|I|[32mInput clock frequency (could be either internal or external, should be ~40 MHz): [1m[33m40.078 MHz[0m
+|02:43:50|I|[32mGTX receiver clock frequency (~160 MHz (~320 MHz) for electrical (optical) readout): [1m[33m160.315 MHz[0m
+|02:43:50|I|[32mExternal CMD clock frequency: [1m[33m0.000 MHz[0m
+|02:43:50|I|[32mExternal Serializer clock frequency: [1m[33m0.000 MHz[0m
+|02:43:50|I|[36m=== Configuring FSM fast command block ===[0m
+|02:43:50|I|[32mInternal trigger frequency (if enabled): [1m[33m30372 Hz[0m
+|02:43:50|I|[32mChecking firmware status:[0m
+|02:43:50|I|[1m[34m	--> Clock generator is [1m[33mlocked[0m
+|02:43:50|I|[1m[34m	--> I2C [1m[33minitialized[0m
+|02:43:50|I|[32mFast command block trigger source: [1m[33m2[0m[32m (1=IPBus, 2=Test-FSM, 3=TTC, 4=TLU, 5=External, 6=Hit-Or, 7=User-defined frequency)[0m
+|02:43:50|I|[32mFast command block trigger state: [1m[33m0[0m[32m (0=Idle, 2=Running)[0m
+|02:43:50|I|[32mFast command block check if configuraiton registers have been set: [1m[33mconfigured[0m
+|02:43:50|I|[32mFast command block error code (0=No error): [1m[33m0[0m
+|02:43:50|I|[32mTrigger counter: [1m[33m0[0m
+|02:43:50|I|[32mHybrid type: [1m[33m1[0m[32m (1=Single chip, 2=Double chip, 4=Quad chip)[0m
+|02:43:50|I|[32mNumber of hybrids which can be potentially readout: [1m[33m8[0m
+|02:43:50|I|[36m================== Done ==================[0m
+|02:43:50|I|[32mInitializing board's registers:[0m
+|02:43:50|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg1.dio5_ch1_thr: 0x[1m[33m80 (128)[0m
+|02:43:50|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg1.dio5_ch2_thr: 0x[1m[33m28 (40)[0m
+|02:43:50|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch3_thr: 0x[1m[33m80 (128)[0m
+|02:43:50|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch4_thr: 0x[1m[33m80 (128)[0m
+|02:43:50|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch5_thr: 0x[1m[33m80 (128)[0m
+|02:43:50|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.tlu_delay: 0x[1m[33m0 (0)[0m
+|02:43:50|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.HitOr_enable_l12: 0x[1m[33m0 (0)[0m
+|02:43:50|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_3.triggers_to_accept: 0x[1m[33mA (10)[0m
+|02:43:50|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_7.autozero_freq: 0x[1m[33m3E8 (1000)[0m
+|02:43:50|I|[1m[34m	--> Done[0m
+|02:43:50|I|[32mChecking status of the optical links:[0m
+|02:43:50|I|[1m[34m	--> Optical link n. active LpGBT chip tx:  [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:43:50|I|[1m[34m	--> Optical link n. active LpGBT chip rx:  [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:43:50|I|[1m[34m	--> Optical link n. active LpGBT chip mgt: [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:43:50|I|[36m=== Configuring frontend chip communication ===[0m
+|02:43:50|I|[32mDown-link phase initialization...[0m
+|02:43:50|I|[1m[34m	--> Done[0m
+|02:43:50|I|[32mInitializing chip communication of hybrid: [0m[1m[33m0[0m
+|02:43:50|I|[32mInitializing communicationng to/from RD53: [0m[1m[33m0[0m
+|02:43:50|I|[32mConfiguring up-link lanes and monitoring...[0m
+|02:43:50|I|[1m[34m	--> Done[0m
+|02:43:50|I|[32mUp-link speed: [1m[33m1.28 Gbit/s[0m
+|02:43:50|I|[36m==================== Done =====================[0m
+|02:43:50|I|[32mChecking status communication RD53 --> FW[0m
+|02:43:50|I|[1m[34m	--> Aurora speed: [1m[33m1.28 Gbit/s[0m
+|02:43:50|I|[1m[34m	--> Total number of required data lanes: [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|02:43:50|I|[1m[34m	--> Total number of active data lanes:   [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:50|E|[1m[31m	--> Some data lanes are enabled but inactive[0m
+|02:43:50|I|[32mTrying initialization sequence number: [1m[33m0[0m
+|02:43:50|I|[1m[34m	--> Number of required data lanes for [board/opticalGroup/hybrid = [1m[33m0/0/0[1m[34m]: [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|02:43:50|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m0[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:51|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m1[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:51|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m2[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:51|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m3[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:51|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m4[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:51|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m5[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:51|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m6[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:51|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m7[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:51|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m8[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:51|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m9[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:51|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m10[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:52|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m11[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:52|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m12[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:52|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m13[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:52|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m14[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:52|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m15[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:52|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m16[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:52|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m17[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:52|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m18[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:52|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m19[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:52|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m20[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:53|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m21[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:53|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m22[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:53|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m23[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:53|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m24[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:53|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m25[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:53|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m26[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:43:53|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m27[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:44:39|I|[1m[35m@@@ Initializing the Hardware @@@[0m
+|02:44:39|I|[1m[33mParseHW [FileParser] 0x269b100	cmsinnertracker.crate0.slot0[0m
+|02:44:39|I|[1m[33mTrying to connect to the Power Supply Server...[0m
+|02:44:39|I|[1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+|02:44:40|I|[1m[35m@@@ Configuring HW parsed from xml file @@@[0m
+|02:44:40|I|[1m[34m	--> Found an Inner Tracker Readout-board[0m
+|02:44:40|I|[32mConfiguring Board: [1m[33m0[0m
+|02:44:40|I|[1m[34m	--> FW version : [1m[33m4.2[1m[34m -- Date (yy/mm/dd) : [1m[33m21/8/28[1m[34m -- Time (hour:minute:sec) : [1m[33m2:35:40[0m
+|02:44:40|I|[1m[34m	--> Link type : [1m[33melectrical[1m[34m -- Optical speed : [1m[33m10 Gbit/s[1m[34m -- Frontend type : [1m[33mRD53A[0m
+|02:44:40|I|[1m[34m	--> L12 FMC type : [1m[33m1[1m[34m -- L08 FMC type : [1m[33m1[1m[34m (1=KSU, 2=CERN, 3=DIO5, 4=OPTO, 5=FERMI, 7=NONE, 0=Unspecified)[0m
+|02:44:40|I|[32mInitializing DIO5:[0m
+|02:44:40|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.HitOr_enable_l12: 0x[1m[33m0 (0)[0m
+|02:44:40|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.trigger_source: 0x[1m[33m2 (2)[0m
+|02:44:40|I|[1m[34m	--> user.ctrl_regs.reset_reg.ext_clk_en: 0x[1m[33m0 (0)[0m
+|02:44:40|I|[1m[34m	--> Done[0m
+|02:44:40|I|[32mReading clock generator (CDCE62005) configuration[0m
+|02:44:40|I|[1m[34m	--> SPI register content: 0x[1m[33mEB020320[0m
+|02:44:40|I|[1m[34m	--> SPI register content: 0x[1m[33mEB020321[0m
+|02:44:40|I|[1m[34m	--> SPI register content: 0x[1m[33mEB840302[0m
+|02:44:40|I|[1m[34m	--> SPI register content: 0x[1m[33mEB840303[0m
+|02:44:40|I|[1m[34m	--> SPI register content: 0x[1m[33mEB140334[0m
+|02:44:40|I|[1m[34m	--> SPI register content: 0x[1m[33m10000E75[0m
+|02:44:40|I|[1m[34m	--> SPI register content: 0x[1m[33m030E02E6[0m
+|02:44:40|I|[1m[34m	--> SPI register content: 0x[1m[33mBD800DF7[0m
+|02:44:40|I|[1m[34m	--> SPI register content: 0x[1m[33m20009D58[0m
+|02:44:40|W|[32mOptical link tx slow control status: [1m[31mnot ready[0m
+|02:44:40|W|[32mOptical link rx slow control status: [1m[31mnot ready[0m
+|02:44:40|I|[32mInput clock frequency (could be either internal or external, should be ~40 MHz): [1m[33m40.078 MHz[0m
+|02:44:40|I|[32mGTX receiver clock frequency (~160 MHz (~320 MHz) for electrical (optical) readout): [1m[33m160.315 MHz[0m
+|02:44:40|I|[32mExternal CMD clock frequency: [1m[33m0.000 MHz[0m
+|02:44:40|I|[32mExternal Serializer clock frequency: [1m[33m0.000 MHz[0m
+|02:44:40|I|[36m=== Configuring FSM fast command block ===[0m
+|02:44:40|I|[32mInternal trigger frequency (if enabled): [1m[33m30372 Hz[0m
+|02:44:40|I|[32mChecking firmware status:[0m
+|02:44:40|I|[1m[34m	--> Clock generator is [1m[33mlocked[0m
+|02:44:40|I|[1m[34m	--> I2C [1m[33minitialized[0m
+|02:44:40|I|[32mFast command block trigger source: [1m[33m2[0m[32m (1=IPBus, 2=Test-FSM, 3=TTC, 4=TLU, 5=External, 6=Hit-Or, 7=User-defined frequency)[0m
+|02:44:40|I|[32mFast command block trigger state: [1m[33m0[0m[32m (0=Idle, 2=Running)[0m
+|02:44:40|I|[32mFast command block check if configuraiton registers have been set: [1m[33mconfigured[0m
+|02:44:40|I|[32mFast command block error code (0=No error): [1m[33m0[0m
+|02:44:40|I|[32mTrigger counter: [1m[33m0[0m
+|02:44:40|I|[32mHybrid type: [1m[33m1[0m[32m (1=Single chip, 2=Double chip, 4=Quad chip)[0m
+|02:44:40|I|[32mNumber of hybrids which can be potentially readout: [1m[33m8[0m
+|02:44:40|I|[36m================== Done ==================[0m
+|02:44:40|I|[32mInitializing board's registers:[0m
+|02:44:40|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg1.dio5_ch1_thr: 0x[1m[33m80 (128)[0m
+|02:44:40|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg1.dio5_ch2_thr: 0x[1m[33m28 (40)[0m
+|02:44:40|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch3_thr: 0x[1m[33m80 (128)[0m
+|02:44:40|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch4_thr: 0x[1m[33m80 (128)[0m
+|02:44:40|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch5_thr: 0x[1m[33m80 (128)[0m
+|02:44:40|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.tlu_delay: 0x[1m[33m0 (0)[0m
+|02:44:40|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.HitOr_enable_l12: 0x[1m[33m0 (0)[0m
+|02:44:40|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_3.triggers_to_accept: 0x[1m[33mA (10)[0m
+|02:44:40|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_7.autozero_freq: 0x[1m[33m3E8 (1000)[0m
+|02:44:40|I|[1m[34m	--> Done[0m
+|02:44:40|I|[32mChecking status of the optical links:[0m
+|02:44:40|I|[1m[34m	--> Optical link n. active LpGBT chip tx:  [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:44:40|I|[1m[34m	--> Optical link n. active LpGBT chip rx:  [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:44:40|I|[1m[34m	--> Optical link n. active LpGBT chip mgt: [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:44:40|I|[36m=== Configuring frontend chip communication ===[0m
+|02:44:40|I|[32mDown-link phase initialization...[0m
+|02:44:40|I|[1m[34m	--> Done[0m
+|02:44:40|I|[32mInitializing chip communication of hybrid: [0m[1m[33m0[0m
+|02:44:40|I|[32mInitializing communicationng to/from RD53: [0m[1m[33m0[0m
+|02:44:40|I|[32mConfiguring up-link lanes and monitoring...[0m
+|02:44:40|I|[1m[34m	--> Done[0m
+|02:44:40|I|[32mUp-link speed: [1m[33m1.28 Gbit/s[0m
+|02:44:40|I|[36m==================== Done =====================[0m
+|02:44:40|I|[32mChecking status communication RD53 --> FW[0m
+|02:44:40|I|[1m[34m	--> Aurora speed: [1m[33m1.28 Gbit/s[0m
+|02:44:40|I|[1m[34m	--> Total number of required data lanes: [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|02:44:40|I|[1m[34m	--> Total number of active data lanes:   [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:44:40|E|[1m[31m	--> Some data lanes are enabled but inactive[0m
+|02:44:40|I|[32mTrying initialization sequence number: [1m[33m0[0m
+|02:44:40|I|[1m[34m	--> Number of required data lanes for [board/opticalGroup/hybrid = [1m[33m0/0/0[1m[34m]: [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|02:44:41|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m0[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:44:41|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m1[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:44:41|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m2[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:44:41|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m3[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:44:41|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m4[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:44:41|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m5[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:44:41|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m6[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:44:41|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m7[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:44:41|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m8[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:44:41|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m9[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:44:42|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m10[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:44:42|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m11[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:44:42|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m12[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:44:42|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m13[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:44:42|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m14[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:44:42|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m15[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:44:42|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m16[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:44:42|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m17[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:12|I|[1m[35m@@@ Initializing the Hardware @@@[0m
+|02:45:12|I|[1m[33mParseHW [FileParser] 0x197b100	cmsinnertracker.crate0.slot0[0m
+|02:45:12|I|[1m[33mTrying to connect to the Power Supply Server...[0m
+|02:45:12|I|[1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+|02:45:12|I|[1m[35m@@@ Configuring HW parsed from xml file @@@[0m
+|02:45:12|I|[1m[34m	--> Found an Inner Tracker Readout-board[0m
+|02:45:12|I|[32mConfiguring Board: [1m[33m0[0m
+|02:45:12|I|[1m[34m	--> FW version : [1m[33m4.2[1m[34m -- Date (yy/mm/dd) : [1m[33m21/8/28[1m[34m -- Time (hour:minute:sec) : [1m[33m2:35:40[0m
+|02:45:12|I|[1m[34m	--> Link type : [1m[33melectrical[1m[34m -- Optical speed : [1m[33m10 Gbit/s[1m[34m -- Frontend type : [1m[33mRD53A[0m
+|02:45:12|I|[1m[34m	--> L12 FMC type : [1m[33m1[1m[34m -- L08 FMC type : [1m[33m1[1m[34m (1=KSU, 2=CERN, 3=DIO5, 4=OPTO, 5=FERMI, 7=NONE, 0=Unspecified)[0m
+|02:45:12|I|[32mInitializing DIO5:[0m
+|02:45:12|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.HitOr_enable_l12: 0x[1m[33m0 (0)[0m
+|02:45:12|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.trigger_source: 0x[1m[33m2 (2)[0m
+|02:45:12|I|[1m[34m	--> user.ctrl_regs.reset_reg.ext_clk_en: 0x[1m[33m0 (0)[0m
+|02:45:12|I|[1m[34m	--> Done[0m
+|02:45:12|I|[32mReading clock generator (CDCE62005) configuration[0m
+|02:45:12|I|[1m[34m	--> SPI register content: 0x[1m[33mEB020320[0m
+|02:45:12|I|[1m[34m	--> SPI register content: 0x[1m[33mEB020321[0m
+|02:45:12|I|[1m[34m	--> SPI register content: 0x[1m[33mEB840302[0m
+|02:45:12|I|[1m[34m	--> SPI register content: 0x[1m[33mEB840303[0m
+|02:45:12|I|[1m[34m	--> SPI register content: 0x[1m[33mEB140334[0m
+|02:45:12|I|[1m[34m	--> SPI register content: 0x[1m[33m10000E75[0m
+|02:45:12|I|[1m[34m	--> SPI register content: 0x[1m[33m030E02E6[0m
+|02:45:12|I|[1m[34m	--> SPI register content: 0x[1m[33mBD800DF7[0m
+|02:45:12|I|[1m[34m	--> SPI register content: 0x[1m[33m20009D58[0m
+|02:45:12|W|[32mOptical link tx slow control status: [1m[31mnot ready[0m
+|02:45:12|W|[32mOptical link rx slow control status: [1m[31mnot ready[0m
+|02:45:12|I|[32mInput clock frequency (could be either internal or external, should be ~40 MHz): [1m[33m40.079 MHz[0m
+|02:45:12|I|[32mGTX receiver clock frequency (~160 MHz (~320 MHz) for electrical (optical) readout): [1m[33m160.315 MHz[0m
+|02:45:12|I|[32mExternal CMD clock frequency: [1m[33m0.000 MHz[0m
+|02:45:12|I|[32mExternal Serializer clock frequency: [1m[33m0.000 MHz[0m
+|02:45:12|I|[36m=== Configuring FSM fast command block ===[0m
+|02:45:12|I|[32mInternal trigger frequency (if enabled): [1m[33m30372 Hz[0m
+|02:45:12|I|[32mChecking firmware status:[0m
+|02:45:12|I|[1m[34m	--> Clock generator is [1m[33mlocked[0m
+|02:45:12|I|[1m[34m	--> I2C [1m[33minitialized[0m
+|02:45:12|I|[32mFast command block trigger source: [1m[33m2[0m[32m (1=IPBus, 2=Test-FSM, 3=TTC, 4=TLU, 5=External, 6=Hit-Or, 7=User-defined frequency)[0m
+|02:45:12|I|[32mFast command block trigger state: [1m[33m0[0m[32m (0=Idle, 2=Running)[0m
+|02:45:12|I|[32mFast command block check if configuraiton registers have been set: [1m[33mconfigured[0m
+|02:45:12|I|[32mFast command block error code (0=No error): [1m[33m0[0m
+|02:45:12|I|[32mTrigger counter: [1m[33m0[0m
+|02:45:12|I|[32mHybrid type: [1m[33m1[0m[32m (1=Single chip, 2=Double chip, 4=Quad chip)[0m
+|02:45:12|I|[32mNumber of hybrids which can be potentially readout: [1m[33m8[0m
+|02:45:12|I|[36m================== Done ==================[0m
+|02:45:12|I|[32mInitializing board's registers:[0m
+|02:45:12|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg1.dio5_ch1_thr: 0x[1m[33m80 (128)[0m
+|02:45:12|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg1.dio5_ch2_thr: 0x[1m[33m28 (40)[0m
+|02:45:12|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch3_thr: 0x[1m[33m80 (128)[0m
+|02:45:12|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch4_thr: 0x[1m[33m80 (128)[0m
+|02:45:12|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch5_thr: 0x[1m[33m80 (128)[0m
+|02:45:12|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.tlu_delay: 0x[1m[33m0 (0)[0m
+|02:45:12|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.HitOr_enable_l12: 0x[1m[33m0 (0)[0m
+|02:45:12|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_3.triggers_to_accept: 0x[1m[33mA (10)[0m
+|02:45:12|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_7.autozero_freq: 0x[1m[33m3E8 (1000)[0m
+|02:45:12|I|[1m[34m	--> Done[0m
+|02:45:12|I|[32mChecking status of the optical links:[0m
+|02:45:12|I|[1m[34m	--> Optical link n. active LpGBT chip tx:  [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:45:12|I|[1m[34m	--> Optical link n. active LpGBT chip rx:  [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:45:12|I|[1m[34m	--> Optical link n. active LpGBT chip mgt: [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:45:12|I|[36m=== Configuring frontend chip communication ===[0m
+|02:45:12|I|[32mDown-link phase initialization...[0m
+|02:45:12|I|[1m[34m	--> Done[0m
+|02:45:12|I|[32mInitializing chip communication of hybrid: [0m[1m[33m0[0m
+|02:45:12|I|[32mInitializing communicationng to/from RD53: [0m[1m[33m0[0m
+|02:45:13|I|[32mConfiguring up-link lanes and monitoring...[0m
+|02:45:13|I|[1m[34m	--> Done[0m
+|02:45:13|I|[32mUp-link speed: [1m[33m1.28 Gbit/s[0m
+|02:45:13|I|[36m==================== Done =====================[0m
+|02:45:13|I|[32mChecking status communication RD53 --> FW[0m
+|02:45:13|I|[1m[34m	--> Aurora speed: [1m[33m1.28 Gbit/s[0m
+|02:45:13|I|[1m[34m	--> Total number of required data lanes: [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|02:45:13|I|[1m[34m	--> Total number of active data lanes:   [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:13|E|[1m[31m	--> Some data lanes are enabled but inactive[0m
+|02:45:13|I|[32mTrying initialization sequence number: [1m[33m0[0m
+|02:45:13|I|[1m[34m	--> Number of required data lanes for [board/opticalGroup/hybrid = [1m[33m0/0/0[1m[34m]: [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|02:45:13|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m0[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:13|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m1[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:13|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m2[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:13|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m3[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:13|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m4[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:13|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m5[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:14|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m6[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:14|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m7[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:14|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m8[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:14|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m9[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:14|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m10[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:14|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m11[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:14|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m12[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:14|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m13[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:14|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m14[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:14|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m15[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:15|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m16[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:15|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m17[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:27|I|[1m[35m@@@ Initializing the Hardware @@@[0m
+|02:45:27|I|[1m[33mParseHW [FileParser] 0x1e9b100	cmsinnertracker.crate0.slot0[0m
+|02:45:27|I|[1m[33mTrying to connect to the Power Supply Server...[0m
+|02:45:27|I|[1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+|02:45:27|I|[1m[35m@@@ Configuring HW parsed from xml file @@@[0m
+|02:45:27|I|[1m[34m	--> Found an Inner Tracker Readout-board[0m
+|02:45:27|I|[32mConfiguring Board: [1m[33m0[0m
+|02:45:27|I|[1m[34m	--> FW version : [1m[33m4.2[1m[34m -- Date (yy/mm/dd) : [1m[33m21/8/28[1m[34m -- Time (hour:minute:sec) : [1m[33m2:35:40[0m
+|02:45:27|I|[1m[34m	--> Link type : [1m[33melectrical[1m[34m -- Optical speed : [1m[33m10 Gbit/s[1m[34m -- Frontend type : [1m[33mRD53A[0m
+|02:45:27|I|[1m[34m	--> L12 FMC type : [1m[33m1[1m[34m -- L08 FMC type : [1m[33m1[1m[34m (1=KSU, 2=CERN, 3=DIO5, 4=OPTO, 5=FERMI, 7=NONE, 0=Unspecified)[0m
+|02:45:27|I|[32mInitializing DIO5:[0m
+|02:45:27|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.HitOr_enable_l12: 0x[1m[33m0 (0)[0m
+|02:45:27|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.trigger_source: 0x[1m[33m2 (2)[0m
+|02:45:27|I|[1m[34m	--> user.ctrl_regs.reset_reg.ext_clk_en: 0x[1m[33m0 (0)[0m
+|02:45:27|I|[1m[34m	--> Done[0m
+|02:45:27|I|[32mReading clock generator (CDCE62005) configuration[0m
+|02:45:27|I|[1m[34m	--> SPI register content: 0x[1m[33mEB020320[0m
+|02:45:27|I|[1m[34m	--> SPI register content: 0x[1m[33mEB020321[0m
+|02:45:27|I|[1m[34m	--> SPI register content: 0x[1m[33mEB840302[0m
+|02:45:27|I|[1m[34m	--> SPI register content: 0x[1m[33mEB840303[0m
+|02:45:27|I|[1m[34m	--> SPI register content: 0x[1m[33mEB140334[0m
+|02:45:27|I|[1m[34m	--> SPI register content: 0x[1m[33m10000E75[0m
+|02:45:27|I|[1m[34m	--> SPI register content: 0x[1m[33m030E02E6[0m
+|02:45:27|I|[1m[34m	--> SPI register content: 0x[1m[33mBD800DF7[0m
+|02:45:27|I|[1m[34m	--> SPI register content: 0x[1m[33m20009D58[0m
+|02:45:27|W|[32mOptical link tx slow control status: [1m[31mnot ready[0m
+|02:45:27|W|[32mOptical link rx slow control status: [1m[31mnot ready[0m
+|02:45:27|I|[32mInput clock frequency (could be either internal or external, should be ~40 MHz): [1m[33m40.079 MHz[0m
+|02:45:27|I|[32mGTX receiver clock frequency (~160 MHz (~320 MHz) for electrical (optical) readout): [1m[33m160.315 MHz[0m
+|02:45:27|I|[32mExternal CMD clock frequency: [1m[33m0.000 MHz[0m
+|02:45:27|I|[32mExternal Serializer clock frequency: [1m[33m0.000 MHz[0m
+|02:45:27|I|[36m=== Configuring FSM fast command block ===[0m
+|02:45:27|I|[32mInternal trigger frequency (if enabled): [1m[33m30372 Hz[0m
+|02:45:27|I|[32mChecking firmware status:[0m
+|02:45:27|I|[1m[34m	--> Clock generator is [1m[33mlocked[0m
+|02:45:27|I|[1m[34m	--> I2C [1m[33minitialized[0m
+|02:45:27|I|[32mFast command block trigger source: [1m[33m2[0m[32m (1=IPBus, 2=Test-FSM, 3=TTC, 4=TLU, 5=External, 6=Hit-Or, 7=User-defined frequency)[0m
+|02:45:27|I|[32mFast command block trigger state: [1m[33m0[0m[32m (0=Idle, 2=Running)[0m
+|02:45:27|I|[32mFast command block check if configuraiton registers have been set: [1m[33mconfigured[0m
+|02:45:27|I|[32mFast command block error code (0=No error): [1m[33m0[0m
+|02:45:27|I|[32mTrigger counter: [1m[33m0[0m
+|02:45:27|I|[32mHybrid type: [1m[33m1[0m[32m (1=Single chip, 2=Double chip, 4=Quad chip)[0m
+|02:45:27|I|[32mNumber of hybrids which can be potentially readout: [1m[33m8[0m
+|02:45:27|I|[36m================== Done ==================[0m
+|02:45:27|I|[32mInitializing board's registers:[0m
+|02:45:27|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg1.dio5_ch1_thr: 0x[1m[33m80 (128)[0m
+|02:45:27|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg1.dio5_ch2_thr: 0x[1m[33m28 (40)[0m
+|02:45:27|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch3_thr: 0x[1m[33m80 (128)[0m
+|02:45:27|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch4_thr: 0x[1m[33m80 (128)[0m
+|02:45:27|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch5_thr: 0x[1m[33m80 (128)[0m
+|02:45:27|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.tlu_delay: 0x[1m[33m0 (0)[0m
+|02:45:27|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.HitOr_enable_l12: 0x[1m[33m0 (0)[0m
+|02:45:27|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_3.triggers_to_accept: 0x[1m[33mA (10)[0m
+|02:45:27|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_7.autozero_freq: 0x[1m[33m3E8 (1000)[0m
+|02:45:27|I|[1m[34m	--> Done[0m
+|02:45:27|I|[32mChecking status of the optical links:[0m
+|02:45:27|I|[1m[34m	--> Optical link n. active LpGBT chip tx:  [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:45:27|I|[1m[34m	--> Optical link n. active LpGBT chip rx:  [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:45:27|I|[1m[34m	--> Optical link n. active LpGBT chip mgt: [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:45:27|I|[36m=== Configuring frontend chip communication ===[0m
+|02:45:27|I|[32mDown-link phase initialization...[0m
+|02:45:27|I|[1m[34m	--> Done[0m
+|02:45:27|I|[32mInitializing chip communication of hybrid: [0m[1m[33m0[0m
+|02:45:27|I|[32mInitializing communicationng to/from RD53: [0m[1m[33m0[0m
+|02:45:27|I|[32mConfiguring up-link lanes and monitoring...[0m
+|02:45:28|I|[1m[34m	--> Done[0m
+|02:45:28|I|[32mUp-link speed: [1m[33m1.28 Gbit/s[0m
+|02:45:28|I|[36m==================== Done =====================[0m
+|02:45:28|I|[32mChecking status communication RD53 --> FW[0m
+|02:45:28|I|[1m[34m	--> Aurora speed: [1m[33m1.28 Gbit/s[0m
+|02:45:28|I|[1m[34m	--> Total number of required data lanes: [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|02:45:28|I|[1m[34m	--> Total number of active data lanes:   [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:28|E|[1m[31m	--> Some data lanes are enabled but inactive[0m
+|02:45:28|I|[32mTrying initialization sequence number: [1m[33m0[0m
+|02:45:28|I|[1m[34m	--> Number of required data lanes for [board/opticalGroup/hybrid = [1m[33m0/0/0[1m[34m]: [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|02:45:28|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m0[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:28|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m1[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:28|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m2[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:28|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m3[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:28|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m4[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:28|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m5[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:28|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m6[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:45:28|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m7[1m[34m: [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:47:21|I|[1m[35m@@@ Initializing the Hardware @@@[0m
+|02:47:21|I|[1m[33mParseHW [FileParser] 0x1041100	cmsinnertracker.crate0.slot0[0m
+|02:47:21|I|[1m[33mTrying to connect to the Power Supply Server...[0m
+|02:47:21|I|[1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+|02:47:21|I|[1m[35m@@@ Configuring HW parsed from xml file @@@[0m
+|02:47:21|I|[1m[34m	--> Found an Inner Tracker Readout-board[0m
+|02:47:21|I|[32mConfiguring Board: [1m[33m0[0m
+|02:47:21|I|[1m[34m	--> FW version : [1m[33m4.2[1m[34m -- Date (yy/mm/dd) : [1m[33m21/8/28[1m[34m -- Time (hour:minute:sec) : [1m[33m2:35:40[0m
+|02:47:21|I|[1m[34m	--> Link type : [1m[33melectrical[1m[34m -- Optical speed : [1m[33m10 Gbit/s[1m[34m -- Frontend type : [1m[33mRD53A[0m
+|02:47:21|I|[1m[34m	--> L12 FMC type : [1m[33m1[1m[34m -- L08 FMC type : [1m[33m1[1m[34m (1=KSU, 2=CERN, 3=DIO5, 4=OPTO, 5=FERMI, 7=NONE, 0=Unspecified)[0m
+|02:47:21|I|[32mInitializing DIO5:[0m
+|02:47:21|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.HitOr_enable_l12: 0x[1m[33m0 (0)[0m
+|02:47:21|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.trigger_source: 0x[1m[33m2 (2)[0m
+|02:47:21|I|[1m[34m	--> user.ctrl_regs.reset_reg.ext_clk_en: 0x[1m[33m0 (0)[0m
+|02:47:21|I|[1m[34m	--> Done[0m
+|02:47:21|I|[32mReading clock generator (CDCE62005) configuration[0m
+|02:47:21|I|[1m[34m	--> SPI register content: 0x[1m[33mEB020320[0m
+|02:47:21|I|[1m[34m	--> SPI register content: 0x[1m[33mEB020321[0m
+|02:47:21|I|[1m[34m	--> SPI register content: 0x[1m[33mEB840302[0m
+|02:47:21|I|[1m[34m	--> SPI register content: 0x[1m[33mEB840303[0m
+|02:47:21|I|[1m[34m	--> SPI register content: 0x[1m[33mEB140334[0m
+|02:47:21|I|[1m[34m	--> SPI register content: 0x[1m[33m10000E75[0m
+|02:47:21|I|[1m[34m	--> SPI register content: 0x[1m[33m030E02E6[0m
+|02:47:21|I|[1m[34m	--> SPI register content: 0x[1m[33mBD800DF7[0m
+|02:47:21|I|[1m[34m	--> SPI register content: 0x[1m[33m20009D58[0m
+|02:47:21|W|[32mOptical link tx slow control status: [1m[31mnot ready[0m
+|02:47:21|W|[32mOptical link rx slow control status: [1m[31mnot ready[0m
+|02:47:21|I|[32mInput clock frequency (could be either internal or external, should be ~40 MHz): [1m[33m40.079 MHz[0m
+|02:47:21|I|[32mGTX receiver clock frequency (~160 MHz (~320 MHz) for electrical (optical) readout): [1m[33m160.315 MHz[0m
+|02:47:21|I|[32mExternal CMD clock frequency: [1m[33m0.000 MHz[0m
+|02:47:21|I|[32mExternal Serializer clock frequency: [1m[33m0.000 MHz[0m
+|02:47:21|I|[36m=== Configuring FSM fast command block ===[0m
+|02:47:21|I|[32mInternal trigger frequency (if enabled): [1m[33m30372 Hz[0m
+|02:47:21|I|[32mChecking firmware status:[0m
+|02:47:21|I|[1m[34m	--> Clock generator is [1m[33mlocked[0m
+|02:47:21|I|[1m[34m	--> I2C [1m[33minitialized[0m
+|02:47:21|I|[32mFast command block trigger source: [1m[33m2[0m[32m (1=IPBus, 2=Test-FSM, 3=TTC, 4=TLU, 5=External, 6=Hit-Or, 7=User-defined frequency)[0m
+|02:47:21|I|[32mFast command block trigger state: [1m[33m0[0m[32m (0=Idle, 2=Running)[0m
+|02:47:21|I|[32mFast command block check if configuraiton registers have been set: [1m[33mconfigured[0m
+|02:47:21|I|[32mFast command block error code (0=No error): [1m[33m0[0m
+|02:47:21|I|[32mTrigger counter: [1m[33m0[0m
+|02:47:21|I|[32mHybrid type: [1m[33m1[0m[32m (1=Single chip, 2=Double chip, 4=Quad chip)[0m
+|02:47:21|I|[32mNumber of hybrids which can be potentially readout: [1m[33m8[0m
+|02:47:21|I|[36m================== Done ==================[0m
+|02:47:21|I|[32mInitializing board's registers:[0m
+|02:47:21|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg1.dio5_ch1_thr: 0x[1m[33m80 (128)[0m
+|02:47:21|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg1.dio5_ch2_thr: 0x[1m[33m28 (40)[0m
+|02:47:21|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch3_thr: 0x[1m[33m80 (128)[0m
+|02:47:21|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch4_thr: 0x[1m[33m80 (128)[0m
+|02:47:21|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch5_thr: 0x[1m[33m80 (128)[0m
+|02:47:21|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.tlu_delay: 0x[1m[33m0 (0)[0m
+|02:47:21|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.HitOr_enable_l12: 0x[1m[33m0 (0)[0m
+|02:47:21|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_3.triggers_to_accept: 0x[1m[33mA (10)[0m
+|02:47:21|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_7.autozero_freq: 0x[1m[33m3E8 (1000)[0m
+|02:47:21|I|[1m[34m	--> Done[0m
+|02:47:21|I|[32mChecking status of the optical links:[0m
+|02:47:21|I|[1m[34m	--> Optical link n. active LpGBT chip tx:  [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:47:21|I|[1m[34m	--> Optical link n. active LpGBT chip rx:  [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:47:21|I|[1m[34m	--> Optical link n. active LpGBT chip mgt: [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:47:21|I|[36m=== Configuring frontend chip communication ===[0m
+|02:47:21|I|[32mDown-link phase initialization...[0m
+|02:47:21|I|[1m[34m	--> Done[0m
+|02:47:21|I|[32mInitializing chip communication of hybrid: [0m[1m[33m0[0m
+|02:47:21|I|[32mInitializing communicationng to/from RD53: [0m[1m[33m0[0m
+|02:47:22|I|[32mConfiguring up-link lanes and monitoring...[0m
+|02:47:22|I|[1m[34m	--> Done[0m
+|02:47:22|I|[32mUp-link speed: [1m[33m1.28 Gbit/s[0m
+|02:47:22|I|[36m==================== Done =====================[0m
+|02:47:22|I|[32mChecking status communication RD53 --> FW[0m
+|02:47:22|I|[1m[34m	--> Aurora speed: [1m[33m1.28 Gbit/s[0m
+|02:47:22|I|[1m[34m	--> Total number of required data lanes: [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|02:47:22|I|[1m[34m	--> Total number of active data lanes:   [1m[33m0[1m[34m i.e. [1m[33m00000000000000000000[0m
+|02:47:22|E|[1m[31m	--> Some data lanes are enabled but inactive[0m
+|02:47:22|I|[32mTrying initialization sequence number: [1m[33m0[0m
+|02:47:22|I|[1m[34m	--> Number of required data lanes for [board/opticalGroup/hybrid = [1m[33m0/0/0[1m[34m]: [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|02:47:22|I|[1m[34m	--> Total number of active data lanes for tentative n. [1m[33m0[1m[34m: [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|02:47:22|I|[32mBoard/OpticalGroup/Hybrid [[1m[33m0/0/0[0m[32m] locked with sequence [1m[33m0[0m[32m on tentative n. [1m[33m0[0m
+|02:47:22|I|[36m===== Configuring frontend chip registers =====[0m
+|02:47:22|I|[32mConfiguring chip of hybrid: [0m[1m[33m0[0m
+|02:47:22|I|[32mConfiguring RD53: [0m[1m[33m0[0m
+|02:47:22|E|[1m[31mRead-command FIFO empty[0m
+|02:47:22|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:22|E|[1m[31mRead-command FIFO empty[0m
+|02:47:22|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:22|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:22|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mPA_IN_BIAS_LIN[0m
+|02:47:22|E|[1m[31mRead-command FIFO empty[0m
+|02:47:22|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:22|E|[1m[31mRead-command FIFO empty[0m
+|02:47:22|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:23|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:23|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mFC_BIAS_LIN[0m
+|02:47:23|E|[1m[31mRead-command FIFO empty[0m
+|02:47:23|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:23|E|[1m[31mRead-command FIFO empty[0m
+|02:47:23|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:23|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:23|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mKRUM_CURR_LIN[0m
+|02:47:23|E|[1m[31mRead-command FIFO empty[0m
+|02:47:23|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:23|E|[1m[31mRead-command FIFO empty[0m
+|02:47:23|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:23|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:23|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mLDAC_LIN[0m
+|02:47:23|E|[1m[31mRead-command FIFO empty[0m
+|02:47:23|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:23|E|[1m[31mRead-command FIFO empty[0m
+|02:47:23|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:23|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:23|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mCOMP_LIN[0m
+|02:47:23|E|[1m[31mRead-command FIFO empty[0m
+|02:47:23|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:23|E|[1m[31mRead-command FIFO empty[0m
+|02:47:23|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:23|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:23|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mREF_KRUM_LIN[0m
+|02:47:23|E|[1m[31mRead-command FIFO empty[0m
+|02:47:23|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:24|E|[1m[31mRead-command FIFO empty[0m
+|02:47:24|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:24|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:24|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mVthreshold_LIN[0m
+|02:47:24|E|[1m[31mRead-command FIFO empty[0m
+|02:47:24|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:24|E|[1m[31mRead-command FIFO empty[0m
+|02:47:24|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:24|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:24|E|[1m[31mRead-command FIFO empty[0m
+|02:47:24|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:24|E|[1m[31mRead-command FIFO empty[0m
+|02:47:24|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:24|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:24|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mSER_SEL_OUT[0m
+|02:47:24|E|[1m[31mRead-command FIFO empty[0m
+|02:47:24|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:24|E|[1m[31mRead-command FIFO empty[0m
+|02:47:24|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:24|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:24|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mSER_SEL_OUT[0m
+|02:47:24|E|[1m[31mRead-command FIFO empty[0m
+|02:47:24|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:24|E|[1m[31mRead-command FIFO empty[0m
+|02:47:24|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:24|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:24|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mSER_SEL_OUT[0m
+|02:47:24|E|[1m[31mRead-command FIFO empty[0m
+|02:47:24|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:25|E|[1m[31mRead-command FIFO empty[0m
+|02:47:25|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:25|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:25|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mCML_CONFIG[0m
+|02:47:25|E|[1m[31mRead-command FIFO empty[0m
+|02:47:25|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:25|E|[1m[31mRead-command FIFO empty[0m
+|02:47:25|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:25|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:25|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mCML_CONFIG[0m
+|02:47:25|E|[1m[31mRead-command FIFO empty[0m
+|02:47:25|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:25|E|[1m[31mRead-command FIFO empty[0m
+|02:47:25|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:25|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:25|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mVOLTAGE_TRIM[0m
+|02:47:25|E|[1m[31mRead-command FIFO empty[0m
+|02:47:25|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:25|E|[1m[31mRead-command FIFO empty[0m
+|02:47:25|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:25|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:25|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mVOLTAGE_TRIM[0m
+|02:47:25|E|[1m[31mRead-command FIFO empty[0m
+|02:47:25|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:25|E|[1m[31mRead-command FIFO empty[0m
+|02:47:25|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:25|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:26|E|[1m[31mRead-command FIFO empty[0m
+|02:47:26|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:26|E|[1m[31mRead-command FIFO empty[0m
+|02:47:26|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:26|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:26|E|[1m[31mRead-command FIFO empty[0m
+|02:47:26|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:26|E|[1m[31mRead-command FIFO empty[0m
+|02:47:26|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:26|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:26|E|[1m[31mRead-command FIFO empty[0m
+|02:47:26|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:26|E|[1m[31mRead-command FIFO empty[0m
+|02:47:26|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:26|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:26|E|[1m[31mRead-command FIFO empty[0m
+|02:47:26|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:26|E|[1m[31mRead-command FIFO empty[0m
+|02:47:26|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:26|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:26|E|[1m[31mRead-command FIFO empty[0m
+|02:47:26|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:26|E|[1m[31mRead-command FIFO empty[0m
+|02:47:26|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:27|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:27|E|[1m[31mRead-command FIFO empty[0m
+|02:47:27|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:27|E|[1m[31mRead-command FIFO empty[0m
+|02:47:27|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:27|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:27|E|[1m[31mRead-command FIFO empty[0m
+|02:47:27|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:27|E|[1m[31mRead-command FIFO empty[0m
+|02:47:27|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:27|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:27|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mSER_SEL_OUT[0m
+|02:47:27|E|[1m[31mRead-command FIFO empty[0m
+|02:47:27|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:27|E|[1m[31mRead-command FIFO empty[0m
+|02:47:27|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:27|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:27|E|[1m[31mRead-command FIFO empty[0m
+|02:47:27|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:27|E|[1m[31mRead-command FIFO empty[0m
+|02:47:27|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:27|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:27|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mHITOR_3_MASK_DIFF_0[0m
+|02:47:27|E|[1m[31mRead-command FIFO empty[0m
+|02:47:27|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:27|E|[1m[31mRead-command FIFO empty[0m
+|02:47:27|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:28|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:28|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mHITOR_2_MASK_DIFF_1[0m
+|02:47:28|E|[1m[31mRead-command FIFO empty[0m
+|02:47:28|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:28|E|[1m[31mRead-command FIFO empty[0m
+|02:47:28|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:28|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:28|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mHITOR_2_MASK_DIFF_0[0m
+|02:47:28|E|[1m[31mRead-command FIFO empty[0m
+|02:47:28|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:28|E|[1m[31mRead-command FIFO empty[0m
+|02:47:28|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:28|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:28|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mHITOR_1_MASK_DIFF_0[0m
+|02:47:28|E|[1m[31mRead-command FIFO empty[0m
+|02:47:28|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:28|E|[1m[31mRead-command FIFO empty[0m
+|02:47:28|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:28|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:28|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mHITOR_0_MASK_DIFF_1[0m
+|02:47:28|E|[1m[31mRead-command FIFO empty[0m
+|02:47:28|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:28|E|[1m[31mRead-command FIFO empty[0m
+|02:47:28|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:28|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:28|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mHITOR_0_MASK_DIFF_0[0m
+|02:47:28|E|[1m[31mRead-command FIFO empty[0m
+|02:47:28|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:29|E|[1m[31mRead-command FIFO empty[0m
+|02:47:29|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:29|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:29|E|[1m[31mRead-command FIFO empty[0m
+|02:47:29|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:29|E|[1m[31mRead-command FIFO empty[0m
+|02:47:29|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:29|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:29|E|[1m[31mRead-command FIFO empty[0m
+|02:47:29|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:29|E|[1m[31mRead-command FIFO empty[0m
+|02:47:29|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:29|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:29|E|[1m[31mRead-command FIFO empty[0m
+|02:47:29|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:29|E|[1m[31mRead-command FIFO empty[0m
+|02:47:29|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:29|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:29|E|[1m[31mRead-command FIFO empty[0m
+|02:47:29|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:29|E|[1m[31mRead-command FIFO empty[0m
+|02:47:29|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:29|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:29|E|[1m[31mRead-command FIFO empty[0m
+|02:47:29|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:30|E|[1m[31mRead-command FIFO empty[0m
+|02:47:30|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:30|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:30|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mHITOR_3_MASK_SYNC[0m
+|02:47:30|E|[1m[31mRead-command FIFO empty[0m
+|02:47:30|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:30|E|[1m[31mRead-command FIFO empty[0m
+|02:47:30|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:30|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:30|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mHITOR_1_MASK_SYNC[0m
+|02:47:30|E|[1m[31mRead-command FIFO empty[0m
+|02:47:30|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:30|E|[1m[31mRead-command FIFO empty[0m
+|02:47:30|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:30|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:30|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mVTH1_DIFF[0m
+|02:47:30|E|[1m[31mRead-command FIFO empty[0m
+|02:47:30|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:30|E|[1m[31mRead-command FIFO empty[0m
+|02:47:30|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:30|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:30|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mEN_MACRO_COL_CAL_SYNC_3[0m
+|02:47:30|E|[1m[31mRead-command FIFO empty[0m
+|02:47:30|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:30|E|[1m[31mRead-command FIFO empty[0m
+|02:47:30|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:30|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:30|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mEN_MACRO_COL_CAL_SYNC_4[0m
+|02:47:30|E|[1m[31mRead-command FIFO empty[0m
+|02:47:30|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:31|E|[1m[31mRead-command FIFO empty[0m
+|02:47:31|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:31|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:31|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mEN_CORE_COL_LIN_1[0m
+|02:47:31|E|[1m[31mRead-command FIFO empty[0m
+|02:47:31|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:31|E|[1m[31mRead-command FIFO empty[0m
+|02:47:31|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:31|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:31|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mPRMP_DIFF[0m
+|02:47:31|E|[1m[31mRead-command FIFO empty[0m
+|02:47:31|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:31|E|[1m[31mRead-command FIFO empty[0m
+|02:47:31|W|[34mEmpty register readback, attempt n. [33m2[34m/[33m2[0m
+|02:47:31|E|[1m[31mEmpty register readback FIFO after [1m[33m2[1m[31m attempts[0m
+|02:47:31|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mIBIASP1_SYNC[0m
+|02:47:31|E|[1m[31mRead-command FIFO empty[0m
+|02:47:43|I|[1m[35m@@@ Initializing the Hardware @@@[0m
+|02:47:43|I|[1m[33mParseHW [FileParser] 0x281b100	cmsinnertracker.crate0.slot0[0m
+|02:47:43|I|[1m[33mTrying to connect to the Power Supply Server...[0m
+|02:47:43|I|[1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+|02:47:43|I|[1m[35m@@@ Configuring HW parsed from xml file @@@[0m
+|02:47:43|I|[1m[34m	--> Found an Inner Tracker Readout-board[0m
+|02:47:43|I|[32mConfiguring Board: [1m[33m0[0m
+|02:47:43|I|[1m[34m	--> FW version : [1m[33m4.2[1m[34m -- Date (yy/mm/dd) : [1m[33m21/8/28[1m[34m -- Time (hour:minute:sec) : [1m[33m2:35:40[0m
+|02:47:43|I|[1m[34m	--> Link type : [1m[33melectrical[1m[34m -- Optical speed : [1m[33m10 Gbit/s[1m[34m -- Frontend type : [1m[33mRD53A[0m
+|02:47:43|I|[1m[34m	--> L12 FMC type : [1m[33m1[1m[34m -- L08 FMC type : [1m[33m1[1m[34m (1=KSU, 2=CERN, 3=DIO5, 4=OPTO, 5=FERMI, 7=NONE, 0=Unspecified)[0m
+|02:47:43|I|[32mInitializing DIO5:[0m
+|02:47:43|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.HitOr_enable_l12: 0x[1m[33m0 (0)[0m
+|02:47:43|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.trigger_source: 0x[1m[33m2 (2)[0m
+|02:47:43|I|[1m[34m	--> user.ctrl_regs.reset_reg.ext_clk_en: 0x[1m[33m0 (0)[0m
+|02:47:43|I|[1m[34m	--> Done[0m
+|02:47:44|I|[32mReading clock generator (CDCE62005) configuration[0m
+|02:47:44|I|[1m[34m	--> SPI register content: 0x[1m[33mEB020320[0m
+|02:47:44|I|[1m[34m	--> SPI register content: 0x[1m[33mEB020321[0m
+|02:47:44|I|[1m[34m	--> SPI register content: 0x[1m[33mEB840302[0m
+|02:47:44|I|[1m[34m	--> SPI register content: 0x[1m[33mEB840303[0m
+|02:47:44|I|[1m[34m	--> SPI register content: 0x[1m[33mEB140334[0m
+|02:47:44|I|[1m[34m	--> SPI register content: 0x[1m[33m10000E75[0m
+|02:47:44|I|[1m[34m	--> SPI register content: 0x[1m[33m030E02E6[0m
+|02:47:44|I|[1m[34m	--> SPI register content: 0x[1m[33mBD800DF7[0m
+|02:47:44|I|[1m[34m	--> SPI register content: 0x[1m[33m20009D58[0m
+|02:47:44|W|[32mOptical link tx slow control status: [1m[31mnot ready[0m
+|02:47:44|W|[32mOptical link rx slow control status: [1m[31mnot ready[0m
+|02:47:44|I|[32mInput clock frequency (could be either internal or external, should be ~40 MHz): [1m[33m40.079 MHz[0m
+|02:47:44|I|[32mGTX receiver clock frequency (~160 MHz (~320 MHz) for electrical (optical) readout): [1m[33m160.315 MHz[0m
+|02:47:44|I|[32mExternal CMD clock frequency: [1m[33m0.000 MHz[0m
+|02:47:44|I|[32mExternal Serializer clock frequency: [1m[33m0.000 MHz[0m
+|02:47:44|I|[36m=== Configuring FSM fast command block ===[0m
+|02:47:44|I|[32mInternal trigger frequency (if enabled): [1m[33m30372 Hz[0m
+|02:47:44|I|[32mChecking firmware status:[0m
+|02:47:44|I|[1m[34m	--> Clock generator is [1m[33mlocked[0m
+|02:47:44|I|[1m[34m	--> I2C [1m[33minitialized[0m
+|02:47:44|I|[32mFast command block trigger source: [1m[33m2[0m[32m (1=IPBus, 2=Test-FSM, 3=TTC, 4=TLU, 5=External, 6=Hit-Or, 7=User-defined frequency)[0m
+|02:47:44|I|[32mFast command block trigger state: [1m[33m0[0m[32m (0=Idle, 2=Running)[0m
+|02:47:44|I|[32mFast command block check if configuraiton registers have been set: [1m[33mconfigured[0m
+|02:47:44|I|[32mFast command block error code (0=No error): [1m[33m0[0m
+|02:47:44|I|[32mTrigger counter: [1m[33m0[0m
+|02:47:44|I|[32mHybrid type: [1m[33m1[0m[32m (1=Single chip, 2=Double chip, 4=Quad chip)[0m
+|02:47:44|I|[32mNumber of hybrids which can be potentially readout: [1m[33m8[0m
+|02:47:44|I|[36m================== Done ==================[0m
+|02:47:44|I|[32mInitializing board's registers:[0m
+|02:47:44|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg1.dio5_ch1_thr: 0x[1m[33m80 (128)[0m
+|02:47:44|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg1.dio5_ch2_thr: 0x[1m[33m28 (40)[0m
+|02:47:44|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch3_thr: 0x[1m[33m80 (128)[0m
+|02:47:44|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch4_thr: 0x[1m[33m80 (128)[0m
+|02:47:44|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch5_thr: 0x[1m[33m80 (128)[0m
+|02:47:44|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.tlu_delay: 0x[1m[33m0 (0)[0m
+|02:47:44|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.HitOr_enable_l12: 0x[1m[33m0 (0)[0m
+|02:47:44|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_3.triggers_to_accept: 0x[1m[33mA (10)[0m
+|02:47:44|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_7.autozero_freq: 0x[1m[33m3E8 (1000)[0m
+|02:47:44|I|[1m[34m	--> Done[0m
+|02:47:44|I|[32mChecking status of the optical links:[0m
+|02:47:44|I|[1m[34m	--> Optical link n. active LpGBT chip tx:  [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:47:44|I|[1m[34m	--> Optical link n. active LpGBT chip rx:  [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:47:44|I|[1m[34m	--> Optical link n. active LpGBT chip mgt: [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|02:47:44|I|[36m=== Configuring frontend chip communication ===[0m
+|02:47:44|I|[32mDown-link phase initialization...[0m
+|02:47:44|I|[1m[34m	--> Done[0m
+|02:47:44|I|[32mInitializing chip communication of hybrid: [0m[1m[33m0[0m
+|02:47:44|I|[32mInitializing communicationng to/from RD53: [0m[1m[33m0[0m
+|02:47:44|I|[32mConfiguring up-link lanes and monitoring...[0m
+|02:47:44|I|[1m[34m	--> Done[0m
+|02:47:44|I|[32mUp-link speed: [1m[33m1.28 Gbit/s[0m
+|02:47:44|I|[36m==================== Done =====================[0m
+|02:47:44|I|[32mChecking status communication RD53 --> FW[0m
+|02:47:44|I|[1m[34m	--> Aurora speed: [1m[33m1.28 Gbit/s[0m
+|02:47:44|I|[1m[34m	--> Total number of required data lanes: [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|02:47:44|I|[1m[34m	--> Total number of active data lanes:   [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|02:47:44|I|[1m[34m	--> All enabled data lanes are active[0m
+|02:47:44|I|[36m===== Configuring frontend chip registers =====[0m
+|02:47:44|I|[32mConfiguring chip of hybrid: [0m[1m[33m0[0m
+|02:47:44|I|[32mConfiguring RD53: [0m[1m[33m0[0m
+|02:47:44|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mPA_IN_BIAS_LIN[0m
+|02:47:44|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mCMDERR_CNT[0m
+|02:47:45|I|[32mNumber of masked pixels: [0m[1m[33m2537[0m
+|02:47:45|I|[36m==================== Done =====================[0m
+|02:47:45|I|[32mLVDS frequency: [1m[33m9.520 MHz[0m
+|02:47:45|I|[32mUsing [1m[33m2[0m[32m threads for data decoding during running time[0m
+|02:47:45|I|[32mStarting monitoring thread[0m
+|02:47:45|I|[1m[35m@@@ Hardware initialization done @@@[0m
+|02:47:45|I|[1m[35m@@@ Performing Physics data taking @@@[0m
+|02:47:45|I|[1m[33mSystemController::setChannelGroupHandler for a queryFunction1 ROCs.[0m
+|02:47:45|I|[1m[33mCreating channel group handler for Chip#0[0m
+|02:47:45|I|[32mPhysics attempting to create directory: [1m[33mResults[0m
+|02:47:45|I|[32m[Physics::Running] Starting run: [1m[33m28[0m
+|02:47:45|I|[32mMonitor data for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|02:47:46|W|[1m[31m		--> Very low voltage: either floating VDD sense-line or FMC not powered (voltage = [1m[33m0.000[1m[31m)[0m
+|02:47:46|I|[1m[34m	--> Hybrid voltage: [1m[33m0.000[1m[34m V (corresponds to half VOUT_dig_ShuLDO of the chip)[0m
+|02:47:46|I|[1m[34m	--> Hybrid temperature: [1m[33m-273.150[1m[34m C[0m
+|02:47:46|I|[1m[34m	--> VOUT_ana_ShuLDO: [1m[33m0.601 +/- 0.024[1m[34m V[0m
+|02:47:46|I|[1m[34m	--> VOUT_dig_ShuLDO: [1m[33m0.648 +/- 0.026[1m[34m V[0m
+|02:47:46|I|[1m[34m	--> ADCbandgap: [1m[33m0.452 +/- 0.018[1m[34m V[0m
+|02:47:46|W|[1m[31m		--> ADC measurement in saturation (ADC = [1m[33m4095[1m[31m): likely the IMUX resistor, that converts the current into a voltage, is not connected[0m
+|02:47:46|I|[1m[34m	--> Iref: [1m[33m83.880 +/- 3.355[1m[34m uA[0m
+|02:47:46|I|[1m[34m	--> TEMPSENS_1: [1m[33m84.560 +/- 3.382[1m[34m C[0m
+|02:47:46|I|[1m[34m	--> TEMPSENS_4: [1m[33m85.982 +/- 3.439[1m[34m C[0m
+|02:47:46|I|[1m[34m	--> Done[0m
+|02:47:46|I|[1m[34m	--> VOUT_ana_ShuLDO: [1m[33m0.601 +/- 0.024[1m[34m V[0m
+|02:47:46|I|[1m[34m	--> VOUT_dig_ShuLDO: [1m[33m0.648 +/- 0.026[1m[34m V[0m
+|02:47:46|I|[1m[34m	--> ADCbandgap: [1m[33m0.452 +/- 0.018[1m[34m V[0m
+|02:47:46|W|[1m[31m		--> ADC measurement in saturation (ADC = [1m[33m4095[1m[31m): likely the IMUX resistor, that converts the current into a voltage, is not connected[0m
+|02:47:46|I|[1m[34m	--> Iref: [1m[33m83.880 +/- 3.355[1m[34m uA[0m
+|02:47:46|I|[1m[34m	--> TEMPSENS_1: [1m[33m83.849 +/- 3.354[1m[34m C[0m
+|02:47:46|I|[1m[34m	--> TEMPSENS_4: [1m[33m85.982 +/- 3.439[1m[34m C[0m
+|02:47:47|I|[32m[Physics::Stop] Stopping[0m
+|02:47:47|I|[32mMonitor data for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|02:47:48|W|[1m[31m		--> Very low voltage: either floating VDD sense-line or FMC not powered (voltage = [1m[33m0.000[1m[31m)[0m
+|02:47:48|I|[1m[34m	--> Hybrid voltage: [1m[33m0.000[1m[34m V (corresponds to half VOUT_dig_ShuLDO of the chip)[0m
+|02:47:48|I|[1m[34m	--> Hybrid temperature: [1m[33m-273.150[1m[34m C[0m
+|02:47:48|I|[1m[34m	--> VOUT_ana_ShuLDO: [1m[33m0.601 +/- 0.024[1m[34m V[0m
+|02:47:48|I|[1m[34m	--> VOUT_dig_ShuLDO: [1m[33m0.649 +/- 0.026[1m[34m V[0m
+|02:47:48|I|[1m[34m	--> ADCbandgap: [1m[33m0.452 +/- 0.018[1m[34m V[0m
+|02:47:48|W|[1m[31m		--> ADC measurement in saturation (ADC = [1m[33m4095[1m[31m): likely the IMUX resistor, that converts the current into a voltage, is not connected[0m
+|02:47:48|I|[1m[34m	--> Iref: [1m[33m83.880 +/- 3.355[1m[34m uA[0m
+|02:47:48|I|[1m[34m	--> TEMPSENS_1: [1m[33m83.849 +/- 3.354[1m[34m C[0m
+|02:47:48|I|[1m[34m	--> TEMPSENS_4: [1m[33m85.271 +/- 3.411[1m[34m C[0m
+|02:47:48|I|[1m[34m	--> Done[0m
+|02:47:48|I|[1m[34m	--> VOUT_ana_ShuLDO: [1m[33m0.601 +/- 0.024[1m[34m V[0m
+|02:47:48|I|[1m[34m	--> VOUT_dig_ShuLDO: [1m[33m0.649 +/- 0.026[1m[34m V[0m
+|02:47:48|I|[1m[34m	--> ADCbandgap: [1m[33m0.452 +/- 0.018[1m[34m V[0m
+|02:47:48|W|[1m[31m		--> ADC measurement in saturation (ADC = [1m[33m4095[1m[31m): likely the IMUX resistor, that converts the current into a voltage, is not connected[0m
+|02:47:48|I|[1m[34m	--> Iref: [1m[33m83.880 +/- 3.355[1m[34m uA[0m
+|02:47:48|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|02:47:48|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|02:47:48|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|02:47:48|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|02:47:48|E|[1m[34mCMDERR_CNT          = [1m[33m[1m[31mWrite-command FIFO not empty[0m
+|02:47:48|E|[1m[31mRead-command FIFO empty[0m
+|02:47:48|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:48|I|62235        [0m
+|02:47:48|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|02:47:48|I|[1m[34mHITOR_0_CNT         = [1m[33m210        [0m
+|02:47:48|I|[1m[34mHITOR_1_CNT         = [1m[33m210        [0m
+|02:47:48|I|[1m[34mHITOR_2_CNT         = [1m[33m210        [0m
+|02:47:48|I|[1m[34mHITOR_3_CNT         = [1m[33m210        [0m
+|02:47:48|I|[1m[34mBCID_CNT            = [1m[33m44796        [0m
+|02:47:48|I|[1m[34mTRIG_CNT            = [1m[33m100        [0m
+|02:47:48|E|[1m[31mRead-command FIFO empty[0m
+|02:47:48|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|02:47:48|I|[1m[34m	--> Physics saved the configuration file for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[1m[34m][0m
+|02:47:48|I|[1m[34m	--> Physics saving histograms...[0m
+|02:47:48|I|[1m[34m	--> TEMPSENS_1: [1m[33m83.849 +/- 3.354[1m[34m C[0m
+|02:47:48|I|[1m[34m	--> TEMPSENS_4: [1m[33m85.982 +/- 3.439[1m[34m C[0m
+|02:47:48|I|[32m[Physics::Stop] Stopped[0m
+|02:47:48|I|[1m[34m	--> Total number of recorded events: [1m[33m100[0m
+|02:47:48|I|[1m[34m	--> Total number of received triggers: [1m[33m10[0m
+|02:47:48|I|[1m[34m	--> Total number of corrupted events: [1m[33m0 (0.000%)[0m
+|02:47:48|I|[32mClosing result file[0m
+|02:47:48|I|[1m[31m>>> Destroying interfaces <<<[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:48|E|[1m[31mWrite-command FIFO error[0m
+|02:47:49|E|[1m[31mWrite-command FIFO error[0m
+|02:47:49|E|[1m[31mWrite-command FIFO error[0m
+|02:47:49|E|[1m[31mWrite-command FIFO error[0m
+|02:47:49|E|[1m[31mWrite-command FIFO error[0m
+|02:47:49|E|[1m[31mWrite-command FIFO error[0m
+|02:47:49|E|[1m[31mError in the write-command FIFO, reached maximum number of attempts ([1m[33m40[1m[31m)[0m
+|02:47:49|I|[1m[31m	--> Destroying monitoring[0m
+|02:47:49|I|[1m[31m>>> Interfaces  destroyed <<<[0m
+|02:47:49|I|[1m[35m@@@ End of CMSIT miniDAQ @@@[0m

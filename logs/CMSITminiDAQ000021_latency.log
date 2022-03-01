@@ -1,0 +1,1311 @@
+|04:42:41|I|[1m[35m@@@ Initializing the Hardware @@@[0m
+|04:42:41|I|[1m[33mParseHW [FileParser] 0x2767100	cmsinnertracker.crate0.slot0[0m
+|04:42:41|I|[1m[33mTrying to connect to the Power Supply Server...[0m
+|04:42:41|I|[1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+|04:42:41|I|[1m[35m@@@ Configuring HW parsed from xml file @@@[0m
+|04:42:41|I|[1m[34m	--> Found an Inner Tracker Readout-board[0m
+|04:42:41|I|[32mConfiguring Board: [1m[33m0[0m
+|04:42:41|I|[1m[34m	--> FW version : [1m[33m4.2[1m[34m -- Date (yy/mm/dd) : [1m[33m21/8/28[1m[34m -- Time (hour:minute:sec) : [1m[33m2:35:40[0m
+|04:42:41|I|[1m[34m	--> Link type : [1m[33melectrical[1m[34m -- Optical speed : [1m[33m10 Gbit/s[1m[34m -- Frontend type : [1m[33mRD53A[0m
+|04:42:41|I|[1m[34m	--> L12 FMC type : [1m[33m1[1m[34m -- L08 FMC type : [1m[33m1[1m[34m (1=KSU, 2=CERN, 3=DIO5, 4=OPTO, 5=FERMI, 7=NONE, 0=Unspecified)[0m
+|04:42:41|I|[32mInitializing DIO5:[0m
+|04:42:41|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.HitOr_enable_l12: 0x[1m[33m0 (0)[0m
+|04:42:41|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.trigger_source: 0x[1m[33m2 (2)[0m
+|04:42:41|I|[1m[34m	--> user.ctrl_regs.reset_reg.ext_clk_en: 0x[1m[33m0 (0)[0m
+|04:42:41|I|[1m[34m	--> Done[0m
+|04:42:41|I|[32mReading clock generator (CDCE62005) configuration[0m
+|04:42:41|I|[1m[34m	--> SPI register content: 0x[1m[33mEB020320[0m
+|04:42:41|I|[1m[34m	--> SPI register content: 0x[1m[33mEB020321[0m
+|04:42:41|I|[1m[34m	--> SPI register content: 0x[1m[33mEB840302[0m
+|04:42:41|I|[1m[34m	--> SPI register content: 0x[1m[33mEB840303[0m
+|04:42:41|I|[1m[34m	--> SPI register content: 0x[1m[33mEB140334[0m
+|04:42:41|I|[1m[34m	--> SPI register content: 0x[1m[33m10000E75[0m
+|04:42:41|I|[1m[34m	--> SPI register content: 0x[1m[33m030E02E6[0m
+|04:42:41|I|[1m[34m	--> SPI register content: 0x[1m[33mBD800DF7[0m
+|04:42:41|I|[1m[34m	--> SPI register content: 0x[1m[33m20009D58[0m
+|04:42:41|W|[32mOptical link tx slow control status: [1m[31mnot ready[0m
+|04:42:41|W|[32mOptical link rx slow control status: [1m[31mnot ready[0m
+|04:42:41|I|[32mInput clock frequency (could be either internal or external, should be ~40 MHz): [1m[33m40.079 MHz[0m
+|04:42:41|I|[32mGTX receiver clock frequency (~160 MHz (~320 MHz) for electrical (optical) readout): [1m[33m160.315 MHz[0m
+|04:42:41|I|[32mExternal CMD clock frequency: [1m[33m0.000 MHz[0m
+|04:42:41|I|[32mExternal Serializer clock frequency: [1m[33m0.000 MHz[0m
+|04:42:41|I|[36m=== Configuring FSM fast command block ===[0m
+|04:42:41|I|[32mInternal trigger frequency (if enabled): [1m[33m30372 Hz[0m
+|04:42:41|I|[32mChecking firmware status:[0m
+|04:42:41|I|[1m[34m	--> Clock generator is [1m[33mlocked[0m
+|04:42:41|I|[1m[34m	--> I2C [1m[33minitialized[0m
+|04:42:41|I|[32mFast command block trigger source: [1m[33m2[0m[32m (1=IPBus, 2=Test-FSM, 3=TTC, 4=TLU, 5=External, 6=Hit-Or, 7=User-defined frequency)[0m
+|04:42:41|I|[32mFast command block trigger state: [1m[33m0[0m[32m (0=Idle, 2=Running)[0m
+|04:42:41|I|[32mFast command block check if configuraiton registers have been set: [1m[33mconfigured[0m
+|04:42:41|I|[32mFast command block error code (0=No error): [1m[33m0[0m
+|04:42:41|I|[32mTrigger counter: [1m[33m0[0m
+|04:42:41|I|[32mHybrid type: [1m[33m1[0m[32m (1=Single chip, 2=Double chip, 4=Quad chip)[0m
+|04:42:41|I|[32mNumber of hybrids which can be potentially readout: [1m[33m8[0m
+|04:42:41|I|[36m================== Done ==================[0m
+|04:42:41|I|[32mInitializing board's registers:[0m
+|04:42:41|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg1.dio5_ch1_thr: 0x[1m[33m80 (128)[0m
+|04:42:41|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg1.dio5_ch2_thr: 0x[1m[33m28 (40)[0m
+|04:42:41|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch3_thr: 0x[1m[33m80 (128)[0m
+|04:42:41|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch4_thr: 0x[1m[33m80 (128)[0m
+|04:42:41|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.dio5_ch5_thr: 0x[1m[33m80 (128)[0m
+|04:42:41|I|[1m[34m	--> user.ctrl_regs.ext_tlu_reg2.tlu_delay: 0x[1m[33m0 (0)[0m
+|04:42:41|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_2.HitOr_enable_l12: 0x[1m[33m0 (0)[0m
+|04:42:41|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_3.triggers_to_accept: 0x[1m[33mA (10)[0m
+|04:42:41|I|[1m[34m	--> user.ctrl_regs.fast_cmd_reg_7.autozero_freq: 0x[1m[33m3E8 (1000)[0m
+|04:42:41|I|[1m[34m	--> Done[0m
+|04:42:41|I|[32mChecking status of the optical links:[0m
+|04:42:41|I|[1m[34m	--> Optical link n. active LpGBT chip tx:  [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|04:42:41|I|[1m[34m	--> Optical link n. active LpGBT chip rx:  [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|04:42:41|I|[1m[34m	--> Optical link n. active LpGBT chip mgt: [1m[33m0[1m[34m i.e.: [1m[33m00000000000000000000[0m
+|04:42:41|I|[36m=== Configuring frontend chip communication ===[0m
+|04:42:41|I|[32mDown-link phase initialization...[0m
+|04:42:42|I|[1m[34m	--> Done[0m
+|04:42:42|I|[32mInitializing chip communication of hybrid: [0m[1m[33m0[0m
+|04:42:42|I|[32mInitializing communicationng to/from RD53: [0m[1m[33m0[0m
+|04:42:42|I|[32mConfiguring up-link lanes and monitoring...[0m
+|04:42:42|I|[1m[34m	--> Done[0m
+|04:42:42|I|[32mUp-link speed: [1m[33m1.28 Gbit/s[0m
+|04:42:42|I|[36m==================== Done =====================[0m
+|04:42:42|I|[32mChecking status communication RD53 --> FW[0m
+|04:42:42|I|[1m[34m	--> Aurora speed: [1m[33m1.28 Gbit/s[0m
+|04:42:42|I|[1m[34m	--> Total number of required data lanes: [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|04:42:42|I|[1m[34m	--> Total number of active data lanes:   [1m[33m1[1m[34m i.e. [1m[33m00000000000000000001[0m
+|04:42:42|I|[1m[34m	--> All enabled data lanes are active[0m
+|04:42:42|I|[36m===== Configuring frontend chip registers =====[0m
+|04:42:42|I|[32mConfiguring chip of hybrid: [0m[1m[33m0[0m
+|04:42:42|I|[32mConfiguring RD53: [0m[1m[33m0[0m
+|04:42:42|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mHITOR_3_CNT[0m
+|04:42:42|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mHITOR_2_CNT[0m
+|04:42:42|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mCMDERR_CNT[0m
+|04:42:43|I|[32mNumber of masked pixels: [0m[1m[33m2537[0m
+|04:42:43|I|[36m==================== Done =====================[0m
+|04:42:43|I|[32mLVDS frequency: [1m[33m9.520 MHz[0m
+|04:42:43|I|[32mUsing [1m[33m2[0m[32m threads for data decoding during running time[0m
+|04:42:43|I|[32mStarting monitoring thread[0m
+|04:42:43|I|[1m[35m@@@ Hardware initialization done @@@[0m
+|04:42:43|I|[1m[35m@@@ Performing Latency scan @@@[0m
+|04:42:43|I|[32m[Latency::localConfigure] Starting run: [1m[33m21[0m
+|04:42:43|I|[1m[33mSystemController::setChannelGroupHandler for a queryFunction1 ROCs.[0m
+|04:42:43|I|[1m[33mCreating channel group handler for Chip#0[0m
+|04:42:43|I|[32mPixelAlive attempting to create directory: [1m[33mResults[0m
+|04:42:43|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m0[1m[35m <<<[0m
+|04:42:43|I|[36m---------------------------[0m
+|04:42:43|I|[32m****** Reading  data ******[0m
+|04:42:43|I|[32mn. 32 bit words :      8000[0m
+|04:42:43|I|[1m[35m>>>> Progress :   1.9% <<<<[0m
+|04:42:43|I|[36m---------------------------[0m
+|04:42:43|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:43|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:43|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:43|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:43|I|[1m[34mCMDERR_CNT          = [1m[33m42954        [0m
+|04:42:43|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:43|I|[1m[34mHITOR_0_CNT         = [1m[33m40744        [0m
+|04:42:43|I|[1m[34mHITOR_1_CNT         = [1m[33m40744        [0m
+|04:42:43|I|[1m[34mHITOR_2_CNT         = [1m[33m40883        [0m
+|04:42:43|I|[1m[34mHITOR_3_CNT         = [1m[33m41472        [0m
+|04:42:43|I|[1m[34mBCID_CNT            = [1m[33m12224        [0m
+|04:42:43|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:43|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:43|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:43|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:43|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m10[1m[35m <<<[0m
+|04:42:43|I|[36m---------------------------[0m
+|04:42:43|I|[32m****** Reading  data ******[0m
+|04:42:43|I|[32mn. 32 bit words :      8000[0m
+|04:42:43|I|[1m[35m>>>> Progress :   3.8% <<<<[0m
+|04:42:43|I|[36m---------------------------[0m
+|04:42:43|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:43|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:43|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:43|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:43|I|[1m[34mCMDERR_CNT          = [1m[33m40534        [0m
+|04:42:43|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:43|I|[1m[34mHITOR_0_CNT         = [1m[33m46060        [0m
+|04:42:43|I|[1m[34mHITOR_1_CNT         = [1m[33m46241        [0m
+|04:42:43|I|[1m[34mHITOR_2_CNT         = [1m[33m46643        [0m
+|04:42:43|I|[1m[34mHITOR_3_CNT         = [1m[33m47139        [0m
+|04:42:43|I|[1m[34mBCID_CNT            = [1m[33m10560        [0m
+|04:42:43|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:43|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:43|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:43|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:43|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m20[1m[35m <<<[0m
+|04:42:43|I|[36m---------------------------[0m
+|04:42:43|I|[32m****** Reading  data ******[0m
+|04:42:43|I|[32mn. 32 bit words :      8000[0m
+|04:42:43|I|[1m[35m>>>> Progress :   5.8% <<<<[0m
+|04:42:43|I|[36m---------------------------[0m
+|04:42:43|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:43|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:43|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:43|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:43|I|[1m[34mCMDERR_CNT          = [1m[33m42028        [0m
+|04:42:43|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:43|I|[1m[34mHITOR_0_CNT         = [1m[33m50830        [0m
+|04:42:43|I|[1m[34mHITOR_1_CNT         = [1m[33m51322        [0m
+|04:42:43|I|[1m[34mHITOR_2_CNT         = [1m[33m51945        [0m
+|04:42:43|I|[1m[34mHITOR_3_CNT         = [1m[33m52395        [0m
+|04:42:43|I|[1m[34mBCID_CNT            = [1m[33m12884        [0m
+|04:42:43|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:43|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:43|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:43|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:43|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m30[1m[35m <<<[0m
+|04:42:43|I|[36m---------------------------[0m
+|04:42:43|I|[32m****** Reading  data ******[0m
+|04:42:43|I|[32mn. 32 bit words :      8000[0m
+|04:42:43|I|[1m[35m>>>> Progress :   7.7% <<<<[0m
+|04:42:43|I|[36m---------------------------[0m
+|04:42:43|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:43|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:43|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:43|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:43|I|[1m[34mCMDERR_CNT          = [1m[33m525        [0m
+|04:42:43|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:43|I|[1m[34mHITOR_0_CNT         = [1m[33m56395        [0m
+|04:42:43|I|[1m[34mHITOR_1_CNT         = [1m[33m56947        [0m
+|04:42:43|I|[1m[34mHITOR_2_CNT         = [1m[33m57466        [0m
+|04:42:43|I|[1m[34mHITOR_3_CNT         = [1m[33m57668        [0m
+|04:42:43|I|[1m[34mBCID_CNT            = [1m[33m16648        [0m
+|04:42:43|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:43|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:43|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:43|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:43|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m40[1m[35m <<<[0m
+|04:42:43|I|[36m---------------------------[0m
+|04:42:43|I|[32m****** Reading  data ******[0m
+|04:42:43|I|[32mn. 32 bit words :      8000[0m
+|04:42:43|I|[1m[35m>>>> Progress :   9.6% <<<<[0m
+|04:42:43|I|[36m---------------------------[0m
+|04:42:43|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:43|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:43|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:43|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:43|I|[1m[34mCMDERR_CNT          = [1m[33m6402        [0m
+|04:42:43|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:43|I|[1m[34mHITOR_0_CNT         = [1m[33m62429        [0m
+|04:42:43|I|[1m[34mHITOR_1_CNT         = [1m[33m62429        [0m
+|04:42:43|I|[1m[34mHITOR_2_CNT         = [1m[33m62429        [0m
+|04:42:43|I|[1m[34mHITOR_3_CNT         = [1m[33m62429        [0m
+|04:42:43|I|[1m[34mBCID_CNT            = [1m[33m3772        [0m
+|04:42:43|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:43|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:43|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:43|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:43|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m50[1m[35m <<<[0m
+|04:42:43|I|[36m---------------------------[0m
+|04:42:43|I|[32m****** Reading  data ******[0m
+|04:42:43|I|[32mn. 32 bit words :      8000[0m
+|04:42:43|I|[1m[35m>>>> Progress :  11.5% <<<<[0m
+|04:42:43|I|[36m---------------------------[0m
+|04:42:43|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:43|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:43|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:43|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:43|I|[1m[34mCMDERR_CNT          = [1m[33m44376        [0m
+|04:42:43|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:43|I|[1m[34mHITOR_0_CNT         = [1m[33m2274        [0m
+|04:42:43|I|[1m[34mHITOR_1_CNT         = [1m[33m2274        [0m
+|04:42:43|I|[1m[34mHITOR_2_CNT         = [1m[33m2302        [0m
+|04:42:43|I|[1m[34mHITOR_3_CNT         = [1m[33m2689        [0m
+|04:42:43|I|[1m[34mBCID_CNT            = [1m[33m48388        [0m
+|04:42:43|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:43|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:43|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:43|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:43|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m60[1m[35m <<<[0m
+|04:42:43|I|[36m---------------------------[0m
+|04:42:43|I|[32m****** Reading  data ******[0m
+|04:42:43|I|[32mn. 32 bit words :      8000[0m
+|04:42:43|I|[1m[35m>>>> Progress :  13.5% <<<<[0m
+|04:42:43|I|[36m---------------------------[0m
+|04:42:43|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:43|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:43|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:43|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:43|I|[1m[34mCMDERR_CNT          = [1m[33m4437        [0m
+|04:42:43|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:43|I|[1m[34mHITOR_0_CNT         = [1m[33m6276        [0m
+|04:42:43|I|[1m[34mHITOR_1_CNT         = [1m[33m6392        [0m
+|04:42:43|I|[1m[34mHITOR_2_CNT         = [1m[33m6956        [0m
+|04:42:43|I|[1m[34mHITOR_3_CNT         = [1m[33m7591        [0m
+|04:42:43|I|[1m[34mBCID_CNT            = [1m[33m57064        [0m
+|04:42:43|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:43|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:43|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:43|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:43|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m70[1m[35m <<<[0m
+|04:42:43|I|[36m---------------------------[0m
+|04:42:43|I|[32m****** Reading  data ******[0m
+|04:42:43|I|[32mn. 32 bit words :      8000[0m
+|04:42:43|I|[1m[35m>>>> Progress :  15.4% <<<<[0m
+|04:42:43|I|[36m---------------------------[0m
+|04:42:43|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:43|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:43|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:43|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:43|I|[1m[34mCMDERR_CNT          = [1m[33m7584        [0m
+|04:42:43|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:43|I|[1m[34mHITOR_0_CNT         = [1m[33m11610        [0m
+|04:42:43|I|[1m[34mHITOR_1_CNT         = [1m[33m11941        [0m
+|04:42:43|I|[1m[34mHITOR_2_CNT         = [1m[33m12375        [0m
+|04:42:43|I|[1m[34mHITOR_3_CNT         = [1m[33m12731        [0m
+|04:42:43|I|[1m[34mBCID_CNT            = [1m[33m62808        [0m
+|04:42:43|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:43|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:43|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:43|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:43|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m80[1m[35m <<<[0m
+|04:42:43|I|[36m---------------------------[0m
+|04:42:43|I|[32m****** Reading  data ******[0m
+|04:42:43|I|[32mn. 32 bit words :      8000[0m
+|04:42:43|I|[1m[35m>>>> Progress :  17.3% <<<<[0m
+|04:42:43|I|[36m---------------------------[0m
+|04:42:43|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:43|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:43|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:43|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:43|I|[1m[34mCMDERR_CNT          = [1m[33m19920        [0m
+|04:42:43|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:43|I|[1m[34mHITOR_0_CNT         = [1m[33m16397        [0m
+|04:42:43|I|[1m[34mHITOR_1_CNT         = [1m[33m16789        [0m
+|04:42:43|I|[1m[34mHITOR_2_CNT         = [1m[33m17095        [0m
+|04:42:43|I|[1m[34mHITOR_3_CNT         = [1m[33m17102        [0m
+|04:42:43|I|[1m[34mBCID_CNT            = [1m[33m31292        [0m
+|04:42:43|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:43|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:43|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:43|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:43|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m90[1m[35m <<<[0m
+|04:42:43|I|[32mMonitor data for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:43|I|[36m---------------------------[0m
+|04:42:43|I|[32m****** Reading  data ******[0m
+|04:42:43|I|[32mn. 32 bit words :      8000[0m
+|04:42:43|I|[1m[35m>>>> Progress :  19.2% <<<<[0m
+|04:42:43|I|[36m---------------------------[0m
+|04:42:43|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:43|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:43|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:43|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:43|I|[1m[34mCMDERR_CNT          = [1m[33m8792        [0m
+|04:42:43|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:43|I|[1m[34mHITOR_0_CNT         = [1m[33m22247        [0m
+|04:42:43|I|[1m[34mHITOR_1_CNT         = [1m[33m22878        [0m
+|04:42:43|I|[1m[34mHITOR_2_CNT         = [1m[33m23548        [0m
+|04:42:43|I|[1m[34mHITOR_3_CNT         = [1m[33m24074        [0m
+|04:42:43|I|[1m[34mBCID_CNT            = [1m[33m33312        [0m
+|04:42:43|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:43|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:43|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:43|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:43|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m100[1m[35m <<<[0m
+|04:42:44|W|[1m[31m		--> Very low voltage: either floating VDD sense-line or FMC not powered (voltage = [1m[33m0.000[1m[31m)[0m
+|04:42:44|I|[1m[34m	--> Hybrid voltage: [1m[33m0.000[1m[34m V (corresponds to half VOUT_dig_ShuLDO of the chip)[0m
+|04:42:44|I|[1m[34m	--> Hybrid temperature: [1m[33m-273.150[1m[34m C[0m
+|04:42:44|I|[1m[34m	--> VOUT_ana_ShuLDO: [1m[33m0.600 +/- 0.024[1m[34m V[0m
+|04:42:44|I|[1m[34m	--> VOUT_dig_ShuLDO: [1m[33m0.652 +/- 0.026[1m[34m V[0m
+|04:42:44|I|[1m[34m	--> ADCbandgap: [1m[33m0.451 +/- 0.018[1m[34m V[0m
+|04:42:44|W|[1m[31m		--> ADC measurement in saturation (ADC = [1m[33m4095[1m[31m): likely the IMUX resistor, that converts the current into a voltage, is not connected[0m
+|04:42:44|I|[1m[34m	--> Iref: [1m[33m83.880 +/- 3.355[1m[34m uA[0m
+|04:42:44|I|[1m[34m	--> TEMPSENS_1: [1m[33m109.450 +/- 4.378[1m[34m C[0m
+|04:42:44|I|[1m[34m	--> TEMPSENS_4: [1m[33m113.717 +/- 4.549[1m[34m C[0m
+|04:42:44|I|[1m[34m	--> Done[0m
+|04:42:44|I|[36m---------------------------[0m
+|04:42:44|I|[32m****** Reading  data ******[0m
+|04:42:44|I|[32mn. 32 bit words :      8000[0m
+|04:42:44|I|[1m[35m>>>> Progress :  21.2% <<<<[0m
+|04:42:44|I|[36m---------------------------[0m
+|04:42:44|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:44|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:44|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:44|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:44|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:44|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:44|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:44|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:44|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:44|I|[1m[34m	--> VOUT_ana_ShuLDO: [1m[33m0.600 +/- 0.024[1m[34m V[0m
+|04:42:44|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:44|I|[1m[34mLOCKLOSS_CNT        = [1m[33m3169        [0m
+|04:42:44|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:44|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:44|I|[1m[34mCMDERR_CNT          = [1m[33m25084        [0m
+|04:42:44|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:44|I|[1m[34mHITOR_0_CNT         = [1m[33m30155        [0m
+|04:42:44|I|[1m[34mHITOR_1_CNT         = [1m[33m30273        [0m
+|04:42:44|I|[1m[34mHITOR_2_CNT         = [1m[33m30273        [0m
+|04:42:44|I|[1m[34mHITOR_3_CNT         = [1m[33m31623        [0m
+|04:42:44|I|[1m[34mBCID_CNT            = [1m[33m15000        [0m
+|04:42:44|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:44|E|[1m[31mRead-command FIFO empty[0m
+|04:42:44|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|04:42:44|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:44|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:44|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:44|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m110[1m[35m <<<[0m
+|04:42:44|I|[1m[34m	--> VOUT_dig_ShuLDO: [1m[33m0.651 +/- 0.026[1m[34m V[0m
+|04:42:44|I|[36m---------------------------[0m
+|04:42:44|I|[32m****** Reading  data ******[0m
+|04:42:44|I|[32mn. 32 bit words :      8000[0m
+|04:42:44|I|[1m[35m>>>> Progress :  23.1% <<<<[0m
+|04:42:44|I|[36m---------------------------[0m
+|04:42:44|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:44|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:44|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:44|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:44|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m2195        [0m
+|04:42:44|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:44|I|[1m[34mCMDERR_CNT          = [1m[33m54135        [0m
+|04:42:44|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:44|I|[1m[34mHITOR_0_CNT         = [1m[33m34705        [0m
+|04:42:44|I|[1m[34mHITOR_1_CNT         = [1m[33m34705        [0m
+|04:42:44|I|[1m[34mHITOR_2_CNT         = [1m[33m34850        [0m
+|04:42:44|I|[1m[34mHITOR_3_CNT         = [1m[33m35062        [0m
+|04:42:44|I|[1m[34mBCID_CNT            = [1m[33m21152        [0m
+|04:42:44|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:44|E|[1m[31mRead-command FIFO empty[0m
+|04:42:44|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|04:42:44|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:44|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:44|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:44|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m120[1m[35m <<<[0m
+|04:42:44|I|[1m[34m	--> ADCbandgap: [1m[33m0.453 +/- 0.018[1m[34m V[0m
+|04:42:44|I|[36m---------------------------[0m
+|04:42:44|I|[32m****** Reading  data ******[0m
+|04:42:44|I|[32mn. 32 bit words :      8000[0m
+|04:42:44|I|[1m[35m>>>> Progress :  25.0% <<<<[0m
+|04:42:44|I|[36m---------------------------[0m
+|04:42:44|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:44|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:44|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:44|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:44|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:44|I|[1m[34mCMDERR_CNT          = [1m[33m22957        [0m
+|04:42:44|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:44|I|[1m[34mHITOR_0_CNT         = [1m[33m40341        [0m
+|04:42:44|I|[1m[34mHITOR_1_CNT         = [1m[33m40341        [0m
+|04:42:44|I|[1m[34mHITOR_2_CNT         = [1m[33m40341        [0m
+|04:42:44|I|[1m[34mHITOR_3_CNT         = [1m[33m40341        [0m
+|04:42:44|I|[1m[34mBCID_CNT            = [1m[33m27448        [0m
+|04:42:44|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:44|W|[1m[31m		--> ADC measurement in saturation (ADC = [1m[33m4094[1m[31m): likely the IMUX resistor, that converts the current into a voltage, is not connected[0m
+|04:42:44|I|[1m[34m	--> Iref: [1m[33m83.859 +/- 3.354[1m[34m uA[0m
+|04:42:44|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:44|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:44|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:44|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m130[1m[35m <<<[0m
+|04:42:44|I|[1m[34m	--> TEMPSENS_1: [1m[33m109.450 +/- 4.378[1m[34m C[0m
+|04:42:44|I|[36m---------------------------[0m
+|04:42:44|I|[32m****** Reading  data ******[0m
+|04:42:44|I|[32mn. 32 bit words :      8000[0m
+|04:42:44|I|[1m[35m>>>> Progress :  26.9% <<<<[0m
+|04:42:44|I|[36m---------------------------[0m
+|04:42:44|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:44|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:44|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:44|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:44|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:44|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:44|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:44|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:44|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:44|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:44|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mCMDERR_CNT          = [1m[33m29754        [0m
+|04:42:45|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:45|I|[1m[34mHITOR_0_CNT         = [1m[33m46587        [0m
+|04:42:45|I|[1m[34mHITOR_1_CNT         = [1m[33m47234        [0m
+|04:42:45|I|[1m[34mHITOR_2_CNT         = [1m[33m48248        [0m
+|04:42:45|I|[1m[34mHITOR_3_CNT         = [1m[33m48248        [0m
+|04:42:45|I|[1m[34mBCID_CNT            = [1m[33m47096        [0m
+|04:42:45|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:45|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:45|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:45|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:45|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:45|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m140[1m[35m <<<[0m
+|04:42:45|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:45|I|[1m[34m	--> TEMPSENS_4: [1m[33m113.717 +/- 4.549[1m[34m C[0m
+|04:42:45|E|[1m[31mL1A counter mismatch [1m[33m--> retry        [0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32m****** Reading  data ******[0m
+|04:42:45|I|[32mn. 32 bit words :     20152[0m
+|04:42:45|I|[1m[35m>>>> Progress :  28.8% <<<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:45|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mCMDERR_CNT          = [1m[33m27546        [0m
+|04:42:45|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:45|I|[1m[34mHITOR_0_CNT         = [1m[33m52629        [0m
+|04:42:45|I|[1m[34mHITOR_1_CNT         = [1m[33m53055        [0m
+|04:42:45|I|[1m[34mHITOR_2_CNT         = [1m[33m53465        [0m
+|04:42:45|I|[1m[34mHITOR_3_CNT         = [1m[33m53509        [0m
+|04:42:45|I|[1m[34mBCID_CNT            = [1m[33m23872        [0m
+|04:42:45|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:45|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.974754[0m
+|04:42:45|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m0[0m
+|04:42:45|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2537[0m
+|04:42:45|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m150[1m[35m <<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32m****** Reading  data ******[0m
+|04:42:45|I|[32mn. 32 bit words :      8000[0m
+|04:42:45|I|[1m[35m>>>> Progress :  30.8% <<<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:45|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mCMDERR_CNT          = [1m[33m45320        [0m
+|04:42:45|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:45|I|[1m[34mHITOR_0_CNT         = [1m[33m57697        [0m
+|04:42:45|I|[1m[34mHITOR_1_CNT         = [1m[33m58123        [0m
+|04:42:45|I|[1m[34mHITOR_2_CNT         = [1m[33m58124        [0m
+|04:42:45|I|[1m[34mHITOR_3_CNT         = [1m[33m58124        [0m
+|04:42:45|I|[1m[34mBCID_CNT            = [1m[33m45516        [0m
+|04:42:45|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:45|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:45|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:45|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:45|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m160[1m[35m <<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32m****** Reading  data ******[0m
+|04:42:45|I|[32mn. 32 bit words :      8000[0m
+|04:42:45|I|[1m[35m>>>> Progress :  32.7% <<<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:45|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mCMDERR_CNT          = [1m[33m5371        [0m
+|04:42:45|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:45|I|[1m[34mHITOR_0_CNT         = [1m[33m62225        [0m
+|04:42:45|I|[1m[34mHITOR_1_CNT         = [1m[33m63611        [0m
+|04:42:45|I|[1m[34mHITOR_2_CNT         = [1m[33m64344        [0m
+|04:42:45|I|[1m[34mHITOR_3_CNT         = [1m[33m64470        [0m
+|04:42:45|I|[1m[34mBCID_CNT            = [1m[33m49536        [0m
+|04:42:45|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:45|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:45|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:45|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:45|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m170[1m[35m <<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32m****** Reading  data ******[0m
+|04:42:45|I|[32mn. 32 bit words :      8000[0m
+|04:42:45|I|[1m[35m>>>> Progress :  34.6% <<<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:45|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mCMDERR_CNT          = [1m[33m13746        [0m
+|04:42:45|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:45|I|[1m[34mHITOR_0_CNT         = [1m[33m2700        [0m
+|04:42:45|I|[1m[34mHITOR_1_CNT         = [1m[33m2700        [0m
+|04:42:45|I|[1m[34mHITOR_2_CNT         = [1m[33m2700        [0m
+|04:42:45|I|[1m[34mHITOR_3_CNT         = [1m[33m2700        [0m
+|04:42:45|I|[1m[34mBCID_CNT            = [1m[33m2368        [0m
+|04:42:45|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:45|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:45|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:45|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:45|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m180[1m[35m <<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32m****** Reading  data ******[0m
+|04:42:45|I|[32mn. 32 bit words :      8000[0m
+|04:42:45|I|[1m[35m>>>> Progress :  36.5% <<<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:45|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mCMDERR_CNT          = [1m[33m48276        [0m
+|04:42:45|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:45|I|[1m[34mHITOR_0_CNT         = [1m[33m8452        [0m
+|04:42:45|I|[1m[34mHITOR_1_CNT         = [1m[33m9141        [0m
+|04:42:45|I|[1m[34mHITOR_2_CNT         = [1m[33m9716        [0m
+|04:42:45|I|[1m[34mHITOR_3_CNT         = [1m[33m10200        [0m
+|04:42:45|I|[1m[34mBCID_CNT            = [1m[33m42552        [0m
+|04:42:45|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:45|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000820[0m
+|04:42:45|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m116[0m
+|04:42:45|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2653[0m
+|04:42:45|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m190[1m[35m <<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32m****** Reading  data ******[0m
+|04:42:45|I|[32mn. 32 bit words :      8000[0m
+|04:42:45|I|[1m[35m>>>> Progress :  38.5% <<<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:45|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mCMDERR_CNT          = [1m[33m1286        [0m
+|04:42:45|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:45|I|[1m[34mHITOR_0_CNT         = [1m[33m13664        [0m
+|04:42:45|I|[1m[34mHITOR_1_CNT         = [1m[33m14295        [0m
+|04:42:45|I|[1m[34mHITOR_2_CNT         = [1m[33m14751        [0m
+|04:42:45|I|[1m[34mHITOR_3_CNT         = [1m[33m15070        [0m
+|04:42:45|I|[1m[34mBCID_CNT            = [1m[33m58748        [0m
+|04:42:45|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:45|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:45|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:45|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:45|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m200[1m[35m <<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32m****** Reading  data ******[0m
+|04:42:45|I|[32mn. 32 bit words :      8000[0m
+|04:42:45|I|[1m[35m>>>> Progress :  40.4% <<<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:45|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mCMDERR_CNT          = [1m[33m15964        [0m
+|04:42:45|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:45|I|[1m[34mHITOR_0_CNT         = [1m[33m18766        [0m
+|04:42:45|I|[1m[34mHITOR_1_CNT         = [1m[33m19278        [0m
+|04:42:45|I|[1m[34mHITOR_2_CNT         = [1m[33m19618        [0m
+|04:42:45|I|[1m[34mHITOR_3_CNT         = [1m[33m19618        [0m
+|04:42:45|I|[1m[34mBCID_CNT            = [1m[33m8640        [0m
+|04:42:45|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:45|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:45|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:45|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:45|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m210[1m[35m <<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32m****** Reading  data ******[0m
+|04:42:45|I|[32mn. 32 bit words :      8000[0m
+|04:42:45|I|[1m[35m>>>> Progress :  42.3% <<<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:45|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mCMDERR_CNT          = [1m[33m28249        [0m
+|04:42:45|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:45|I|[1m[34mHITOR_0_CNT         = [1m[33m23863        [0m
+|04:42:45|I|[1m[34mHITOR_1_CNT         = [1m[33m24191        [0m
+|04:42:45|I|[1m[34mHITOR_2_CNT         = [1m[33m24243        [0m
+|04:42:45|I|[1m[34mHITOR_3_CNT         = [1m[33m24243        [0m
+|04:42:45|I|[1m[34mBCID_CNT            = [1m[33m37988        [0m
+|04:42:45|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:45|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:45|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:45|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:45|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m220[1m[35m <<<[0m
+|04:42:45|E|[1m[31mL1A counter mismatch [1m[33m--> retry        [0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32m****** Reading  data ******[0m
+|04:42:45|I|[32mn. 32 bit words :      8000[0m
+|04:42:45|I|[1m[35m>>>> Progress :  44.2% <<<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:45|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mCMDERR_CNT          = [1m[33m62254        [0m
+|04:42:45|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:45|I|[1m[34mHITOR_0_CNT         = [1m[33m28822        [0m
+|04:42:45|I|[1m[34mHITOR_1_CNT         = [1m[33m28822        [0m
+|04:42:45|I|[1m[34mHITOR_2_CNT         = [1m[33m28822        [0m
+|04:42:45|I|[1m[34mHITOR_3_CNT         = [1m[33m28822        [0m
+|04:42:45|I|[1m[34mBCID_CNT            = [1m[33m32680        [0m
+|04:42:45|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:45|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:45|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:45|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:45|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m230[1m[35m <<<[0m
+|04:42:45|E|[1m[31mL1A counter mismatch [1m[33m--> retry        [0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32m****** Reading  data ******[0m
+|04:42:45|I|[32mn. 32 bit words :      8000[0m
+|04:42:45|I|[1m[35m>>>> Progress :  46.2% <<<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:45|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mCMDERR_CNT          = [1m[33m18770        [0m
+|04:42:45|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:45|I|[1m[34mHITOR_0_CNT         = [1m[33m33491        [0m
+|04:42:45|I|[1m[34mHITOR_1_CNT         = [1m[33m33491        [0m
+|04:42:45|I|[1m[34mHITOR_2_CNT         = [1m[33m33491        [0m
+|04:42:45|I|[1m[34mHITOR_3_CNT         = [1m[33m33605        [0m
+|04:42:45|I|[1m[34mBCID_CNT            = [1m[33m63612        [0m
+|04:42:45|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:45|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:45|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:45|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:45|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m240[1m[35m <<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32m****** Reading  data ******[0m
+|04:42:45|I|[32mn. 32 bit words :      8000[0m
+|04:42:45|I|[1m[35m>>>> Progress :  48.1% <<<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:45|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mCMDERR_CNT          = [1m[33m35297        [0m
+|04:42:45|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:45|I|[1m[34mHITOR_0_CNT         = [1m[33m39608        [0m
+|04:42:45|I|[1m[34mHITOR_1_CNT         = [1m[33m40202        [0m
+|04:42:45|I|[1m[34mHITOR_2_CNT         = [1m[33m40786        [0m
+|04:42:45|I|[1m[34mHITOR_3_CNT         = [1m[33m41228        [0m
+|04:42:45|I|[1m[34mBCID_CNT            = [1m[33m48468        [0m
+|04:42:45|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:45|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.002705[0m
+|04:42:45|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m109[0m
+|04:42:45|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2646[0m
+|04:42:45|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m250[1m[35m <<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32m****** Reading  data ******[0m
+|04:42:45|I|[32mn. 32 bit words :      8000[0m
+|04:42:45|I|[1m[35m>>>> Progress :  50.0% <<<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:45|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mCMDERR_CNT          = [1m[33m11632        [0m
+|04:42:45|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:45|I|[1m[34mHITOR_0_CNT         = [1m[33m45502        [0m
+|04:42:45|I|[1m[34mHITOR_1_CNT         = [1m[33m46003        [0m
+|04:42:45|I|[1m[34mHITOR_2_CNT         = [1m[33m46147        [0m
+|04:42:45|I|[1m[34mHITOR_3_CNT         = [1m[33m46147        [0m
+|04:42:45|I|[1m[34mBCID_CNT            = [1m[33m65376        [0m
+|04:42:45|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:45|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:45|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:45|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:45|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m260[1m[35m <<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32m****** Reading  data ******[0m
+|04:42:45|I|[32mn. 32 bit words :      8000[0m
+|04:42:45|I|[1m[35m>>>> Progress :  51.9% <<<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:45|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mCMDERR_CNT          = [1m[33m36817        [0m
+|04:42:45|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:45|I|[1m[34mHITOR_0_CNT         = [1m[33m50556        [0m
+|04:42:45|I|[1m[34mHITOR_1_CNT         = [1m[33m50615        [0m
+|04:42:45|I|[1m[34mHITOR_2_CNT         = [1m[33m50615        [0m
+|04:42:45|I|[1m[34mHITOR_3_CNT         = [1m[33m50615        [0m
+|04:42:45|I|[1m[34mBCID_CNT            = [1m[33m62264        [0m
+|04:42:45|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:45|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:45|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:45|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:45|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m270[1m[35m <<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32m****** Reading  data ******[0m
+|04:42:45|I|[32mn. 32 bit words :      8000[0m
+|04:42:45|I|[1m[35m>>>> Progress :  53.8% <<<<[0m
+|04:42:45|I|[36m---------------------------[0m
+|04:42:45|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:45|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:45|I|[1m[34mCMDERR_CNT          = [1m[33m49516        [0m
+|04:42:45|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:45|I|[1m[34mHITOR_0_CNT         = [1m[33m54653        [0m
+|04:42:45|I|[1m[34mHITOR_1_CNT         = [1m[33m55933        [0m
+|04:42:45|I|[1m[34mHITOR_2_CNT         = [1m[33m56383        [0m
+|04:42:45|I|[1m[34mHITOR_3_CNT         = [1m[33m56713        [0m
+|04:42:45|I|[1m[34mBCID_CNT            = [1m[33m56216        [0m
+|04:42:45|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:45|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:45|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:45|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:45|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m280[1m[35m <<<[0m
+|04:42:46|I|[36m---------------------------[0m
+|04:42:46|I|[32m****** Reading  data ******[0m
+|04:42:46|I|[32mn. 32 bit words :      8000[0m
+|04:42:46|I|[1m[35m>>>> Progress :  55.8% <<<<[0m
+|04:42:46|I|[36m---------------------------[0m
+|04:42:46|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:46|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:46|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:46|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:46|I|[1m[34mCMDERR_CNT          = [1m[33m5818        [0m
+|04:42:46|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:46|I|[1m[34mHITOR_0_CNT         = [1m[33m59001        [0m
+|04:42:46|I|[1m[34mHITOR_1_CNT         = [1m[33m60940        [0m
+|04:42:46|I|[1m[34mHITOR_2_CNT         = [1m[33m60940        [0m
+|04:42:46|I|[1m[34mHITOR_3_CNT         = [1m[33m60940        [0m
+|04:42:46|I|[1m[34mBCID_CNT            = [1m[33m64944        [0m
+|04:42:46|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:46|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:46|I|[32mMonitor data for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:46|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:46|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:46|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m290[1m[35m <<<[0m
+|04:42:46|W|[1m[31m		--> Very low voltage: either floating VDD sense-line or FMC not powered (voltage = [1m[33m0.000[1m[31m)[0m
+|04:42:46|I|[1m[34m	--> Hybrid voltage: [1m[33m0.000[1m[34m V (corresponds to half VOUT_dig_ShuLDO of the chip)[0m
+|04:42:46|I|[1m[34m	--> Hybrid temperature: [1m[33m-273.150[1m[34m C[0m
+|04:42:46|I|[1m[34m	--> VOUT_ana_ShuLDO: [1m[33m0.601 +/- 0.024[1m[34m V[0m
+|04:42:46|I|[1m[34m	--> VOUT_dig_ShuLDO: [1m[33m0.652 +/- 0.026[1m[34m V[0m
+|04:42:46|I|[1m[34m	--> ADCbandgap: [1m[33m0.451 +/- 0.018[1m[34m V[0m
+|04:42:46|W|[1m[31m		--> ADC measurement in saturation (ADC = [1m[33m4095[1m[31m): likely the IMUX resistor, that converts the current into a voltage, is not connected[0m
+|04:42:46|I|[1m[34m	--> Iref: [1m[33m83.880 +/- 3.355[1m[34m uA[0m
+|04:42:46|I|[1m[34m	--> TEMPSENS_1: [1m[33m108.739 +/- 4.350[1m[34m C[0m
+|04:42:46|I|[1m[34m	--> TEMPSENS_4: [1m[33m114.428 +/- 4.577[1m[34m C[0m
+|04:42:46|I|[1m[34m	--> Done[0m
+|04:42:46|I|[36m---------------------------[0m
+|04:42:46|I|[32m****** Reading  data ******[0m
+|04:42:46|I|[32mn. 32 bit words :      8000[0m
+|04:42:46|I|[1m[35m>>>> Progress :  57.7% <<<<[0m
+|04:42:46|I|[36m---------------------------[0m
+|04:42:46|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:46|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:46|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:46|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:46|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:46|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:46|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:46|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:46|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:46|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:46|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:46|I|[1m[34mCMDERR_CNT          = [1m[33m21799        [0m
+|04:42:46|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:46|I|[1m[34mHITOR_0_CNT         = [1m[33m65185        [0m
+|04:42:46|I|[1m[34mHITOR_1_CNT         = [1m[33m65185        [0m
+|04:42:46|I|[1m[34mHITOR_2_CNT         = [1m[33m65185        [0m
+|04:42:46|I|[1m[34mHITOR_3_CNT         = [1m[33m65352        [0m
+|04:42:46|I|[1m[34mBCID_CNT            = [1m[33m58804        [0m
+|04:42:46|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:46|I|[1m[34m	--> VOUT_ana_ShuLDO: [1m[33m0.600 +/- 0.024[1m[34m V[0m
+|04:42:46|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:46|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:46|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:46|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m300[1m[35m <<<[0m
+|04:42:46|I|[1m[34m	--> VOUT_dig_ShuLDO: [1m[33m0.651 +/- 0.026[1m[34m V[0m
+|04:42:46|I|[1m[34m	--> ADCbandgap: [1m[33m0.451 +/- 0.018[1m[34m V[0m
+|04:42:46|I|[36m---------------------------[0m
+|04:42:46|I|[32m****** Reading  data ******[0m
+|04:42:46|I|[32mn. 32 bit words :      8000[0m
+|04:42:46|I|[1m[35m>>>> Progress :  59.6% <<<<[0m
+|04:42:46|I|[36m---------------------------[0m
+|04:42:46|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:46|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:46|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:46|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:46|I|[1m[34mCMDERR_CNT          = [1m[33m27180        [0m
+|04:42:46|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:46|I|[1m[34mHITOR_0_CNT         = [1m[33m5297        [0m
+|04:42:46|I|[1m[34mHITOR_1_CNT         = [1m[33m5447        [0m
+|04:42:46|I|[1m[34mHITOR_2_CNT         = [1m[33m5447        [0m
+|04:42:46|I|[1m[34mHITOR_3_CNT         = [1m[33m5447        [0m
+|04:42:46|I|[1m[34mBCID_CNT            = [1m[33m38640        [0m
+|04:42:46|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:46|W|[1m[31m		--> ADC measurement in saturation (ADC = [1m[33m4094[1m[31m): likely the IMUX resistor, that converts the current into a voltage, is not connected[0m
+|04:42:46|I|[1m[34m	--> Iref: [1m[33m83.859 +/- 3.354[1m[34m uA[0m
+|04:42:46|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:46|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:46|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:46|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m310[1m[35m <<<[0m
+|04:42:46|I|[1m[34m	--> TEMPSENS_1: [1m[33m107.317 +/- 4.293[1m[34m C[0m
+|04:42:46|I|[36m---------------------------[0m
+|04:42:46|I|[32m****** Reading  data ******[0m
+|04:42:46|I|[32mn. 32 bit words :      8000[0m
+|04:42:46|I|[1m[35m>>>> Progress :  61.5% <<<<[0m
+|04:42:46|I|[36m---------------------------[0m
+|04:42:46|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:46|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:46|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:46|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:46|E|[1m[34mLOCKLOSS_CNT        = [1m[33m[1m[31mRead-command FIFO empty[0m
+|04:42:46|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|04:42:47|I|0        [0m
+|04:42:47|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mCMDERR_CNT          = [1m[33m38640        [0m
+|04:42:47|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:47|I|[1m[34mHITOR_0_CNT         = [1m[33m23117        [0m
+|04:42:47|I|[1m[34mHITOR_1_CNT         = [1m[33m23508        [0m
+|04:42:47|I|[1m[34mHITOR_2_CNT         = [1m[33m23508        [0m
+|04:42:47|I|[1m[34mHITOR_3_CNT         = [1m[33m23795        [0m
+|04:42:47|I|[1m[34mBCID_CNT            = [1m[33m47640        [0m
+|04:42:47|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:47|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:47|E|[1m[31mError when reading back what was written into RD53 reg. [1m[33mSENSOR_CONFIG_1[0m
+|04:42:47|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:47|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:47|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m320[1m[35m <<<[0m
+|04:42:47|I|[1m[34m	--> TEMPSENS_4: [1m[33m108.028 +/- 4.321[1m[34m C[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32m****** Reading  data ******[0m
+|04:42:47|I|[32mn. 32 bit words :      8000[0m
+|04:42:47|I|[1m[35m>>>> Progress :  63.5% <<<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:47|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mCMDERR_CNT          = [1m[33m7543        [0m
+|04:42:47|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:47|I|[1m[34mHITOR_0_CNT         = [1m[33m30453        [0m
+|04:42:47|I|[1m[34mHITOR_1_CNT         = [1m[33m31031        [0m
+|04:42:47|I|[1m[34mHITOR_2_CNT         = [1m[33m31455        [0m
+|04:42:47|I|[1m[34mHITOR_3_CNT         = [1m[33m31798        [0m
+|04:42:47|I|[1m[34mBCID_CNT            = [1m[33m12216        [0m
+|04:42:47|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:47|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:47|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:47|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:47|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m330[1m[35m <<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32m****** Reading  data ******[0m
+|04:42:47|I|[32mn. 32 bit words :      8000[0m
+|04:42:47|I|[1m[35m>>>> Progress :  65.4% <<<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:47|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mCMDERR_CNT          = [1m[33m974        [0m
+|04:42:47|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:47|I|[1m[34mHITOR_0_CNT         = [1m[33m35809        [0m
+|04:42:47|I|[1m[34mHITOR_1_CNT         = [1m[33m35809        [0m
+|04:42:47|I|[1m[34mHITOR_2_CNT         = [1m[33m35809        [0m
+|04:42:47|I|[1m[34mHITOR_3_CNT         = [1m[33m35809        [0m
+|04:42:47|I|[1m[34mBCID_CNT            = [1m[33m6908        [0m
+|04:42:47|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:47|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:47|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:47|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:47|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m340[1m[35m <<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32m****** Reading  data ******[0m
+|04:42:47|I|[32mn. 32 bit words :      8000[0m
+|04:42:47|I|[1m[35m>>>> Progress :  67.3% <<<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:47|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mCMDERR_CNT          = [1m[33m17315        [0m
+|04:42:47|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:47|I|[1m[34mHITOR_0_CNT         = [1m[33m40383        [0m
+|04:42:47|I|[1m[34mHITOR_1_CNT         = [1m[33m40383        [0m
+|04:42:47|I|[1m[34mHITOR_2_CNT         = [1m[33m40383        [0m
+|04:42:47|I|[1m[34mHITOR_3_CNT         = [1m[33m40383        [0m
+|04:42:47|I|[1m[34mBCID_CNT            = [1m[33m35956        [0m
+|04:42:47|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:47|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:47|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:47|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:47|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m350[1m[35m <<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32m****** Reading  data ******[0m
+|04:42:47|I|[32mn. 32 bit words :      8000[0m
+|04:42:47|I|[1m[35m>>>> Progress :  69.2% <<<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:47|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mCMDERR_CNT          = [1m[33m34480        [0m
+|04:42:47|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:47|I|[1m[34mHITOR_0_CNT         = [1m[33m45158        [0m
+|04:42:47|I|[1m[34mHITOR_1_CNT         = [1m[33m45158        [0m
+|04:42:47|I|[1m[34mHITOR_2_CNT         = [1m[33m45158        [0m
+|04:42:47|I|[1m[34mHITOR_3_CNT         = [1m[33m45294        [0m
+|04:42:47|I|[1m[34mBCID_CNT            = [1m[33m19596        [0m
+|04:42:47|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:47|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:47|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:47|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:47|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m360[1m[35m <<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32m****** Reading  data ******[0m
+|04:42:47|I|[32mn. 32 bit words :      8000[0m
+|04:42:47|I|[1m[35m>>>> Progress :  71.2% <<<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:47|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mCMDERR_CNT          = [1m[33m50207        [0m
+|04:42:47|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:47|I|[1m[34mHITOR_0_CNT         = [1m[33m50241        [0m
+|04:42:47|I|[1m[34mHITOR_1_CNT         = [1m[33m50241        [0m
+|04:42:47|I|[1m[34mHITOR_2_CNT         = [1m[33m50241        [0m
+|04:42:47|I|[1m[34mHITOR_3_CNT         = [1m[33m50312        [0m
+|04:42:47|I|[1m[34mBCID_CNT            = [1m[33m30232        [0m
+|04:42:47|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:47|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:47|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:47|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:47|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m370[1m[35m <<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32m****** Reading  data ******[0m
+|04:42:47|I|[32mn. 32 bit words :      8000[0m
+|04:42:47|I|[1m[35m>>>> Progress :  73.1% <<<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:47|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mCMDERR_CNT          = [1m[33m5075        [0m
+|04:42:47|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:47|I|[1m[34mHITOR_0_CNT         = [1m[33m55537        [0m
+|04:42:47|I|[1m[34mHITOR_1_CNT         = [1m[33m55662        [0m
+|04:42:47|I|[1m[34mHITOR_2_CNT         = [1m[33m56078        [0m
+|04:42:47|I|[1m[34mHITOR_3_CNT         = [1m[33m56791        [0m
+|04:42:47|I|[1m[34mBCID_CNT            = [1m[33m23948        [0m
+|04:42:47|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:47|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:47|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:47|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:47|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m380[1m[35m <<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32m****** Reading  data ******[0m
+|04:42:47|I|[32mn. 32 bit words :      8000[0m
+|04:42:47|I|[1m[35m>>>> Progress :  75.0% <<<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:47|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mCMDERR_CNT          = [1m[33m10756        [0m
+|04:42:47|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:47|I|[1m[34mHITOR_0_CNT         = [1m[33m60630        [0m
+|04:42:47|I|[1m[34mHITOR_1_CNT         = [1m[33m60944        [0m
+|04:42:47|I|[1m[34mHITOR_2_CNT         = [1m[33m61620        [0m
+|04:42:47|I|[1m[34mHITOR_3_CNT         = [1m[33m62093        [0m
+|04:42:47|I|[1m[34mBCID_CNT            = [1m[33m44668        [0m
+|04:42:47|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:47|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:47|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:47|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:47|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m390[1m[35m <<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32m****** Reading  data ******[0m
+|04:42:47|I|[32mn. 32 bit words :      8000[0m
+|04:42:47|I|[1m[35m>>>> Progress :  76.9% <<<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:47|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mCMDERR_CNT          = [1m[33m27773        [0m
+|04:42:47|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:47|I|[1m[34mHITOR_0_CNT         = [1m[33m681        [0m
+|04:42:47|I|[1m[34mHITOR_1_CNT         = [1m[33m1348        [0m
+|04:42:47|I|[1m[34mHITOR_2_CNT         = [1m[33m1907        [0m
+|04:42:47|I|[1m[34mHITOR_3_CNT         = [1m[33m2338        [0m
+|04:42:47|I|[1m[34mBCID_CNT            = [1m[33m42276        [0m
+|04:42:47|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:47|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:47|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:47|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:47|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m400[1m[35m <<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32m****** Reading  data ******[0m
+|04:42:47|I|[32mn. 32 bit words :      8000[0m
+|04:42:47|I|[1m[35m>>>> Progress :  78.8% <<<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:47|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mCMDERR_CNT          = [1m[33m65275        [0m
+|04:42:47|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:47|I|[1m[34mHITOR_0_CNT         = [1m[33m6384        [0m
+|04:42:47|I|[1m[34mHITOR_1_CNT         = [1m[33m6856        [0m
+|04:42:47|I|[1m[34mHITOR_2_CNT         = [1m[33m7134        [0m
+|04:42:47|I|[1m[34mHITOR_3_CNT         = [1m[33m7134        [0m
+|04:42:47|I|[1m[34mBCID_CNT            = [1m[33m32404        [0m
+|04:42:47|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:47|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:47|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:47|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:47|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m410[1m[35m <<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32m****** Reading  data ******[0m
+|04:42:47|I|[32mn. 32 bit words :      8000[0m
+|04:42:47|I|[1m[35m>>>> Progress :  80.8% <<<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:47|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mCMDERR_CNT          = [1m[33m6405        [0m
+|04:42:47|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:47|I|[1m[34mHITOR_0_CNT         = [1m[33m11268        [0m
+|04:42:47|I|[1m[34mHITOR_1_CNT         = [1m[33m11683        [0m
+|04:42:47|I|[1m[34mHITOR_2_CNT         = [1m[33m11703        [0m
+|04:42:47|I|[1m[34mHITOR_3_CNT         = [1m[33m11703        [0m
+|04:42:47|I|[1m[34mBCID_CNT            = [1m[33m54344        [0m
+|04:42:47|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:47|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:47|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:47|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:47|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m420[1m[35m <<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32m****** Reading  data ******[0m
+|04:42:47|I|[32mn. 32 bit words :      8000[0m
+|04:42:47|I|[1m[35m>>>> Progress :  82.7% <<<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:47|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mCMDERR_CNT          = [1m[33m18247        [0m
+|04:42:47|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:47|I|[1m[34mHITOR_0_CNT         = [1m[33m15769        [0m
+|04:42:47|I|[1m[34mHITOR_1_CNT         = [1m[33m16079        [0m
+|04:42:47|I|[1m[34mHITOR_2_CNT         = [1m[33m16211        [0m
+|04:42:47|I|[1m[34mHITOR_3_CNT         = [1m[33m16211        [0m
+|04:42:47|I|[1m[34mBCID_CNT            = [1m[33m20976        [0m
+|04:42:47|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:47|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:47|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:47|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:47|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m430[1m[35m <<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32m****** Reading  data ******[0m
+|04:42:47|I|[32mn. 32 bit words :      8000[0m
+|04:42:47|I|[1m[35m>>>> Progress :  84.6% <<<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:47|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mCMDERR_CNT          = [1m[33m30593        [0m
+|04:42:47|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:47|I|[1m[34mHITOR_0_CNT         = [1m[33m20899        [0m
+|04:42:47|I|[1m[34mHITOR_1_CNT         = [1m[33m20899        [0m
+|04:42:47|I|[1m[34mHITOR_2_CNT         = [1m[33m20899        [0m
+|04:42:47|I|[1m[34mHITOR_3_CNT         = [1m[33m20899        [0m
+|04:42:47|I|[1m[34mBCID_CNT            = [1m[33m37888        [0m
+|04:42:47|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:47|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:47|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:47|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:47|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m440[1m[35m <<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32m****** Reading  data ******[0m
+|04:42:47|I|[32mn. 32 bit words :      8000[0m
+|04:42:47|I|[1m[35m>>>> Progress :  86.5% <<<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:47|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mCMDERR_CNT          = [1m[33m56107        [0m
+|04:42:47|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:47|I|[1m[34mHITOR_0_CNT         = [1m[33m24381        [0m
+|04:42:47|I|[1m[34mHITOR_1_CNT         = [1m[33m26562        [0m
+|04:42:47|I|[1m[34mHITOR_2_CNT         = [1m[33m26562        [0m
+|04:42:47|I|[1m[34mHITOR_3_CNT         = [1m[33m26562        [0m
+|04:42:47|I|[1m[34mBCID_CNT            = [1m[33m50304        [0m
+|04:42:47|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:47|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:47|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:47|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:47|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m450[1m[35m <<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32m****** Reading  data ******[0m
+|04:42:47|I|[32mn. 32 bit words :      8000[0m
+|04:42:47|I|[1m[35m>>>> Progress :  88.5% <<<<[0m
+|04:42:47|I|[36m---------------------------[0m
+|04:42:47|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:47|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:47|I|[1m[34mCMDERR_CNT          = [1m[33m6084        [0m
+|04:42:47|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:47|I|[1m[34mHITOR_0_CNT         = [1m[33m30578        [0m
+|04:42:47|I|[1m[34mHITOR_1_CNT         = [1m[33m30578        [0m
+|04:42:47|I|[1m[34mHITOR_2_CNT         = [1m[33m30578        [0m
+|04:42:47|I|[1m[34mHITOR_3_CNT         = [1m[33m30840        [0m
+|04:42:47|I|[1m[34mBCID_CNT            = [1m[33m35632        [0m
+|04:42:48|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:48|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:48|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:48|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:48|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m460[1m[35m <<<[0m
+|04:42:48|I|[36m---------------------------[0m
+|04:42:48|I|[32m****** Reading  data ******[0m
+|04:42:48|I|[32mn. 32 bit words :      8000[0m
+|04:42:48|I|[1m[35m>>>> Progress :  90.4% <<<<[0m
+|04:42:48|I|[36m---------------------------[0m
+|04:42:48|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:48|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:48|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:48|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:48|I|[1m[34mCMDERR_CNT          = [1m[33m20979        [0m
+|04:42:48|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:48|I|[1m[34mHITOR_0_CNT         = [1m[33m36119        [0m
+|04:42:48|I|[1m[34mHITOR_1_CNT         = [1m[33m36810        [0m
+|04:42:48|I|[1m[34mHITOR_2_CNT         = [1m[33m37233        [0m
+|04:42:48|I|[1m[34mHITOR_3_CNT         = [1m[33m37668        [0m
+|04:42:48|I|[1m[34mBCID_CNT            = [1m[33m55576        [0m
+|04:42:48|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:48|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:48|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:48|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:48|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m470[1m[35m <<<[0m
+|04:42:48|I|[36m---------------------------[0m
+|04:42:48|I|[32m****** Reading  data ******[0m
+|04:42:48|I|[32mn. 32 bit words :      8000[0m
+|04:42:48|I|[1m[35m>>>> Progress :  92.3% <<<<[0m
+|04:42:48|I|[36m---------------------------[0m
+|04:42:48|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:48|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:48|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:48|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:48|I|[1m[34mCMDERR_CNT          = [1m[33m58836        [0m
+|04:42:48|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:48|I|[1m[34mHITOR_0_CNT         = [1m[33m42246        [0m
+|04:42:48|I|[1m[34mHITOR_1_CNT         = [1m[33m42656        [0m
+|04:42:48|I|[1m[34mHITOR_2_CNT         = [1m[33m42687        [0m
+|04:42:48|I|[1m[34mHITOR_3_CNT         = [1m[33m42687        [0m
+|04:42:48|I|[1m[34mBCID_CNT            = [1m[33m49920        [0m
+|04:42:48|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:48|I|[32mMonitor data for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:48|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:48|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:48|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:48|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m480[1m[35m <<<[0m
+|04:42:48|W|[1m[31m		--> Very low voltage: either floating VDD sense-line or FMC not powered (voltage = [1m[33m0.000[1m[31m)[0m
+|04:42:48|I|[1m[34m	--> Hybrid voltage: [1m[33m0.000[1m[34m V (corresponds to half VOUT_dig_ShuLDO of the chip)[0m
+|04:42:48|I|[1m[34m	--> Hybrid temperature: [1m[33m-273.150[1m[34m C[0m
+|04:42:48|I|[1m[34m	--> VOUT_ana_ShuLDO: [1m[33m0.601 +/- 0.024[1m[34m V[0m
+|04:42:48|I|[1m[34m	--> VOUT_dig_ShuLDO: [1m[33m0.652 +/- 0.026[1m[34m V[0m
+|04:42:48|I|[1m[34m	--> ADCbandgap: [1m[33m0.451 +/- 0.018[1m[34m V[0m
+|04:42:48|W|[1m[31m		--> ADC measurement in saturation (ADC = [1m[33m4095[1m[31m): likely the IMUX resistor, that converts the current into a voltage, is not connected[0m
+|04:42:48|I|[1m[34m	--> Iref: [1m[33m83.880 +/- 3.355[1m[34m uA[0m
+|04:42:48|I|[1m[34m	--> TEMPSENS_1: [1m[33m108.739 +/- 4.350[1m[34m C[0m
+|04:42:48|I|[1m[34m	--> TEMPSENS_4: [1m[33m115.140 +/- 4.606[1m[34m C[0m
+|04:42:48|I|[1m[34m	--> Done[0m
+|04:42:48|I|[36m---------------------------[0m
+|04:42:48|I|[32m****** Reading  data ******[0m
+|04:42:48|I|[32mn. 32 bit words :      8000[0m
+|04:42:48|I|[1m[35m>>>> Progress :  94.2% <<<<[0m
+|04:42:48|I|[36m---------------------------[0m
+|04:42:48|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:48|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:48|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:48|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:48|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:48|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:48|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:48|E|[1m[34mLOCKLOSS_CNT        = [1m[33m[1m[31mWrite-command FIFO not empty[0m
+|04:42:48|I|0        [0m
+|04:42:48|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:48|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:48|I|[1m[34mCMDERR_CNT          = [1m[33m49940        [0m
+|04:42:48|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:48|I|[1m[34mHITOR_0_CNT         = [1m[33m47527        [0m
+|04:42:48|I|[1m[34mHITOR_1_CNT         = [1m[33m47527        [0m
+|04:42:48|I|[1m[34mHITOR_2_CNT         = [1m[33m47527        [0m
+|04:42:48|I|[1m[34mHITOR_3_CNT         = [1m[33m47604        [0m
+|04:42:48|I|[1m[34mBCID_CNT            = [1m[33m41908        [0m
+|04:42:48|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:48|I|[1m[34m	--> VOUT_ana_ShuLDO: [1m[33m0.600 +/- 0.024[1m[34m V[0m
+|04:42:48|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:48|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:48|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:48|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m490[1m[35m <<<[0m
+|04:42:48|I|[1m[34m	--> VOUT_dig_ShuLDO: [1m[33m0.651 +/- 0.026[1m[34m V[0m
+|04:42:48|I|[1m[34m	--> ADCbandgap: [1m[33m0.451 +/- 0.018[1m[34m V[0m
+|04:42:48|W|[1m[31m		--> ADC measurement in saturation (ADC = [1m[33m4095[1m[31m): likely the IMUX resistor, that converts the current into a voltage, is not connected[0m
+|04:42:48|I|[1m[34m	--> Iref: [1m[33m83.880 +/- 3.355[1m[34m uA[0m
+|04:42:48|I|[1m[34m	--> TEMPSENS_1: [1m[33m109.450 +/- 4.378[1m[34m C[0m
+|04:42:48|I|[36m---------------------------[0m
+|04:42:48|I|[32m****** Reading  data ******[0m
+|04:42:48|I|[32mn. 32 bit words :      8000[0m
+|04:42:48|I|[1m[35m>>>> Progress :  96.2% <<<<[0m
+|04:42:48|I|[36m---------------------------[0m
+|04:42:48|E|[1m[31mWrite-command FIFO not empty[0m
+|04:42:48|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:48|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:49|E|[1m[34mBITFLIP_WNG_CNT     = [1m[33m[1m[31mRead-command FIFO empty[0m
+|04:42:49|W|[34mEmpty register readback, attempt n. [33m1[34m/[33m2[0m
+|04:42:49|I|0        [0m
+|04:42:49|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:49|I|[1m[34mCMDERR_CNT          = [1m[33m17146        [0m
+|04:42:49|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:49|I|[1m[34mHITOR_0_CNT         = [1m[33m63539        [0m
+|04:42:49|I|[1m[34mHITOR_1_CNT         = [1m[33m63769        [0m
+|04:42:49|I|[1m[34mHITOR_2_CNT         = [1m[33m64465        [0m
+|04:42:49|I|[1m[34mHITOR_3_CNT         = [1m[33m208        [0m
+|04:42:49|I|[1m[34mBCID_CNT            = [1m[33m33572        [0m
+|04:42:49|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:49|I|[1m[34m	--> TEMPSENS_4: [1m[33m113.006 +/- 4.520[1m[34m C[0m
+|04:42:49|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:49|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:49|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:49|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m500[1m[35m <<<[0m
+|04:42:49|I|[36m---------------------------[0m
+|04:42:49|I|[32m****** Reading  data ******[0m
+|04:42:49|I|[32mn. 32 bit words :      8000[0m
+|04:42:49|I|[1m[35m>>>> Progress :  98.1% <<<<[0m
+|04:42:49|I|[36m---------------------------[0m
+|04:42:49|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:49|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:49|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:49|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:49|I|[1m[34mCMDERR_CNT          = [1m[33m24430        [0m
+|04:42:49|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:49|I|[1m[34mHITOR_0_CNT         = [1m[33m4776        [0m
+|04:42:49|I|[1m[34mHITOR_1_CNT         = [1m[33m4776        [0m
+|04:42:49|I|[1m[34mHITOR_2_CNT         = [1m[33m4776        [0m
+|04:42:49|I|[1m[34mHITOR_3_CNT         = [1m[33m4776        [0m
+|04:42:49|I|[1m[34mBCID_CNT            = [1m[33m41428        [0m
+|04:42:49|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:49|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:49|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:49|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:49|I|[1m[35m>>> [1m[33mLATENCY_CONFIG[1m[35m value = [1m[33m510[1m[35m <<<[0m
+|04:42:49|I|[36m---------------------------[0m
+|04:42:49|I|[32m****** Reading  data ******[0m
+|04:42:49|I|[32mn. 32 bit words :      8000[0m
+|04:42:49|I|[1m[35m>>>> Progress : 100.0% <<<<[0m
+|04:42:49|I|[36m---------------------------[0m
+|04:42:49|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:49|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:49|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:49|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:49|I|[1m[34mCMDERR_CNT          = [1m[33m40010        [0m
+|04:42:49|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:49|I|[1m[34mHITOR_0_CNT         = [1m[33m9700        [0m
+|04:42:49|I|[1m[34mHITOR_1_CNT         = [1m[33m9700        [0m
+|04:42:49|I|[1m[34mHITOR_2_CNT         = [1m[33m9700        [0m
+|04:42:49|I|[1m[34mHITOR_3_CNT         = [1m[33m9929        [0m
+|04:42:49|I|[1m[34mBCID_CNT            = [1m[33m20992        [0m
+|04:42:49|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:49|I|[32mAverage occupancy for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m] is [1m[33m0.000000[0m
+|04:42:49|I|[1m[34m	--> Number of potentially [1m[33mmasked[1m[34m pixels in this iteration: [1m[33m122[0m
+|04:42:49|I|[1m[34m	--> Total number of potentially masked pixels: [1m[33m2659[0m
+|04:42:49|I|[32mReadout chip error report for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[32m][0m
+|04:42:49|I|[1m[34mLOCKLOSS_CNT        = [1m[33m0        [0m
+|04:42:49|I|[1m[34mBITFLIP_WNG_CNT     = [1m[33m0        [0m
+|04:42:49|I|[1m[34mBITFLIP_ERR_CNT     = [1m[33m0        [0m
+|04:42:49|I|[1m[34mCMDERR_CNT          = [1m[33m50661        [0m
+|04:42:49|I|[1m[34mSKIPPED_TRIGGER_CNT = [1m[33m0        [0m
+|04:42:49|I|[1m[34mHITOR_0_CNT         = [1m[33m13998        [0m
+|04:42:49|I|[1m[34mHITOR_1_CNT         = [1m[33m14140        [0m
+|04:42:49|I|[1m[34mHITOR_2_CNT         = [1m[33m14140        [0m
+|04:42:49|I|[1m[34mHITOR_3_CNT         = [1m[33m14140        [0m
+|04:42:49|I|[1m[34mBCID_CNT            = [1m[33m18396        [0m
+|04:42:49|I|[1m[34mTRIG_CNT            = [1m[33m1000        [0m
+|04:42:49|I|[1m[35m>>> Best latency for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[1m[35m] is within [[1m[33m131,140[1m[35m] (n.bx) <<<[0m
+|04:42:49|I|[1m[34m	--> Latency saved the configuration file for [board/opticalGroup/hybrid/chip = [1m[33m0/0/0/0[0m[1m[34m][0m
+|04:42:49|I|[1m[34m	--> Latency saving histograms...[0m
+|04:42:49|I|[32mClosing result file[0m
+|04:42:49|I|[1m[31m>>> Destroying interfaces <<<[0m
+|04:42:49|I|[1m[31m	--> Destroying monitoring[0m
+|04:42:50|I|[1m[31m>>> Interfaces  destroyed <<<[0m
+|04:42:50|I|[1m[35m@@@ End of CMSIT miniDAQ @@@[0m
