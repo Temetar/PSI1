@@ -9,4 +9,4 @@ cd ../Ph2_ACF_runs
 ./reset_.../sh
 ```
 ## Changes in Setup
-Changed the settings back to pixelalife for Threshold equalization
+Settings are already correct for target threshold
