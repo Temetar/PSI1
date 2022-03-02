@@ -9,4 +9,5 @@ if [ ! -f ${CMSIT_XML} ]; then
 fi
 
 #fpgaconfig -c ${CMSIT_XML} -i ph2ITuDTC_v4p1_SC_KS-KS_x1G28
-fpgaconfig -c ${CMSIT_XML} -i IT-uDTC_v4p2-KSU-4x_elec_x1G28 
+#fpgaconfig -c ${CMSIT_XML} -i IT-uDTC_v4p2-KSU-4x_elec_x1G28 
+fpgaconfig -c ${CMSIT_XML} -i IT-uDTC_v4p2-KSU-3xQUAD_x1G28 
