@@ -10,3 +10,4 @@ cd ../Ph2_ACF_runs
 ```
 ## Changes in Setup
 preparations for fine latency, optimum is within [131,140]
+Turns out to be 132
