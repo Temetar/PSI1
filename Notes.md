@@ -9,4 +9,4 @@ cd ../Ph2_ACF_runs
 ./reset_.../sh
 ```
 ## Changes in Setup
-Best latency is 133 for all 3 chips.
+Pixelalive yields average occupancy between 0.999621 and 1.
