@@ -9,4 +9,4 @@ cd ../Ph2_ACF_runs
 ./reset_.../sh
 ```
 ## Changes in Setup
-Noise scan returned empty
+Vthreshold_Lin is 357/358/343 respectively
