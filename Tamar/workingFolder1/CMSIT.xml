@@ -30,7 +30,7 @@
               LDAC_LIN               =  "130"
               COMP_LIN               =  "110"
               REF_KRUM_LIN           =  "300"
-              Vthreshold_LIN         =  "346"
+              Vthreshold_LIN         =  "400"
 
               IBIASP1_SYNC           =  "100"
               IBIASP2_SYNC           =  "150"

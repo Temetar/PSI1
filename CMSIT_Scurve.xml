@@ -57,12 +57,12 @@
               VCAL_MED               =  "100"
 
               GP_LVDS_ROUTE          =    "0"
-              LATENCY_CONFIG         =  "133"
+              LATENCY_CONFIG         =  "136"
               CLK_DATA_DELAY         =    "0"
               INJECTION_SELECT       =    "9"
 
               VOLTAGE_TRIM_DIG       =   "25"
-              VOLTAGE_TRIM_ANA       =   "11"
+              VOLTAGE_TRIM_ANA       =   "12"
 
               CML_CONFIG_SER_EN_TAP  = "0b00"
               CML_CONFIG_SER_INV_TAP = "0b00"
