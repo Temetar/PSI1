@@ -197,9 +197,9 @@
     -->
     <!-- PixelAlive, SCurve, ThrAdj: 100; ThrEqu: 500
     -->
-    <Setting name="nEvents">          10000000 </Setting>
-    <Setting name="nEvtsBurst">       10000 </Setting>
-    <Setting name="INJtype">            0 </Setting>
+    <Setting name="nEvents">          100 </Setting>
+    <Setting name="nEvtsBurst">       100 </Setting>
+    <Setting name="INJtype">            1 </Setting>
     <Setting name="maskChannelsFromOtherGroups"> 1 </Setting>
     <Setting name="DoFast">             0 </Setting>
     <!--
