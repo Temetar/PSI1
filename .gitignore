@@ -3,3 +3,5 @@ logs/
 MonitorResults
 *.log
 RunNumber.txt
+firmware
+tmp
