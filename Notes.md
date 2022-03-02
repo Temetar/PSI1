@@ -8,3 +8,6 @@ source setup.sh
 cd ../Ph2_ACF_runs
 ./reset_.../sh
 ```
+## Changes in Setup
+enable monitoring
+preparations for coarse monitoring

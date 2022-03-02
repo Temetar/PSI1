@@ -275,7 +275,7 @@
     <Setting name="StopValueDAC2">        50 </Setting>
     <Setting name="StepDAC2">              1 </Setting>
 
-    <Setting name="DoFast">                0 </Setting>
+    <Setting name="DoFast">                1 </Setting>
     <Setting name="DoOnlyNGroups">         0 </Setting>
     <Setting name="DisplayHisto">          0 </Setting>
     <Setting name="UpdateChipCfg">         1 </Setting>
@@ -297,7 +297,7 @@
        MonitoringSleepTime: sleep for monitoring thread in milliseconds
   -->
   <MonitoringSettings>
-    <Monitoring type="RD53" enable="0">
+    <Monitoring type="RD53" enable="1">
       <MonitoringSleepTime> 1000 </MonitoringSleepTime>
       <MonitoringElements
         VIN_ana_ShuLDO  = "0"
