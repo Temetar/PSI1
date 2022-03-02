@@ -187,3 +187,11 @@ Return codes
 01.03.2022 15:31:10: |139974135356416|I| [1m[33mTrying to connect to the Power Supply Server...[0m
 01.03.2022 15:31:10: |139974135356416|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
 01.03.2022 15:31:10: |139974135356416|I| [1m[34m>>> Done <<<[0m
+02.03.2022 07:53:03: |139762935847936|I| [1m[33mParseHW [FileParser] 0x2484100	cmsinnertracker.crate0.slot0[0m
+02.03.2022 07:53:03: |139762935847936|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+02.03.2022 07:53:03: |139762935847936|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+02.03.2022 07:53:04: |139762935847936|I| [1m[34m>>> Done <<<[0m
+02.03.2022 08:44:15: |139731457793024|I| [1m[33mParseHW [FileParser] 0xcb7100	cmsinnertracker.crate0.slot0[0m
+02.03.2022 08:44:16: |139731457793024|I| [1m[33mTrying to connect to the Power Supply Server...[0m
+02.03.2022 08:44:16: |139731457793024|I| [1m[33mCannot connect to the Power Supply Server, power supplies will need to be controlled manually[0m
+02.03.2022 08:44:16: |139731457793024|I| [1m[34m>>> Done <<<[0m

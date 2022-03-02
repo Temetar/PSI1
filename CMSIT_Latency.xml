@@ -30,7 +30,7 @@
               LDAC_LIN               =  "130"
               COMP_LIN               =  "110"
               REF_KRUM_LIN           =  "300"
-              Vthreshold_LIN         =  "400"
+              Vthreshold_LIN         =  "346"
 
               IBIASP1_SYNC           =  "100"
               IBIASP2_SYNC           =  "150"
@@ -57,7 +57,7 @@
               VCAL_MED               =  "100"
 
               GP_LVDS_ROUTE          =    "0"
-              LATENCY_CONFIG         =  "136"
+              LATENCY_CONFIG         =  "133"
               CLK_DATA_DELAY         =    "0"
               INJECTION_SELECT       =    "9"
 
