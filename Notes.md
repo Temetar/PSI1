@@ -9,4 +9,4 @@ cd ../Ph2_ACF_runs
 ./reset_.../sh
 ```
 ## Changes in Setup
-Best latency is between 131 and 140 for all 3 chips.
+Best latency is 133 for all 3 chips.

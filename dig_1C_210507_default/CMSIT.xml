@@ -23,7 +23,7 @@
               VCAL_MED              =  "100"
 
               GP_LVDS_ROUTE         =    "0"
-              LATENCY_CONFIG        =  "136"
+              LATENCY_CONFIG        =  "133"
               CLK_DATA_DELAY        =    "0"
               INJECTION_SELECT      =    "0"
 
@@ -52,7 +52,7 @@
               VCAL_MED              =  "100"
 
               GP_LVDS_ROUTE         =    "0"
-              LATENCY_CONFIG        =  "136"
+              LATENCY_CONFIG        =  "133"
               CLK_DATA_DELAY        =    "0"
               INJECTION_SELECT      =    "0"
 
@@ -81,7 +81,7 @@
               VCAL_MED              =  "100"
 
               GP_LVDS_ROUTE         =    "0"
-              LATENCY_CONFIG        =  "136"
+              LATENCY_CONFIG        =  "133"
               CLK_DATA_DELAY        =    "0"
               INJECTION_SELECT      =    "0"
 
