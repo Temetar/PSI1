@@ -9,4 +9,4 @@ cd ../Ph2_ACF_runs
 ./reset_.../sh
 ```
 ## Changes in Setup
-preparations for pixelalive, everything is already set correctly.
+preparations for noise
