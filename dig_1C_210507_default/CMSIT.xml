@@ -2,12 +2,12 @@
 
 <HwDescription>
   <BeBoard Id="0" boardType="RD53" eventType="VR">
-    <connection id="cmsinnertracker.crate0.slot0" uri="chtcp-2.0://localhost:10203?target=192.168.1.80:50001" address_table="file://${PH2ACF_BASE_DIR}/settings/address_tables/CMSIT_address_table.xml" />
+    <connection id="cmsinnertracker.crate0.slot0" uri="chtcp-2.0://localhost:10203?target=192.168.1.10:50001" address_table="file://${PH2ACF_BASE_DIR}/settings/address_tables/CMSIT_address_table.xml" />
 
     <OpticalGroup Id="0" FMCId="0">
 
       <Hybrid Id="1" Status="1">
-        <RD53_Files path="${PH2ACF_ANALYSIS_DIR}/configs/quads/dig_1C_210507_default"/>
+        <RD53_Files path="${PH2ACF_ANALYSIS_DIR}/dig_1C_210507_default"/>
 
         <RD53 Id="0" Lane="0" configfile="CMSIT_RD53_chip0.txt">
           <Settings
