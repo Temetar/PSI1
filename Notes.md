@@ -9,4 +9,4 @@ cd ../Ph2_ACF_runs
 ./reset_.../sh
 ```
 ## Changes in Setup
-New voltage tunings> 31/16, 24/10, 26/14
+Best latency is between 131 and 140 for all 3 chips.
