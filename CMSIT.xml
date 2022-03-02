@@ -2,7 +2,7 @@
 
 <HwDescription>
   <BeBoard Id="0" boardType="RD53" eventType="VR">
-    <connection id="cmsinnertracker.crate0.slot0" uri="chtcp-2.0://localhost:10203?target=192.168.1.10:50001" address_table="file://${PH2ACF_BASE_DIR}/settings/address_tables/CMSIT_address_table.xml" />
+    <connection id="cmsinnertracker.crate0.slot0" uri="chtcp-2.0://localhost:10203?target=192.168.0.50:50001" address_table="file://${PH2ACF_BASE_DIR}/settings/address_tables/CMSIT_address_table.xml" />
     <!---
         <connection id="cmsinnertracker.crate0.slot0" uri="ipbusudp-2.0://192.168.1.80:50001" address_table="file://${PH2ACF_BASE_DIR}/settings/address_tables/CMSIT_address_table.xml" />
     -->
@@ -18,7 +18,7 @@
       </lpGBT>
       -->
       <Hybrid Id="0" Status="1">
-	      <RD53_Files path="${PWD}/RD53Files/" />
+	      <RD53_Files path="${PH2ACF_ANALYSIS_DIR}/RD53Files/" />
 
         <!-- Available Comment fields are: 50x50, 25x100origR0C0, 25x100origR1C0, unknown, combined with dual, quad -->
         <RD53 Id="0" Lane="0" configfile="CMSIT_RD53.txt" RxGroups="6" RxChannels="0" TxGroups="3" TxChannels="0" Comment="50x50">
@@ -57,12 +57,12 @@
               VCAL_MED               =  "100"
 
               GP_LVDS_ROUTE          =    "0"
-              LATENCY_CONFIG         =  "133"
+              LATENCY_CONFIG         =  "136"
               CLK_DATA_DELAY         =    "0"
               INJECTION_SELECT       =    "9"
 
-              VOLTAGE_TRIM_DIG       =   "25"
-              VOLTAGE_TRIM_ANA       =   "11"
+              VOLTAGE_TRIM_DIG       =   "16"
+              VOLTAGE_TRIM_ANA       =   "16"
 
               CML_CONFIG_SER_EN_TAP  = "0b00"
               CML_CONFIG_SER_INV_TAP = "0b00"
@@ -297,7 +297,7 @@
        MonitoringSleepTime: sleep for monitoring thread in milliseconds
   -->
   <MonitoringSettings>
-    <Monitoring type="RD53" enable="1">
+    <Monitoring type="RD53" enable="0">
       <MonitoringSleepTime> 1000 </MonitoringSleepTime>
       <MonitoringElements
         VIN_ana_ShuLDO  = "0"
