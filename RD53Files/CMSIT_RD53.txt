@@ -35,7 +35,7 @@ KRUM_CURR_LIN             0x10          0x001D                  0x001D          
 LDAC_LIN                  0x11          0x0082                  0x0082                             10
 COMP_LIN                  0x12          0x006E                  0x006E                             09
 REF_KRUM_LIN              0x13          0x012C                  0x012C                             10
-Vthreshold_LIN            0x14          0x0190                  0x0190                             10
+Vthreshold_LIN            0x14          0x0190                  0x016C                             10
 
 *-------------------------------------------------------------------------------------------------------
 * Differential Front End
@@ -80,7 +80,7 @@ WR_SYNC_DELAY_SYNC        0x26          0x0010                  0x0010          
 *-------------------------------------------------------------------------------------------------------
 INJECTION_SELECT          0x27          0x0020                  0x0009                             06
 CLK_DATA_DELAY            0x28          0x0000                  0x0000                             09
-VCAL_HIGH                 0x29          0x01F4                  0x019C                             12
+VCAL_HIGH                 0x29          0x01F4                  0x010A                             12
 VCAL_MED                  0x2A          0x012C                  0x0064                             12
 CH_SYNC_CONF              0x2B          0x0208                  0x0208                             12
 GLOBAL_PULSE_ROUTE        0x2C          0x0000                  0x0000                             16
