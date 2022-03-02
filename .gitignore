@@ -1,3 +1,5 @@
 Results/
 logs
 MonitorResults
+*.log
+RunNumber.txt
