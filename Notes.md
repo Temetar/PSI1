@@ -9,4 +9,4 @@ cd ../Ph2_ACF_runs
 ./reset_.../sh
 ```
 ## Changes in Setup
-Settings are already correct for target threshold
+New voltage tunings> 31/16, 24/10, 26/14
