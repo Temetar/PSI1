@@ -6,7 +6,7 @@
 
     <OpticalGroup Id="0" FMCId="0">
 
-      <Hybrid Id="0" Status="1">
+      <Hybrid Id="1" Status="1">
         <RD53_Files path="${PH2ACF_ANALYSIS_DIR}/dig_1C_210507_default"/>
 
         <RD53 Id="0" Lane="0" configfile="CMSIT_RD53_chip0.txt">
@@ -56,7 +56,7 @@
               CLK_DATA_DELAY        =    "0"
               INJECTION_SELECT      =    "0"
 
-              VOLTAGE_TRIM_DIG      =   "24"
+              VOLTAGE_TRIM_DIG      =   "23"
               VOLTAGE_TRIM_ANA      =   "10"
 
               MONITOR_CONFIG_ADC    =    "5"
@@ -85,8 +85,8 @@
               CLK_DATA_DELAY        =    "0"
               INJECTION_SELECT      =    "0"
 
-              VOLTAGE_TRIM_DIG      =   "26"
-              VOLTAGE_TRIM_ANA      =   "14"
+              VOLTAGE_TRIM_DIG      =   "27"
+              VOLTAGE_TRIM_ANA      =   "15"
 
               MONITOR_CONFIG_ADC    =    "5"
               MONITOR_CONFIG_BG     =   "12"
