@@ -230,8 +230,8 @@
     <Setting name="LatencyStop">      140 </Setting>
 
     <Setting name="VCalHstart">       100 </Setting>
-    <Setting name="VCalHstop">       4000 </Setting>
-    <Setting name="VCalHnsteps">       12 </Setting>
+    <Setting name="VCalHstop">        600 </Setting>
+    <Setting name="VCalHnsteps">       50 </Setting>
     <Setting name="VCalMED">          100 </Setting>
 
     <Setting name="TargetCharge">   20000 </Setting>
