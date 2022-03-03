@@ -1,3 +1,4 @@
+#!/bin/bash
 
 CMSIT_XML=${PH2ACF_ANALYSIS_DIR}/configs/init/CMSIT.xml
 
