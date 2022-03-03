@@ -2,7 +2,7 @@
 
 <HwDescription>
   <BeBoard Id="0" boardType="RD53" eventType="VR">
-    <connection id="cmsinnertracker.crate0.slot0" uri="chtcp-2.0://localhost:10203?target=192.168.1.10:50001" address_table="file://${PH2ACF_BASE_DIR}/settings/address_tables/CMSIT_address_table.xml" />
+    <connection id="cmsinnertracker.crate0.slot0" uri="chtcp-2.0://localhost:10203?target=192.168.1.80:50001" address_table="file://${PH2ACF_BASE_DIR}/settings/address_tables/CMSIT_address_table.xml" />
 
     <OpticalGroup Id="0" FMCId="0">
 
@@ -180,7 +180,7 @@
     </Register>
 
   </BeBoard>
-
+icalGro
   <Settings>
     <!-- === Calibration parameters ===
          INJtype       = 0: no injection;                             INJtype         = 1: analog;     INJtype = 2: digital
@@ -193,7 +193,7 @@
          TargetCharge  (thradj):           average charge (electrons) corresponding to ToT point = max value - 1
          TargetOcc     (thrmin):           average pixel occupancy
          TargetOcc     (pixelalive/noise): per pixel occupancy threhold below/above which pixels are masked
-         UnstuckPixels (pixelalive) = 0: do not try to unstuck pixels; UnstuckPixels = 1: set TDAC to 0 to unstuck pixels
+         UnstuckPixels (pixelalive) = 0: do not try ticalGroo unstuck pixels; UnstuckPixels = 1: set TDAC to 0 to unstuck pixels
     -->
     <!-- PixelAlive, SCurve, ThrAdj: 100; ThrEqu: 500
     -->
