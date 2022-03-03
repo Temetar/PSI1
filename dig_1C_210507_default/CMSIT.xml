@@ -231,7 +231,7 @@
 
     <Setting name="VCalHstart">       100 </Setting>
     <Setting name="VCalHstop">        600 </Setting>
-    <Setting name="VCalHnsteps">       50 </Setting>
+    <Setting name="VCalHnsteps">       30 </Setting>
     <Setting name="VCalMED">          100 </Setting>
 
     <Setting name="TargetCharge">   20000 </Setting>
