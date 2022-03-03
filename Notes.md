@@ -9,4 +9,4 @@ cd ../Ph2_ACF_runs
 ./reset_.../sh
 ```
 ## Changes in Setup
-Increased target threshold to 2500
+Vthreshold_Lin is 370/373/355 respectively
