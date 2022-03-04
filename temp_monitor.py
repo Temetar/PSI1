@@ -18,7 +18,8 @@ rm = visa.ResourceManager() #('@py')
 print('Detected devices:')
 print(rm.list_resources())
 
-kmm = rm.open_resource('ASRL/dev/ttyUSB2::INSTR', baud_rate = 9600)
+#kmm = rm.open_resource('ASRL/dev/ttyUSB2::INSTR', baud_rate = 9600)
+kmm = rm.open_resource('ASRL/dev/ttyUSB0::INSTR', baud_rate = 9600)
 kmm.timeout = 10000
 print(repr(convert_str(kmm.query('*IDN?'))))
 kmm.write('*RST')
