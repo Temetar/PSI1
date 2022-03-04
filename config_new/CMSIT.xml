@@ -365,7 +365,7 @@
     <Setting name="COLstart">            128 </Setting>
     <Setting name="COLstop">             263 </Setting>
 
-    <Setting name="LatencyStart">        131 </Setting>
+    <Setting name="LatencyStart">        120 </Setting>
     <Setting name="LatencyStop">         140 </Setting>
 
     <Setting name="VCalHstart">          100 </Setting>
