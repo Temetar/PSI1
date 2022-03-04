@@ -80,7 +80,7 @@ WR_SYNC_DELAY_SYNC        0x26          0x0010                  0x0010          
 *-------------------------------------------------------------------------------------------------------
 INJECTION_SELECT          0x27          0x0020                  0x0009                             06
 CLK_DATA_DELAY            0x28          0x0000                  0x0000                             09
-VCAL_HIGH                 0x29          0x01F4                  0x010A                             12
+VCAL_HIGH                 0x29          0x01F4                  0x0258                             12
 VCAL_MED                  0x2A          0x012C                  0x0064                             12
 CH_SYNC_CONF              0x2B          0x0208                  0x0208                             12
 GLOBAL_PULSE_ROUTE        0x2C          0x0000                  0x0100                             16
