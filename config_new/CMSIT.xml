@@ -18,10 +18,10 @@
       </lpGBT>
       -->
       <Hybrid Id="1" Status="1">
-	      <RD53_Files path="${PH2ACF_ANALYSIS_DIR}/configs/init/" />
+	      <RD53_Files path="${PH2ACF_ANALYSIS_DIR}/config_new/" />
 
         <!-- Available Comment fields are: 50x50, 25x100origR0C0, 25x100origR1C0, unknown, combined with dual, quad -->
-        <RD53 Id="0" Lane="0" configfile="CMSIT_RD53_chip0.txt" RxGroups="6" RxChannels="0" TxGroups="3" TxChannels="0" Comment="50x50">
+        <RD53 Id="0" Lane="0" configfile="CMSIT_RD53_chip0.txt">
           <!-- Overwrite .txt configuration file settings -->
           <Settings
               PA_IN_BIAS_LIN         =  "350"
@@ -87,7 +87,7 @@
               CLK_DATA_DELAY: [8] clk phase; [7:4] clk delay; [3:0] data delay
           -->
         </RD53>
-                <RD53 Id="1" Lane="1" configfile="CMSIT_RD53_chip1.txt" RxGroups="6" RxChannels="0" TxGroups="3" TxChannels="0" Comment="50x50">
+                <RD53 Id="1" Lane="1" configfile="CMSIT_RD53_chip1.txt">
           <!-- Overwrite .txt configuration file settings -->
           <Settings
               PA_IN_BIAS_LIN         =  "350"
@@ -153,7 +153,7 @@
               CLK_DATA_DELAY: [8] clk phase; [7:4] clk delay; [3:0] data delay
           -->
         </RD53>
-                <RD53 Id="2" Lane="2" configfile="CMSIT_RD53_chip2.txt" RxGroups="6" RxChannels="0" TxGroups="3" TxChannels="0" Comment="50x50">
+                <RD53 Id="2" Lane="2" configfile="CMSIT_RD53_chip2.txt">
           <!-- Overwrite .txt configuration file settings -->
           <Settings
               PA_IN_BIAS_LIN         =  "350"
@@ -301,7 +301,7 @@
           <Register name="dio5_ch4_thr"> 128 </Register>
           <Register name="dio5_ch5_thr"> 128 </Register>
 
-          <Register name="tlu_delay"> 0 </Register>
+          <!--Register name="tlu_delay"> 0 </Register>-->
           <!-- Delay for TLU trigger ID -->
         </Register>
 
