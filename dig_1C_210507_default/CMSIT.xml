@@ -17,7 +17,7 @@
               LDAC_LIN              =  "130"
               COMP_LIN              =  "110"
               REF_KRUM_LIN          =  "300"
-              Vthreshold_LIN        =  "361"
+              Vthreshold_LIN        =  "400"
 
               VCAL_HIGH             =  "600"
               VCAL_MED              =  "100"
@@ -46,7 +46,7 @@
               LDAC_LIN              =  "130"
               COMP_LIN              =  "110"
               REF_KRUM_LIN          =  "300"
-              Vthreshold_LIN        =  "366"
+              Vthreshold_LIN        =  "400"
 
               VCAL_HIGH             =  "600"
               VCAL_MED              =  "100"
@@ -75,7 +75,7 @@
               LDAC_LIN              =  "130"
               COMP_LIN              =  "110"
               REF_KRUM_LIN          =  "300"
-              Vthreshold_LIN        =  "342"
+              Vthreshold_LIN        =  "400"
 
               VCAL_HIGH             =  "600"
               VCAL_MED              =  "100"
