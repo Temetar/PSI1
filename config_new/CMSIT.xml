@@ -355,7 +355,7 @@
     <Setting name="VDDDTrimTolerance">  0.02 </Setting>
     <Setting name="VDDATrimTolerance">  0.02 </Setting>
 
-    <Setting name="nTRIGxEvent">          10 </Setting>
+    <Setting name="nTRIGxEvent">           1 </Setting>
     <Setting name="INJtype">               1 </Setting>
     <Setting name="ResetMask">             0 </Setting>
     <Setting name="ResetTDAC">             0 </Setting>
@@ -365,8 +365,8 @@
     <Setting name="COLstart">            128 </Setting>
     <Setting name="COLstop">             263 </Setting>
 
-    <Setting name="LatencyStart">          0 </Setting>
-    <Setting name="LatencyStop">         511 </Setting>
+    <Setting name="LatencyStart">        131 </Setting>
+    <Setting name="LatencyStop">         140 </Setting>
 
     <Setting name="VCalHstart">          100 </Setting>
     <Setting name="VCalHstop">           600 </Setting>
@@ -407,7 +407,7 @@
     <Setting name="StopValueDAC2">        50 </Setting>
     <Setting name="StepDAC2">              1 </Setting>
 
-    <Setting name="DoFast">                1 </Setting>
+    <Setting name="DoFast">                0 </Setting>
     <Setting name="DoOnlyNGroups">         0 </Setting>
     <Setting name="DisplayHisto">          0 </Setting>
     <Setting name="UpdateChipCfg">         1 </Setting>

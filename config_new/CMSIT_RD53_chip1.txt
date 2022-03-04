@@ -58,7 +58,7 @@ LCC_DIFF                  0x1C          0x0014                  0x0014          
 *-------------------------------------------------------------------------------------------------------
 CONF_FE_DIFF              0x1D          0x0002                  0x0000                             02
 CONF_FE_SYNC              0x1E          0x0004                  0x0002                             05
-VOLTAGE_TRIM              0x1F          0x0210                  0x0210                             10
+VOLTAGE_TRIM              0x1F          0x0210                  0x0158                             10
 
 *-------------------------------------------------------------------------------------------------------
 * Digital Matrix
@@ -70,7 +70,7 @@ EN_CORE_COL_LIN_1         0x21          0x0000                  0xFFFF          
 EN_CORE_COL_LIN_2         0x22          0x0000                  0x0001                             01
 EN_CORE_COL_DIFF_1        0x23          0x0000                  0x0000                             16
 EN_CORE_COL_DIFF_2        0x24          0x0000                  0x0000                             01
-LATENCY_CONFIG            0x25          0x01F4                  0x0088                             09
+LATENCY_CONFIG            0x25          0x01F4                  0x008C                             09
 WR_SYNC_DELAY_SYNC        0x26          0x0010                  0x0010                             05
 
 *-------------------------------------------------------------------------------------------------------
@@ -197,8 +197,8 @@ SELF_TRIGGER_ENABLE       0x89          0x0000                  0x0000          
 *-------------------------------------------------------------------------------------------------------
 HighGain_LIN              0xA0          0x0001                  0x0001                             01
 INJECTION_SELECT_DELAY    0xA1          0x0000                  0x0000                             04
-VOLTAGE_TRIM_DIG          0xA2          0x0010                  0x0010                             05
-VOLTAGE_TRIM_ANA          0xA3          0x0010                  0x0010                             05
+VOLTAGE_TRIM_DIG          0xA2          0x0010                  0x0018                             05
+VOLTAGE_TRIM_ANA          0xA3          0x0010                  0x000A                             05
 CLK_DATA_DELAY_CMD_DELAY  0xA4          0x0000                  0x0000                             04
 CLK_DATA_DELAY_CLK_DELAY  0xA5          0x0000                  0x0000                             04
 CLK_DATA_DELAY_2INV_DELAY 0xA6          0x0000                  0x0000                             01
