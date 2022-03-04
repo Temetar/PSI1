@@ -61,7 +61,7 @@
               CLK_DATA_DELAY         =    "0"
               INJECTION_SELECT       =    "9"
 
-              VOLTAGE_TRIM_DIG       =   "16"
+              VOLTAGE_TRIM_DIG       =   "31"
               VOLTAGE_TRIM_ANA       =   "16"
 
               CML_CONFIG_SER_EN_TAP  = "0b00"
@@ -127,8 +127,8 @@
               CLK_DATA_DELAY         =    "0"
               INJECTION_SELECT       =    "9"
 
-              VOLTAGE_TRIM_DIG       =   "16"
-              VOLTAGE_TRIM_ANA       =   "16"
+              VOLTAGE_TRIM_DIG       =   "24"
+              VOLTAGE_TRIM_ANA       =   "10"
 
               CML_CONFIG_SER_EN_TAP  = "0b00"
               CML_CONFIG_SER_INV_TAP = "0b00"
@@ -193,8 +193,8 @@
               CLK_DATA_DELAY         =    "0"
               INJECTION_SELECT       =    "9"
 
-              VOLTAGE_TRIM_DIG       =   "16"
-              VOLTAGE_TRIM_ANA       =   "16"
+              VOLTAGE_TRIM_DIG       =   "27"
+              VOLTAGE_TRIM_ANA       =   "15"
 
               CML_CONFIG_SER_EN_TAP  = "0b00"
               CML_CONFIG_SER_INV_TAP = "0b00"

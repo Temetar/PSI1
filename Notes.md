@@ -9,4 +9,4 @@ cd ../Ph2_ACF_runs
 ./reset_.../sh
 ```
 ## Changes in Setup
-Vthreshold_Lin is 361/366/343 respectively
+Voltagtuning is practically identical to last time
