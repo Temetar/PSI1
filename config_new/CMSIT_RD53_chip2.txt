@@ -58,7 +58,7 @@ LCC_DIFF                  0x1C          0x0014                  0x0014          
 *-------------------------------------------------------------------------------------------------------
 CONF_FE_DIFF              0x1D          0x0002                  0x0000                             02
 CONF_FE_SYNC              0x1E          0x0004                  0x0002                             05
-VOLTAGE_TRIM              0x1F          0x0210                  0x01FB                             10
+VOLTAGE_TRIM              0x1F          0x0210                  0x021B                             10
 
 *-------------------------------------------------------------------------------------------------------
 * Digital Matrix
@@ -198,7 +198,7 @@ SELF_TRIGGER_ENABLE       0x89          0x0000                  0x0000          
 HighGain_LIN              0xA0          0x0001                  0x0001                             01
 INJECTION_SELECT_DELAY    0xA1          0x0000                  0x0000                             04
 VOLTAGE_TRIM_DIG          0xA2          0x0010                  0x001B                             05
-VOLTAGE_TRIM_ANA          0xA3          0x0010                  0x000F                             05
+VOLTAGE_TRIM_ANA          0xA3          0x0010                  0x0010                             05
 CLK_DATA_DELAY_CMD_DELAY  0xA4          0x0000                  0x0000                             04
 CLK_DATA_DELAY_CLK_DELAY  0xA5          0x0000                  0x0000                             04
 CLK_DATA_DELAY_2INV_DELAY 0xA6          0x0000                  0x0000                             01
