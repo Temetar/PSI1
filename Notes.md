@@ -9,4 +9,4 @@ cd ../Ph2_ACF_runs
 ./reset_.../sh
 ```
 ## Changes in Setup
-Voltagtuning is practically identical to last time
+Changed thresholds to 368/375/351

@@ -30,7 +30,7 @@
               LDAC_LIN               =  "130"
               COMP_LIN               =  "110"
               REF_KRUM_LIN           =  "300"
-              Vthreshold_LIN         =  "400"
+              Vthreshold_LIN         =  "368"
 
               IBIASP1_SYNC           =  "100"
               IBIASP2_SYNC           =  "150"
@@ -96,7 +96,7 @@
               LDAC_LIN               =  "130"
               COMP_LIN               =  "110"
               REF_KRUM_LIN           =  "300"
-              Vthreshold_LIN         =  "400"
+              Vthreshold_LIN         =  "375"
 
               IBIASP1_SYNC           =  "100"
               IBIASP2_SYNC           =  "150"
@@ -162,7 +162,7 @@
               LDAC_LIN               =  "130"
               COMP_LIN               =  "110"
               REF_KRUM_LIN           =  "300"
-              Vthreshold_LIN         =  "400"
+              Vthreshold_LIN         =  "351"
 
               IBIASP1_SYNC           =  "100"
               IBIASP2_SYNC           =  "150"
