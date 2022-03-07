@@ -43,7 +43,7 @@ for i in range(num_chips):
     except FileNotFoundError:
         print("Directory not found, creating directory")
         shutil.os.mkdir(output_path)
-        shutil.copyfile(r'/home/l_tester/w
+        shutil.copyfile(r'/home/l_tester/work/pixel_phase2/Ph2_ACF_runs/tamar2/configs/init/CMSIT_RD53.txt', output_path+"CMSIT_RD53_chip"+str(i)+".txt")
 #Threshold equalization
 os.system('cd ..; CMSITminiDAQ -f ' + output_pork/pixel_phase2/Ph2_ACF_runs/tamar2/configs/init/CMSIT_RD53.txt', output_path+"CMSIT_RD53_chip"+str(i)+".txt")
 
