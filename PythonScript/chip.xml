@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <xml>
 <RD53 Id="0" Lane="0" configfile="CMSIT_RD53.txt" RxGroups="6" RxChannels="0" TxGroups="3" TxChannels="0" Comment="50x50">
           <Settings
