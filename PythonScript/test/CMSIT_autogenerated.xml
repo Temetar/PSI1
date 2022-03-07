@@ -50,8 +50,8 @@
                     LATENCY_CONFIG="136"
                     CLK_DATA_DELAY="0"
                     INJECTION_SELECT="9"
-                    VOLTAGE_TRIM_DIG="16"
-                    VOLTAGE_TRIM_ANA="16"
+                    VOLTAGE_TRIM_DIG="31"
+                    VOLTAGE_TRIM_ANA="10"
                     CML_CONFIG_SER_EN_TAP="0b00"
                     CML_CONFIG_SER_INV_TAP="0b00"
                     CML_TAP0_BIAS="500"
@@ -107,8 +107,8 @@
                     LATENCY_CONFIG="136"
                     CLK_DATA_DELAY="0"
                     INJECTION_SELECT="9"
-                    VOLTAGE_TRIM_DIG="16"
-                    VOLTAGE_TRIM_ANA="16"
+                    VOLTAGE_TRIM_DIG="23"
+                    VOLTAGE_TRIM_ANA="15"
                     CML_CONFIG_SER_EN_TAP="0b00"
                     CML_CONFIG_SER_INV_TAP="0b00"
                     CML_TAP0_BIAS="500"
@@ -164,7 +164,7 @@
                     LATENCY_CONFIG="136"
                     CLK_DATA_DELAY="0"
                     INJECTION_SELECT="9"
-                    VOLTAGE_TRIM_DIG="16"
+                    VOLTAGE_TRIM_DIG="27"
                     VOLTAGE_TRIM_ANA="16"
                     CML_CONFIG_SER_EN_TAP="0b00"
                     CML_CONFIG_SER_INV_TAP="0b00"
@@ -336,7 +336,7 @@
     <Setting name="StartValueDAC2">28</Setting>
     <Setting name="StopValueDAC2">50</Setting>
     <Setting name="StepDAC2">1</Setting>
-    <Setting name="DoFast">0</Setting>
+    <Setting name="DoFast">1</Setting>
     <Setting name="DoOnlyNGroups">0</Setting>
     <Setting name="DisplayHisto">0</Setting>
     <Setting name="UpdateChipCfg">1</Setting>
