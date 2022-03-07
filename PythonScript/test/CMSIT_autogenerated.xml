@@ -9,10 +9,10 @@
                   FMCId="0">
       <Hybrid Id="1"
               Status="1">
-        <RD53_Files path="${PH2ACF_ANALYSIS_DIR}/configs/init/" />
+        <RD53_Files path="/home/l_tester/work/pixel_phase2/Ph2_ACF_runs/tamar2/PythonScript/test/" />
         <RD53 Id="0"
               Lane="0"
-              configfile="CMSIT_RD53_chip0"
+              configfile="CMSIT_RD53_chip0.txt"
               RxGroups="6"
               RxChannels="0"
               TxGroups="3"
@@ -69,7 +69,7 @@
         </RD53>
         <RD53 Id="1"
               Lane="1"
-              configfile="CMSIT_RD53_chip1"
+              configfile="CMSIT_RD53_chip1.txt"
               RxGroups="6"
               RxChannels="0"
               TxGroups="3"
@@ -126,7 +126,7 @@
         </RD53>
         <RD53 Id="2"
               Lane="2"
-              configfile="CMSIT_RD53_chip2"
+              configfile="CMSIT_RD53_chip2.txt"
               RxGroups="6"
               RxChannels="0"
               TxGroups="3"
@@ -248,7 +248,7 @@
           <Register name="dio5_ch3_thr">128</Register>
           <Register name="dio5_ch4_thr">128</Register>
           <Register name="dio5_ch5_thr">128</Register>
-          <Register name="tlu_delay">0</Register>
+          <!--Register name="tlu_delay"> 0 </Register-->
           <!-- Delay for TLU trigger ID -->
         </Register>
         <Register name="reset_reg">
