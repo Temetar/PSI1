@@ -88,7 +88,7 @@
           <Register name="dio5_ch4_thr"> 128 </Register>
           <Register name="dio5_ch5_thr"> 128 </Register>
 
-          <Register name="tlu_delay"> 0 </Register>
+          <!--Register name="tlu_delay"> 0 </Register-->
           <!-- Delay for TLU trigger ID -->
         </Register>
 
