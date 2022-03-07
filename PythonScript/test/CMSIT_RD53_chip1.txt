@@ -6,8 +6,8 @@
 PIX_PORTAL                0x00          0x0000                  0x0000                             04
 REGION_COL                0x01          0x0000                  0x0000                             08
 REGION_ROW                0x02          0x0000                  0x0000                             08
-PIX_MODE                  0x03          0x0007                  0x0007                             08
-PIX_DEFAULT_CONFIG        0x04          0x9CE2                  0x9CE2                             16
+PIX_MODE                  0x03          0x0007                  0x0008                             08
+PIX_DEFAULT_CONFIG        0x04          0x9CE2                  0x0000                             16
 
 *-------------------------------------------------------------------------------------------------------
 * Synchronous Front End
@@ -83,7 +83,7 @@ CLK_DATA_DELAY            0x28          0x0000                  0x0000          
 VCAL_HIGH                 0x29          0x01F4                  0x0258                             12
 VCAL_MED                  0x2A          0x012C                  0x0064                             12
 CH_SYNC_CONF              0x2B          0x0208                  0x0208                             12
-GLOBAL_PULSE_ROUTE        0x2C          0x0000                  0x0000                             16
+GLOBAL_PULSE_ROUTE        0x2C          0x0000                  0x0100                             16
 MONITOR_FRAME_SKIP        0x2D          0x0032                  0x0032                             08
 EN_MACRO_COL_CAL_SYNC_1   0x2E          0xFFFF                  0xFFFF                             16
 EN_MACRO_COL_CAL_SYNC_2   0x2F          0xFFFF                  0xFFFF                             16
@@ -113,7 +113,7 @@ CDR_CONFIG                0x40          0x0418                  0x0418          
 CDR_VCO_BUFF_BIAS         0x41          0x0190                  0x0190                             10
 CDR_CP_IBIAS              0x42          0x0032                  0x0032                             10
 CDR_VCO_IBIAS             0x43          0x01F4                  0x01F4                             10
-SER_SEL_OUT               0x44          0x0055                  0x0055                             08
+SER_SEL_OUT               0x44          0x0055                  0x0001                             08
 CML_CONFIG                0x45          0x003F                  0x000F                             08
 CML_TAP0_BIAS             0x46          0x01F4                  0x01F4                             10
 CML_TAP1_BIAS             0x47          0x0000                  0x0000                             10

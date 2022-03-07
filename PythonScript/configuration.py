@@ -12,7 +12,7 @@ from time import sleep
 ##### Settings #####
 hybrid_id = 1 #Port on the fc7, starting at 0
 num_chips = 3 #Number of chips
-chip_ids = range(num_chips) #Ids of the chips, default is range(num_chips)
+chip_ids = range(num_chips) #Ids of the chips in increasing order, default is range(num_chips).
 uri = "chtcp-2.0://localhost:10203?target=192.168.1.80:50001" #check if ip is correct
 output_path = "/home/l_tester/work/pixel_phase2/Ph2_ACF_runs/tamar2/PythonScript/test/" #Path where the output files are saved. Should end in '/'.
 ####################
