@@ -7,7 +7,7 @@ import shutil #To copy the config .txt files
 import os #To run shell commands
 import re #To find variable in string
 import numpy as np #Better arrays
-from time import sleep
+from time import sleep #Sleep is important
 
 #TODO: Ability to choose starting point
 ##### Settings #####
@@ -16,7 +16,7 @@ num_chips = 3 #Number of chips
 chip_ids = range(num_chips) #Ids of the chips in increasing order, default is range(num_chips).
 uri = "chtcp-2.0://localhost:10203?target=192.168.1.80:50001" #check if ip is correct
 output_path = "/home/l_tester/work/pixel_phase2/Ph2_ACF_runs/tamar2/PythonScript/test/" #Path where the output files are saved. Should end in '/'.
-start = {0,1} #0: Autogenerate 1: voltagetuning 2: latency 3: threshold equalization 4: threshold adjustment 5:scurve
+start = {4} #0: Autogenerate 1: voltagetuning 2: latency 3: threshold equalization 4: threshold adjustment 5:scurve
 ####################
 
 #Open Base tree and find insertion point
