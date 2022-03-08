@@ -24,7 +24,7 @@
                     LDAC_LIN="130"
                     COMP_LIN="110"
                     REF_KRUM_LIN="300"
-                    Vthreshold_LIN="400"
+                    Vthreshold_LIN="368"
                     IBIASP1_SYNC="100"
                     IBIASP2_SYNC="150"
                     IBIAS_SF_SYNC="80"
@@ -81,7 +81,7 @@
                     LDAC_LIN="130"
                     COMP_LIN="110"
                     REF_KRUM_LIN="300"
-                    Vthreshold_LIN="400"
+                    Vthreshold_LIN="374"
                     IBIASP1_SYNC="100"
                     IBIASP2_SYNC="150"
                     IBIAS_SF_SYNC="80"
@@ -138,7 +138,7 @@
                     LDAC_LIN="130"
                     COMP_LIN="110"
                     REF_KRUM_LIN="300"
-                    Vthreshold_LIN="400"
+                    Vthreshold_LIN="351"
                     IBIASP1_SYNC="100"
                     IBIASP2_SYNC="150"
                     IBIAS_SF_SYNC="80"
@@ -357,15 +357,17 @@
   -->
   <MonitoringSettings>
     <Monitoring type="RD53"
-                enable="0">
+                enable="1">
       <MonitoringSleepTime>1000</MonitoringSleepTime>
       <MonitoringElements VIN_ana_ShuLDO="0"
-                          VOUT_ana_ShuLDO="1"
+                          VOUT_ana_ShuLDO="0"
                           VIN_dig_ShuLDO="0"
-                          VOUT_dig_ShuLDO="1"
-                          ADCbandgap="1"
-                          Iref="1"
+                          VOUT_dig_ShuLDO="0"
+                          ADCbandgap="0"
+                          Iref="0"
                           TEMPSENS_1="1"
+                          TEMPSENS_2="1"
+                          TEMPSENS_3="1"
                           TEMPSENS_4="1" />
     </Monitoring>
   </MonitoringSettings>
