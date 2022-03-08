@@ -47,7 +47,7 @@
                     VCAL_HIGH="600"
                     VCAL_MED="100"
                     GP_LVDS_ROUTE="0"
-                    LATENCY_CONFIG="500"
+                    LATENCY_CONFIG="131"
                     CLK_DATA_DELAY="0"
                     INJECTION_SELECT="9"
                     VOLTAGE_TRIM_DIG="16"
@@ -104,7 +104,7 @@
                     VCAL_HIGH="600"
                     VCAL_MED="100"
                     GP_LVDS_ROUTE="0"
-                    LATENCY_CONFIG="500"
+                    LATENCY_CONFIG="131"
                     CLK_DATA_DELAY="0"
                     INJECTION_SELECT="9"
                     VOLTAGE_TRIM_DIG="16"
@@ -161,7 +161,7 @@
                     VCAL_HIGH="600"
                     VCAL_MED="100"
                     GP_LVDS_ROUTE="0"
-                    LATENCY_CONFIG="500"
+                    LATENCY_CONFIG="131"
                     CLK_DATA_DELAY="0"
                     INJECTION_SELECT="9"
                     VOLTAGE_TRIM_DIG="16"
@@ -302,8 +302,8 @@
     <Setting name="ROWstop">191</Setting>
     <Setting name="COLstart">128</Setting>
     <Setting name="COLstop">263</Setting>
-    <Setting name="LatencyStart">490</Setting>
-    <Setting name="LatencyStop">500</Setting>
+    <Setting name="LatencyStart">130</Setting>
+    <Setting name="LatencyStop">140</Setting>
     <Setting name="VCalHstart">100</Setting>
     <Setting name="VCalHstop">600</Setting>
     <Setting name="VCalHnsteps">50</Setting>
