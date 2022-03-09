@@ -414,15 +414,17 @@
   -->
   <MonitoringSettings>
     <Monitoring type="RD53"
-                enable="0">
+                enable="1">
       <MonitoringSleepTime>1000</MonitoringSleepTime>
       <MonitoringElements VIN_ana_ShuLDO="0"
-                          VOUT_ana_ShuLDO="1"
+                          VOUT_ana_ShuLDO="0"
                           VIN_dig_ShuLDO="0"
-                          VOUT_dig_ShuLDO="1"
-                          ADCbandgap="1"
-                          Iref="1"
+                          VOUT_dig_ShuLDO="0"
+                          ADCbandgap="0"
+                          Iref="0"
                           TEMPSENS_1="1"
+                          TEMPSENS_2="1"
+                          TEMPSENS_3="1"
                           TEMPSENS_4="1" />
     </Monitoring>
   </MonitoringSettings>
