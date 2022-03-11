@@ -58,7 +58,7 @@ LCC_DIFF                  0x1C          0x0014                  0x0014          
 *-------------------------------------------------------------------------------------------------------
 CONF_FE_DIFF              0x1D          0x0002                  0x0000                             02
 CONF_FE_SYNC              0x1E          0x0004                  0x0002                             05
-VOLTAGE_TRIM              0x1F          0x0210                  0x0157                             10
+VOLTAGE_TRIM              0x1F          0x0210                  0x0158                             10
 
 *-------------------------------------------------------------------------------------------------------
 * Digital Matrix
@@ -150,8 +150,8 @@ HITOR_2_MASK_DIFF_1       0x5F          0x0000                  0x0001          
 HITOR_3_MASK_DIFF_0       0x60          0x0000                  0xFFFF                             16
 HITOR_3_MASK_DIFF_1       0x61          0x0000                  0x0001                             01
 MONITOR_CONFIG            0x62          0x0000                  0x0305                             11
-SENSOR_CONFIG_0           0x63          0x0000                  0x0000                             12
-SENSOR_CONFIG_1           0x64          0x0000                  0x0000                             12
+SENSOR_CONFIG_0           0x63          0x0000                  0x0F7D                             12
+SENSOR_CONFIG_1           0x64          0x0000                  0x0F7D                             12
 AUTO_READ_0               0x65          0x0088                  0x0088                             09
 AUTO_READ_1               0x66          0x0082                  0x0082                             09
 AUTO_READ_2               0x67          0x0076                  0x0076                             09
@@ -197,7 +197,7 @@ SELF_TRIGGER_ENABLE       0x89          0x0000                  0x0000          
 *-------------------------------------------------------------------------------------------------------
 HighGain_LIN              0xA0          0x0001                  0x0001                             01
 INJECTION_SELECT_DELAY    0xA1          0x0000                  0x0000                             04
-VOLTAGE_TRIM_DIG          0xA2          0x0010                  0x0017                             05
+VOLTAGE_TRIM_DIG          0xA2          0x0010                  0x0018                             05
 VOLTAGE_TRIM_ANA          0xA3          0x0010                  0x000A                             05
 CLK_DATA_DELAY_CMD_DELAY  0xA4          0x0000                  0x0000                             04
 CLK_DATA_DELAY_CLK_DELAY  0xA5          0x0000                  0x0000                             04

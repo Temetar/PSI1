@@ -150,8 +150,8 @@ HITOR_2_MASK_DIFF_1       0x5F          0x0000                  0x0001          
 HITOR_3_MASK_DIFF_0       0x60          0x0000                  0xFFFF                             16
 HITOR_3_MASK_DIFF_1       0x61          0x0000                  0x0001                             01
 MONITOR_CONFIG            0x62          0x0000                  0x0305                             11
-SENSOR_CONFIG_0           0x63          0x0000                  0x0000                             12
-SENSOR_CONFIG_1           0x64          0x0000                  0x0000                             12
+SENSOR_CONFIG_0           0x63          0x0000                  0x0F7D                             12
+SENSOR_CONFIG_1           0x64          0x0000                  0x0F7D                             12
 AUTO_READ_0               0x65          0x0088                  0x0088                             09
 AUTO_READ_1               0x66          0x0082                  0x0082                             09
 AUTO_READ_2               0x67          0x0076                  0x0076                             09
