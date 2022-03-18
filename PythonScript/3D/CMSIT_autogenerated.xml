@@ -9,7 +9,7 @@
                   FMCId="0">
       <Hybrid Id="1"
               Status="1">
-        <RD53_Files path="/home/l_tester/work/pixel_phase2/Ph2_ACF_runs/tamar2/PythonScript/3D/" />
+        <RD53_Files path="/home/l_tester/work/pixel_phase2/Ph2_ACF_runs/tamar2/PythonScript/1D/" />
         <RD53 Id="0"
               Lane="0"
               configfile="CMSIT_RD53_chip0.txt"
@@ -351,7 +351,7 @@
     <Setting name="VDDATrimTarget">1.20</Setting>
     <Setting name="VDDDTrimTolerance">0.02</Setting>
     <Setting name="VDDATrimTolerance">0.02</Setting>
-    <Setting name="nTRIGxEvent">10</Setting>
+    <Setting name="nTRIGxEvent">1</Setting>
     <Setting name="INJtype">1</Setting>
     <Setting name="ResetMask">0</Setting>
     <Setting name="ResetTDAC">0</Setting>
@@ -359,8 +359,8 @@
     <Setting name="ROWstop">191</Setting>
     <Setting name="COLstart">128</Setting>
     <Setting name="COLstop">263</Setting>
-    <Setting name="LatencyStart">0</Setting>
-    <Setting name="LatencyStop">511</Setting>
+    <Setting name="LatencyStart">126</Setting>
+    <Setting name="LatencyStop">136</Setting>
     <Setting name="VCalHstart">100</Setting>
     <Setting name="VCalHstop">600</Setting>
     <Setting name="VCalHnsteps">50</Setting>
@@ -414,15 +414,17 @@
   -->
   <MonitoringSettings>
     <Monitoring type="RD53"
-                enable="0">
+                enable="1">
       <MonitoringSleepTime>1000</MonitoringSleepTime>
       <MonitoringElements VIN_ana_ShuLDO="0"
-                          VOUT_ana_ShuLDO="1"
+                          VOUT_ana_ShuLDO="0"
                           VIN_dig_ShuLDO="0"
-                          VOUT_dig_ShuLDO="1"
-                          ADCbandgap="1"
-                          Iref="1"
+                          VOUT_dig_ShuLDO="0"
+                          ADCbandgap="0"
+                          Iref="0"
                           TEMPSENS_1="1"
+                          TEMPSENS_2="1"
+                          TEMPSENS_3="1"
                           TEMPSENS_4="1" />
     </Monitoring>
   </MonitoringSettings>
